@@ -1,0 +1,99 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 河西走廊：祁连雪峰下的长城烽燧与穿越戈壁的驼队 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="河西走廊：祁连雪峰下的长城烽燧与穿越戈壁的驼队">
+  <defs>
+    <linearGradient id="corSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F1E4"/>
+      <stop offset="1" stop-color="#F7F1E4" stop-opacity=".6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#corSky)"/>
+  <circle cx="936" cy="176" r="104" fill="#BE8A3C" opacity=".15"/>
+  <circle cx="936" cy="176" r="60" fill="#BE8A3C" opacity=".17"/>
+  <circle cx="936" cy="176" r="60" fill="none" stroke="#BE8A3C" stroke-width="2" opacity=".42"/>
+
+  <!-- 远山与雪线 -->
+  <path d="M0 430 L118 322 L214 388 L330 286 L446 386 L556 306 L676 400 L790 318 L906 402 L1018 330 L1126 408 L1200 350 L1200 560 L0 560 Z" fill="#A61B1B" opacity=".32"/>
+  <g fill="#F7F1E4" opacity=".92">
+    <path d="M330 286 L304 326 L320 314 L332 334 L346 312 L364 328 L352 300 Z"/>
+    <path d="M556 306 L530 346 L546 334 L558 354 L572 332 L590 348 L578 320 Z"/>
+    <path d="M790 318 L764 356 L780 344 L792 364 L806 342 L824 358 L812 330 Z"/>
+    <path d="M1018 330 L992 368 L1008 356 L1020 376 L1034 354 L1052 370 L1040 342 Z"/>
+    <path d="M1126 408 L1104 440 L1118 430 L1128 446 L1140 428 L1154 440 L1146 418 Z"/>
+  </g>
+  <path d="M0 430 L118 322 L214 388 L330 286 L446 386 L556 306 L676 400 L790 318 L906 402 L1018 330 L1126 408 L1200 350" fill="none" stroke="#7A1210" stroke-width="3" stroke-linecap="round" opacity=".3"/>
+
+  <!-- 戈壁台地 -->
+  <path d="M0 560 L160 512 L320 556 L470 508 L620 560 L780 514 L940 562 L1090 518 L1200 556 L1200 675 L0 675 Z" fill="#BE8A3C" opacity=".26"/>
+  <path d="M0 606 L180 560 L360 606 L540 556 L720 610 L900 562 L1080 612 L1200 570 L1200 675 L0 675 Z" fill="#BE8A3C" opacity=".24"/>
+
+  <!-- 长城与烽燧：一条从远山蜿蜒而来的金线 -->
+  <path d="M0 512 L120 480 L236 508 L340 466 L452 506 L560 462 L668 508 L780 466 L890 512 L1000 470 L1112 514 L1200 482" fill="none" stroke="#7A1210" stroke-width="4" opacity=".45"/>
+  <g fill="#7A1210" opacity=".92">
+    <path d="M 198 470 L 202 430 L 226 430 L 230 470 Z"/>
+    <path d="M 196 430 L 232 430 L 228 420 L 200 420 Z"/>
+    <path d="M 208 438 L 220 438 L 220 452 L 208 452 Z" fill="#F7F1E4" opacity=".72"/>
+    <path d="M 469 456 L 473 412 L 501 412 L 505 456 Z"/>
+    <path d="M 466 412 L 508 412 L 503 400 L 471 400 Z"/>
+    <path d="M 481 422 L 493 422 L 493 438 L 481 438 Z" fill="#F7F1E4" opacity=".72"/>
+    <path d="M 759 456 L 763 416 L 789 416 L 793 456 Z"/>
+    <path d="M 756 416 L 796 416 L 791 404 L 761 404 Z"/>
+    <path d="M 771 426 L 783 426 L 783 441 L 771 441 Z" fill="#F7F1E4" opacity=".72"/>
+    <path d="M 1031 470 L 1034 436 L 1058 436 L 1061 470 Z"/>
+    <path d="M 1028 436 L 1064 436 L 1060 426 L 1032 426 Z"/>
+    <path d="M 1041 444 L 1053 444 L 1053 457 L 1041 457 Z" fill="#F7F1E4" opacity=".72"/>
+  </g>
+
+  <!-- 沙丘与梭梭草 -->
+  <path d="M0 620 C 140 596 260 626 400 604 C 540 582 640 618 780 598 C 920 578 1040 612 1200 590 L1200 675 L0 675 Z" fill="#7A1210" opacity=".2"/>
+  <g fill="none" stroke="#1F1A17" stroke-width="2.5" stroke-linecap="round" opacity=".55">
+    <path d="M 96 650 C 92 626 84 610 74 598"/>
+    <path d="M 96 650 C 100 626 108 612 118 602"/>
+    <path d="M 144 656 C 140 634 134 620 126 610"/>
+    <path d="M 1092 646 C 1088 624 1080 608 1070 596"/>
+    <path d="M 1092 646 C 1096 622 1104 608 1114 598"/>
+    <path d="M 1136 652 C 1132 630 1126 616 1118 606"/>
+  </g>
+
+  <!-- 驼队：三峰骆驼与牵驼人 -->
+  <g fill="#1F1A17">
+    <!-- 骆驼一 -->
+    <path d="M 500 552 Q 508 522 536 516 Q 560 512 576 528 Q 584 536 584 548 L 580 560 L 512 560 Q 500 558 500 552 Z"/>
+    <path d="M 574 522 L 588 496 L 598 492 Q 608 492 608 502 L 598 506 L 592 514 L 584 532 Z"/>
+    <path d="M 598 494 L 606 486 L 612 490 L 608 498 Z"/>
+    <path d="M 514 560 L 512 582 L 518 582 L 522 562 Z"/>
+    <path d="M 528 560 L 526 584 L 532 584 L 536 562 Z"/>
+    <path d="M 556 560 L 554 584 L 560 584 L 564 562 Z"/>
+    <path d="M 572 560 L 570 582 L 576 582 L 580 560 Z"/>
+    <path d="M 508 544 C 486 548 470 562 458 580" fill="none" stroke="#1F1A17" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- 骆驼二 -->
+    <path d="M 636 566 Q 642 544 662 540 Q 680 538 690 550 Q 696 556 696 566 L 692 574 L 644 574 Q 636 572 636 566 Z"/>
+    <path d="M 688 546 L 698 526 L 706 524 Q 714 524 714 532 L 706 536 L 700 542 L 694 554 Z"/>
+    <path d="M 644 574 L 642 590 L 648 590 L 650 576 Z"/>
+    <path d="M 656 574 L 654 592 L 660 592 L 664 576 Z"/>
+    <path d="M 678 574 L 676 592 L 682 592 L 686 574 Z"/>
+    <path d="M 690 574 L 688 590 L 694 590 L 698 574 Z"/>
+    <path d="M 638 560 C 622 562 610 572 600 586" fill="none" stroke="#1F1A17" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- 骆驼三，较小 -->
+    <path d="M 750 580 Q 756 564 770 560 Q 784 558 792 568 Q 798 574 798 580 L 794 588 L 756 588 Q 750 586 750 580 Z"/>
+    <path d="M 790 566 L 798 550 L 804 548 Q 810 548 810 554 L 804 558 L 800 562 L 796 570 Z"/>
+    <path d="M 756 588 L 754 600 L 760 600 L 762 590 Z"/>
+    <path d="M 768 588 L 766 602 L 772 602 L 776 590 Z"/>
+    <path d="M 786 588 L 784 600 L 790 600 L 794 588 Z"/>
+  </g>
+  <!-- 牵驼人剪影 -->
+  <g fill="#1F1A17">
+    <circle cx="438" cy="542" r="8"/>
+    <path d="M 428 580 Q 428 552 438 552 Q 448 552 448 580 Z"/>
+    <path d="M 434 578 L 428 604 M 442 578 L 450 604" fill="none" stroke="#1F1A17" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 450 558 L 466 548" fill="none" stroke="#1F1A17" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 风线 -->
+  <g stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".45">
+    <path d="M 120 486 L 286 478"/>
+    <path d="M 640 430 L 782 422"/>
+    <path d="M 880 444 L 1030 436"/>
+    <path d="M 180 236 L 300 230"/>
+  </g>
+</svg>

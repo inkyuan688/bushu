@@ -1,0 +1,135 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 黄河夜色中的虎豹口渡口，木船破浪、篙影与灯火的渡河剪影 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="黄河夜色中的虎豹口渡口，木船破浪、篙影与灯火的渡河剪影">
+  <defs>
+    <linearGradient id="crossSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F1E4"/>
+      <stop offset="1" stop-color="#F7F1E4" stop-opacity=".6"/>
+    </linearGradient>
+    <linearGradient id="crossWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7A1210" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#7A1210" stop-opacity=".95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 宣纸夜空、淡金月轮与薄云 -->
+  <rect width="1200" height="675" fill="url(#crossSky)"/>
+  <circle cx="1006" cy="146" r="62" fill="#BE8A3C" opacity=".14"/>
+  <circle cx="1006" cy="146" r="62" fill="none" stroke="#BE8A3C" stroke-width="2" opacity=".5"/>
+  <g stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".3">
+    <path d="M120 128 L240 122"/>
+    <path d="M300 168 L404 162"/>
+    <path d="M760 112 L880 106"/>
+    <path d="M1060 216 L1140 212"/>
+  </g>
+
+  <!-- 远岸山影与烽燧 -->
+  <path d="M0 392 L96 352 L178 380 L262 338 L348 372 L438 340 L528 376 L626 348 L724 382 L822 354 L920 386 L1018 358 L1116 388 L1200 362 L1200 430 L0 430 Z" fill="#7A1210" opacity=".78"/>
+  <path d="M0 392 L96 352 L178 380 L262 338 L348 372 L438 340 L528 376 L626 348 L724 382 L822 354 L920 386 L1018 358 L1116 388 L1200 362" fill="none" stroke="#BE8A3C" stroke-width="2" opacity=".4"/>
+  <g fill="#1F1A17" opacity=".75">
+    <path d="M282 336 L300 336 L300 316 L314 316 L314 336 L328 336 L328 300 L322 300 L322 292 L308 292 L308 300 L302 300 L302 336 Z"/>
+    <path d="M902 366 L920 366 L920 348 L934 348 L934 366 L946 366 L946 332 L940 332 L940 324 L926 324 L926 332 L920 332 L920 366 Z"/>
+  </g>
+  <g fill="#BE8A3C" opacity=".55">
+    <rect x="303" y="303" width="5" height="8"/>
+    <rect x="927" y="326" width="5" height="8"/>
+  </g>
+
+  <!-- 黄河水面：层层推进的红色浪涛 -->
+  <path d="M0 424 C 140 408 260 436 400 420 C 540 404 660 434 800 418 C 940 402 1060 430 1200 414 L1200 675 L0 675 Z" fill="url(#crossWater)"/>
+  <path d="M0 470 C 150 452 300 486 450 466 C 600 446 750 482 900 462 C 1050 442 1140 470 1200 458 L1200 675 L0 675 Z" fill="#7A1210" opacity=".35"/>
+  <path d="M0 548 C 170 528 320 566 490 544 C 660 522 820 562 990 540 C 1080 528 1140 546 1200 536 L1200 675 L0 675 Z" fill="#7A1210" opacity=".58"/>
+  <path d="M0 624 C 180 606 360 638 540 616 C 720 594 900 632 1080 610 C 1120 606 1160 614 1200 608 L1200 675 L0 675 Z" fill="#7A1210" opacity=".94"/>
+
+  <!-- 水纹与月光碎影 -->
+  <g fill="none" stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".48">
+    <path d="M60 452 C 130 444 190 458 258 450"/>
+    <path d="M340 490 C 420 480 486 496 560 486"/>
+    <path d="M640 470 C 720 460 786 476 860 466"/>
+    <path d="M930 504 C 1000 494 1054 510 1122 500"/>
+    <path d="M120 588 C 210 578 280 594 366 586"/>
+    <path d="M470 636 C 560 624 640 642 730 632"/>
+    <path d="M842 600 C 916 590 974 606 1050 596"/>
+  </g>
+  <g stroke="#F7F1E4" stroke-width="3" stroke-linecap="round" opacity=".5">
+    <path d="M986 452 L1026 448"/>
+    <path d="M958 480 L1020 474"/>
+    <path d="M976 512 L1030 506"/>
+    <path d="M950 546 L1002 540"/>
+  </g>
+
+  <!-- 主船：木船、篙影、灯火、船头红旗 -->
+  <g>
+    <path d="M372 524 Q 470 562 588 518 L 570 550 Q 470 584 392 552 Z" fill="#1F1A17"/>
+    <path d="M398 530 Q 470 558 558 524" fill="none" stroke="#BE8A3C" stroke-width="2.5" opacity=".55"/>
+    <path d="M520 526 L520 426" stroke="#1F1A17" stroke-width="6" stroke-linecap="round"/>
+    <path d="M520 428 L600 444 L582 462 L600 480 L520 492 Z" fill="#A61B1B" stroke="#F7F1E4" stroke-width="2" opacity=".95"/>
+    <circle cx="552" cy="458" r="6" fill="#F7F1E4" opacity=".8"/>
+    <!-- 撑篙者 -->
+    <circle cx="448" cy="492" r="11" fill="#1F1A17"/>
+    <path d="M434 528 Q 434 500 448 500 Q 462 500 462 528 Z" fill="#1F1A17"/>
+    <path d="M470 470 L500 534" stroke="#1F1A17" stroke-width="4" stroke-linecap="round"/>
+    <!-- 摇橹者 -->
+    <circle cx="490" cy="498" r="10" fill="#1F1A17"/>
+    <path d="M478 528 Q 478 504 490 504 Q 502 504 502 528 Z" fill="#1F1A17"/>
+    <!-- 船尾旗手 -->
+    <circle cx="566" cy="500" r="9" fill="#1F1A17"/>
+    <path d="M556 526 Q 556 508 566 508 Q 576 508 576 526 Z" fill="#1F1A17"/>
+    <path d="M580 508 L580 468" stroke="#1F1A17" stroke-width="3" stroke-linecap="round"/>
+    <!-- 桅灯 -->
+    <path d="M520 448 L592 470" stroke="#BE8A3C" stroke-width="1.6" opacity=".55"/>
+    <circle cx="596" cy="472" r="20" fill="#BE8A3C" opacity=".14"/>
+    <circle cx="596" cy="472" r="9" fill="#BE8A3C"/>
+    <circle cx="596" cy="472" r="9" fill="none" stroke="#F7F1E4" stroke-width="1.5" opacity=".7"/>
+    <!-- 船影倒映 -->
+    <g stroke="#F7F1E4" stroke-width="3" stroke-linecap="round" opacity=".3">
+      <path d="M428 566 L470 572"/>
+      <path d="M520 578 L566 584"/>
+      <path d="M590 560 L620 566"/>
+    </g>
+  </g>
+
+  <!-- 侧船：右翼小船 -->
+  <g>
+    <path d="M780 498 Q 832 522 892 496 L 878 516 Q 828 536 794 516 Z" fill="#1F1A17"/>
+    <circle cx="820" cy="482" r="8" fill="#1F1A17"/>
+    <path d="M811 506 Q 811 488 820 488 Q 829 488 829 506 Z" fill="#1F1A17"/>
+    <circle cx="856" cy="486" r="7" fill="#1F1A17"/>
+    <path d="M848 508 Q 848 492 856 492 Q 864 492 864 508 Z" fill="#1F1A17"/>
+    <path d="M844 446 L866 500" stroke="#1F1A17" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="894" cy="486" r="7" fill="#BE8A3C" opacity=".9"/>
+    <circle cx="894" cy="486" r="15" fill="#BE8A3C" opacity=".14"/>
+  </g>
+
+  <!-- 远船：左翼先头船 -->
+  <g opacity=".9">
+    <path d="M128 452 Q 176 472 230 450 L 218 468 Q 172 484 142 466 Z" fill="#1F1A17"/>
+    <circle cx="168" cy="438" r="7" fill="#1F1A17"/>
+    <path d="M160 458 Q 160 444 168 444 Q 176 444 176 458 Z" fill="#1F1A17"/>
+    <path d="M204 440 L204 414" stroke="#1F1A17" stroke-width="3" stroke-linecap="round"/>
+    <path d="M204 416 L236 424 L228 434 L236 442 L204 448 Z" fill="#A61B1B" opacity=".9"/>
+    <circle cx="238" cy="446" r="6" fill="#BE8A3C" opacity=".85"/>
+  </g>
+
+  <!-- 近岸芦苇与渡口石阶 -->
+  <g fill="none" stroke="#1F1A17" stroke-width="3" stroke-linecap="round" opacity=".8">
+    <path d="M58 675 C 62 620 44 584 30 558"/>
+    <path d="M84 675 C 84 624 74 590 66 566"/>
+    <path d="M112 675 C 116 628 116 596 124 570"/>
+    <path d="M146 675 C 140 636 132 612 120 594"/>
+    <path d="M1078 675 C 1072 630 1060 596 1046 570"/>
+    <path d="M1112 675 C 1116 626 1124 594 1140 566"/>
+    <path d="M1152 675 C 1150 634 1158 602 1170 580"/>
+  </g>
+  <g fill="#BE8A3C" opacity=".8">
+    <path d="M30 552 C 22 540 34 526 46 532 C 54 540 44 554 30 552 Z"/>
+    <path d="M66 560 C 58 548 70 534 82 540 C 90 548 80 562 66 560 Z"/>
+    <path d="M124 564 C 116 552 128 538 140 544 C 148 552 138 566 124 564 Z"/>
+    <path d="M1046 564 C 1038 552 1050 538 1062 544 C 1070 552 1060 566 1046 564 Z"/>
+    <path d="M1140 560 C 1132 548 1144 534 1156 540 C 1164 548 1154 562 1140 560 Z"/>
+    <path d="M1176 574 C 1168 562 1180 548 1192 554 C 1200 562 1190 576 1176 574 Z"/>
+  </g>
+  <g fill="#7A1210">
+    <path d="M0 646 L164 630 L300 648 L300 675 L0 675 Z" opacity=".35"/>
+    <path d="M900 640 L1040 626 L1200 644 L1200 675 L900 675 Z" opacity=".35"/>
+  </g>
+</svg>

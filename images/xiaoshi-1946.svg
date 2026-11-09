@@ -1,0 +1,72 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 建校之初：兰州旧校舍与院门 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="1946 年兰州旧校舍：一排带拱形门窗的平房与院门、柳树">
+  <defs>
+    <linearGradient id="vsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"/>
+      <stop offset="1" stop-color="#F0E4CE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#vsky)"/>
+
+  <!-- 日与云 -->
+  <circle cx="300" cy="140" r="66" fill="#C6392C" opacity=".13"/>
+  <circle cx="300" cy="140" r="40" fill="#C6392C" opacity=".2"/>
+  <g fill="#7A1210" opacity=".1">
+    <ellipse cx="820" cy="132" rx="92" ry="20"/>
+    <ellipse cx="900" cy="118" rx="66" ry="16"/>
+    <ellipse cx="1010" cy="164" rx="76" ry="16"/>
+  </g>
+
+  <!-- 远山 -->
+  <path d="M0 332 L160 258 L300 322 L440 246 L580 318 L720 262 L860 330 L1000 276 L1120 334 L1200 302 L1200 675 L0 675 Z" fill="#A61B1B" opacity=".14"/>
+
+  <!-- 旧校舍 -->
+  <g>
+    <!-- 主屋 -->
+    <path d="M300 470 L300 368 L900 368 L900 470 Z" fill="#7A1210" opacity=".9"/>
+    <path d="M282 368 L600 292 L918 368 Z" fill="#A61B1B"/>
+    <path d="M282 368 L918 368 L918 380 L282 380 Z" fill="#5E0D0C"/>
+    <!-- 拱门 -->
+    <path d="M572 470 L572 412 C 572 386 628 386 628 412 L628 470 Z" fill="#F7F1E4" opacity=".85"/>
+    <!-- 拱窗 -->
+    <g fill="#F7F1E4" opacity=".55">
+      <path d="M356 470 L356 424 C 356 406 392 406 392 424 L392 470 Z"/>
+      <path d="M448 470 L448 424 C 448 406 484 406 484 424 L484 470 Z"/>
+      <path d="M716 470 L716 424 C 716 406 752 406 752 424 L752 470 Z"/>
+      <path d="M808 470 L808 424 C 808 406 844 406 844 424 L844 470 Z"/>
+    </g>
+    <!-- 墙基线 -->
+    <path d="M282 470 L918 470 L918 486 L282 486 Z" fill="#5E0D0C"/>
+  </g>
+
+  <!-- 院门与围墙 -->
+  <g fill="#7A1210" opacity=".82">
+    <path d="M180 486 L180 424 L300 424 L300 486 Z"/>
+    <path d="M168 424 L240 386 L312 424 Z" fill="#A61B1B"/>
+    <rect x="222" y="440" width="36" height="46" fill="#F7F1E4" opacity=".55"/>
+    <path d="M900 486 L900 440 L1200 440 L1200 486 Z" opacity=".55"/>
+  </g>
+
+  <!-- 柳树 -->
+  <g fill="#7A1210">
+    <path d="M118 486 L118 400" stroke="#7A1210" stroke-width="7"/>
+    <ellipse cx="118" cy="356" rx="58" ry="42" opacity=".75"/>
+    <g stroke="#7A1210" stroke-width="3" opacity=".55">
+      <path d="M78 372 C 70 420 74 452 84 482"/>
+      <path d="M158 372 C 166 420 162 452 152 482"/>
+      <path d="M118 392 C 112 432 114 456 118 482"/>
+    </g>
+    <path d="M1058 486 L1058 412" stroke="#7A1210" stroke-width="6"/>
+    <ellipse cx="1058" cy="376" rx="48" ry="34" opacity=".6"/>
+  </g>
+
+  <!-- 土路 -->
+  <path d="M420 675 L500 486 L700 486 L780 675 Z" fill="#A61B1B" opacity=".1"/>
+  <g fill="none" stroke="#7A1210" stroke-width="2" stroke-dasharray="10 12" opacity=".3">
+    <path d="M520 660 L566 500"/><path d="M690 660 L640 500"/>
+  </g>
+
+  <!-- 前景 -->
+  <path d="M0 675 L0 588 C 300 566 620 606 900 578 C 1060 562 1150 584 1200 576 L1200 675 Z" fill="#A61B1B" opacity=".16"/>
+  <path d="M0 675 L0 632 C 300 610 620 650 900 622 C 1060 606 1150 628 1200 620 L1200 675 Z" fill="#5E0D0C" opacity=".88"/>
+</svg>

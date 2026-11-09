@@ -1,0 +1,129 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 会宁会合：城楼、红旗与三支队伍，山峦之间汇成一条河流 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="会宁会师旧址的城门、三面红旗与山峦之间汇聚的队伍剪影">
+  <defs>
+    <linearGradient id="czHsSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"></stop>
+      <stop offset=".7" stop-color="#F7F1E4"></stop>
+      <stop offset="1" stop-color="#EFE4CF"></stop>
+    </linearGradient>
+    <pattern id="czHsGrain" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="1.1" fill="#1F1A17" opacity=".05"></circle>
+      <circle cx="21" cy="22" r="1" fill="#BE8A3C" opacity=".13"></circle>
+    </pattern>
+    <g id="czHsSoldier">
+      <circle cx="0" cy="-24" r="4" fill="#5E0D0C"></circle>
+      <path d="M-6.2 -19 C -6.2 -12 -7.2 -7 -8 -1 L 8 -1 C 6.2 -8 5.2 -14 5.2 -19 Z" fill="#5E0D0C"></path>
+      <path d="M-4.8 -1 L -7 8 M 4.2 -1 L 6.6 8" stroke="#5E0D0C" stroke-width="2.8" stroke-linecap="round" fill="none"></path>
+      <path d="M2 -16 L 10 -26" stroke="#5E0D0C" stroke-width="2" stroke-linecap="round"></path>
+    </g>
+    <g id="czHsFlag">
+      <path d="M0 6 V -46" stroke="#7A1210" stroke-width="3.4" stroke-linecap="round"></path>
+      <path d="M0 -46 L 38 -38 L 0 -27 Z" fill="#A61B1B"></path>
+      <path d="M10 -41 l2.2 4.8 5.2 .8 -3.8 3.6 1 5.2 -4.6 -2.5 -4.6 2.5 1 -5.2 -3.8 -3.6 5.2 -.8 z" fill="#BE8A3C" opacity=".92"></path>
+    </g>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#czHsSky)"></rect>
+  <rect width="1200" height="675" fill="url(#czHsGrain)"></rect>
+
+  <g>
+    <circle cx="948" cy="160" r="132" fill="#C6392C" opacity=".09"></circle>
+    <circle cx="948" cy="160" r="90" fill="#C6392C" opacity=".14"></circle>
+    <circle cx="948" cy="160" r="54" fill="#C6392C" opacity=".2"></circle>
+  </g>
+
+  <path d="M0 420 L96 364 L188 402 L286 346 L382 396 L480 352 L576 404 L672 358 L770 408 L868 364 L966 412 L1062 370 L1150 412 L1200 396 L1200 675 L0 675 Z" fill="#E3C68C" opacity=".28"></path>
+  <path d="M0 486 L108 428 L216 472 L324 414 L432 474 L540 420 L648 480 L756 426 L864 486 L972 432 L1080 486 L1188 442 L1200 448 L1200 675 L0 675 Z" fill="#A61B1B" opacity=".12"></path>
+  <path d="M0 552 L120 492 L252 538 L384 486 L516 548 L648 496 L780 552 L912 502 L1044 556 L1176 510 L1200 520 L1200 675 L0 675 Z" fill="#7A1210" opacity=".42"></path>
+
+  <g fill="none" stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".3">
+    <path d="M40 500 C 240 452, 420 470, 600 452 C 780 434, 960 452, 1160 424"></path>
+    <path d="M60 620 C 260 566, 440 588, 620 566 C 800 544, 980 566, 1180 536"></path>
+  </g>
+
+  <g>
+    <path d="M300 494 L336 494 L336 512 L368 512 L368 494 L404 494 L404 512 L436 512 L436 494 L472 494 L472 512 L504 512 L504 494 L540 494 L540 512 L572 512 L572 494 L608 494 L608 512 L640 512 L640 494 L676 494 L676 512 L708 512 L708 494 L744 494 L744 512 L776 512 L776 494 L812 494 L812 512 L844 512 L844 494 L880 494 L880 512 L900 512 L900 596 L300 596 Z" fill="#5E0D0C"></path>
+    <path d="M300 596 L300 556 L900 556 L900 596 Z" fill="#7A1210"></path>
+    <path d="M520 596 L520 540 A 80 80 0 0 1 680 540 L680 596 Z" fill="#F7F1E4"></path>
+    <path d="M520 596 L520 540 A 80 80 0 0 1 680 540 L680 596" fill="none" stroke="#BE8A3C" stroke-width="2.4" opacity=".8"></path>
+    <path d="M600 540 V 596" stroke="#BE8A3C" stroke-width="2" opacity=".55"></path>
+    <path d="M540 586 V 556 M660 586 V 556" stroke="#BE8A3C" stroke-width="2" opacity=".5"></path>
+
+    <path d="M452 556 L452 446 L748 446 L748 556 Z" fill="#A61B1B"></path>
+    <path d="M452 446 L600 366 L748 446 Z" fill="#7A1210"></path>
+    <path d="M452 446 L600 366 L748 446" fill="none" stroke="#BE8A3C" stroke-width="2.6" opacity=".85"></path>
+    <path d="M452 446 q -30 -4 -42 16" fill="none" stroke="#7A1210" stroke-width="5" stroke-linecap="round"></path>
+    <path d="M748 446 q 30 -4 42 16" fill="none" stroke="#7A1210" stroke-width="5" stroke-linecap="round"></path>
+    <path d="M494 366 L600 300 L706 366 Z" fill="#5E0D0C"></path>
+    <path d="M494 366 L600 300 L706 366" fill="none" stroke="#BE8A3C" stroke-width="2.4" opacity=".85"></path>
+    <path d="M494 366 q -24 -2 -34 14" fill="none" stroke="#7A1210" stroke-width="4.4" stroke-linecap="round"></path>
+    <path d="M706 366 q 24 -2 34 14" fill="none" stroke="#7A1210" stroke-width="4.4" stroke-linecap="round"></path>
+    <path d="M600 300 V 264" stroke="#7A1210" stroke-width="3" stroke-linecap="round"></path>
+    <circle cx="600" cy="260" r="5" fill="#BE8A3C"></circle>
+    <g fill="#BE8A3C" opacity=".9">
+      <path d="M486 500 L486 466 A 16 16 0 0 1 518 466 L518 500 Z"></path>
+      <path d="M554 500 L554 466 A 16 16 0 0 1 586 466 L586 500 Z"></path>
+      <path d="M622 500 L622 466 A 16 16 0 0 1 654 466 L654 500 Z"></path>
+      <path d="M690 500 L690 466 A 16 16 0 0 1 722 466 L722 500 Z"></path>
+    </g>
+    <g fill="none" stroke="#7A1210" stroke-width="2" opacity=".7">
+      <path d="M502 470 V 500 M486 484 H 518"></path>
+      <path d="M570 470 V 500 M554 484 H 586"></path>
+      <path d="M638 470 V 500 M622 484 H 654"></path>
+      <path d="M706 470 V 500 M690 484 H 722"></path>
+    </g>
+  </g>
+
+  <g transform="translate(452 446) scale(.62)">
+    <path d="M0 0 V -34" stroke="#7A1210" stroke-width="3" stroke-linecap="round"></path>
+    <path d="M0 -34 L 30 -27 L 0 -16 Z" fill="#A61B1B"></path>
+  </g>
+  <g transform="translate(748 446) scale(.62)">
+    <path d="M0 0 V -34" stroke="#7A1210" stroke-width="3" stroke-linecap="round"></path>
+    <path d="M0 -34 L 30 -27 L 0 -16 Z" fill="#A61B1B"></path>
+  </g>
+  <g transform="translate(600 264) scale(.92)">
+    <path d="M0 0 V -46" stroke="#7A1210" stroke-width="3.4" stroke-linecap="round"></path>
+    <path d="M0 -46 L 40 -37 L 0 -25 Z" fill="#A61B1B"></path>
+  </g>
+
+  <use href="#czHsFlag" transform="translate(196 604)"></use>
+  <use href="#czHsSoldier" transform="translate(166 610)"></use>
+  <use href="#czHsSoldier" transform="translate(196 612) scale(.96)"></use>
+  <use href="#czHsSoldier" transform="translate(228 610) scale(.94)"></use>
+  <use href="#czHsSoldier" transform="translate(258 612) scale(.92)"></use>
+  <use href="#czHsSoldier" transform="translate(290 610) scale(.9)"></use>
+  <use href="#czHsSoldier" transform="translate(320 612) scale(.88)"></use>
+
+  <use href="#czHsFlag" transform="translate(1002 604) scale(.94)"></use>
+  <use href="#czHsSoldier" transform="translate(1034 610) scale(.92)"></use>
+  <use href="#czHsSoldier" transform="translate(1004 612) scale(.94)"></use>
+  <use href="#czHsSoldier" transform="translate(972 610) scale(.9)"></use>
+  <use href="#czHsSoldier" transform="translate(942 612) scale(.88)"></use>
+  <use href="#czHsSoldier" transform="translate(912 610) scale(.86)"></use>
+
+  <use href="#czHsFlag" transform="translate(704 648) scale(.9)"></use>
+  <use href="#czHsSoldier" transform="translate(534 656) scale(.94)"></use>
+  <use href="#czHsSoldier" transform="translate(566 658) scale(.92)"></use>
+  <use href="#czHsSoldier" transform="translate(598 656) scale(.9)"></use>
+  <use href="#czHsSoldier" transform="translate(630 658) scale(.92)"></use>
+  <use href="#czHsSoldier" transform="translate(662 656) scale(.9)"></use>
+
+  <g stroke="#1F1A17" stroke-width="2" fill="none" opacity=".26" stroke-linecap="round">
+    <path d="M238 202 q 11 -8 22 0"></path>
+    <path d="M262 202 q 11 -8 22 0"></path>
+    <path d="M306 250 q 9 -7 18 0"></path>
+    <path d="M326 250 q 9 -7 18 0"></path>
+  </g>
+
+  <g fill="#BE8A3C" opacity=".55">
+    <path d="M1016 106 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z"></path>
+    <path d="M768 130 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z" opacity=".8"></path>
+  </g>
+
+  <path d="M0 675 L0 640 C 160 618 300 646 460 638 C 620 630 760 654 920 646 C 1040 640 1140 652 1200 646 L1200 675 Z" fill="#5E0D0C"></path>
+  <g fill="none" stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".28">
+    <path d="M64 660 q 8 -14 2 -24 M76 662 q 3 -12 10 -20"></path>
+    <path d="M1126 660 q -8 -14 -2 -24 M1114 662 q -3 -12 -10 -20"></path>
+  </g>
+</svg>

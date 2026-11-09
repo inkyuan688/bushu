@@ -1,0 +1,491 @@
+@charset "UTF-8";
+/* ==========================================================================
+   陇原星火 · 精神谱系页（jingshen.html）专属样式
+   作用域：body.page-jingshen
+   说明：仅新增本页区块类，不重定义 base.css 的通用组件
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   一、页面主视觉补充（hero 内的小标注）
+   -------------------------------------------------------------------------- */
+body.page-jingshen .sp-hero__note {
+  margin: 20px 0 0;
+  padding: 12px 16px;
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--ink-2);
+  background: rgba(190, 138, 60, .08);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+body.page-jingshen .sp-hero__note b {
+  color: var(--red-deep);
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   二、精神长河（七个可点节点）
+   -------------------------------------------------------------------------- */
+body.page-jingshen .sp-river {
+  position: relative;
+  margin-top: clamp(18px, 2.4vw, 30px);
+  padding: clamp(18px, 2.6vw, 34px) clamp(8px, 2vw, 26px) clamp(10px, 1.6vw, 18px);
+  background: linear-gradient(180deg, rgba(239, 228, 207, .55), rgba(251, 247, 238, .2));
+  border: 1px solid var(--line-gold);
+  border-radius: var(--r);
+}
+
+body.page-jingshen .sp-river__list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body.page-jingshen .sp-river__list::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 6%;
+  right: 6%;
+  top: 32px;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--line-gold) 7%,
+    var(--red) 50%,
+    var(--line-gold) 93%,
+    transparent 100%);
+}
+
+body.page-jingshen .sp-river__item { margin: 0; }
+
+body.page-jingshen .sp-river__link {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 4px 12px;
+  text-align: center;
+  color: var(--ink);
+  border-radius: var(--r);
+  transition: color .26s var(--ease), background .26s var(--ease);
+}
+body.page-jingshen .sp-river__link:hover,
+body.page-jingshen .sp-river__link:focus-visible { color: var(--red-deep); }
+
+body.page-jingshen .sp-river__dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-family: var(--font-num);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--gold-deep);
+  background: var(--paper-2);
+  border: 1px solid var(--line-gold);
+  border-radius: 50%;
+  transition: all .3s var(--ease);
+}
+body.page-jingshen .sp-river__link:hover .sp-river__dot {
+  border-color: var(--red);
+  transform: translateY(-2px);
+}
+body.page-jingshen .sp-river__link[aria-current="true"] .sp-river__dot {
+  color: var(--paper-2);
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 0 0 5px rgba(166, 27, 27, .1);
+}
+body.page-jingshen .sp-river__name {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  line-height: 1.4;
+}
+body.page-jingshen .sp-river__era {
+  font-size: 11px;
+  letter-spacing: .1em;
+  line-height: 1.4;
+  color: var(--ink-3);
+}
+
+body.page-jingshen .sp-river__hint {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin: 16px 0 0;
+  padding-top: 14px;
+  font-size: 12.5px;
+  letter-spacing: .04em;
+  color: var(--ink-3);
+  border-top: 1px solid var(--line-soft);
+}
+body.page-jingshen .sp-river__hint span { display: inline-flex; align-items: center; gap: 6px; }
+body.page-jingshen .sp-river__hint i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+/* --------------------------------------------------------------------------
+   三、Tab 面板
+   -------------------------------------------------------------------------- */
+body.page-jingshen .sp-tabs {
+  margin-top: clamp(10px, 1.6vw, 18px);
+}
+body.page-jingshen .sp-tabs .tabs {
+  gap: 4px;
+}
+body.page-jingshen .sp-tabs .tabs__btn {
+  padding: 12px 17px;
+  font-size: 14.6px;
+  letter-spacing: .04em;
+}
+body.page-jingshen .tab-panel { padding-top: clamp(8px, 1.4vw, 16px); }
+body.page-jingshen .tab-panel:focus { outline: none; }
+body.page-jingshen .tab-panel:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 6px; }
+
+body.page-jingshen .sp-panel__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px 18px;
+  margin-bottom: 22px;
+}
+body.page-jingshen .sp-panel__idx {
+  font-family: var(--font-num);
+  font-size: 13px;
+  letter-spacing: .16em;
+  color: var(--gold-deep);
+}
+body.page-jingshen .sp-panel__title {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  letter-spacing: .08em;
+  color: var(--red-deep);
+}
+body.page-jingshen .sp-panel__era {
+  font-size: 12px;
+  letter-spacing: .16em;
+  color: var(--ink-3);
+}
+body.page-jingshen .sp-panel__lead {
+  flex: 1 1 100%;
+  margin: 4px 0 0;
+  font-size: 15.5px;
+  line-height: 1.85;
+  color: var(--ink-2);
+}
+
+body.page-jingshen .sp-panel__quote { margin-bottom: clamp(22px, 2.6vw, 32px); }
+body.page-jingshen .sp-panel__quote .quote__text { font-size: clamp(16px, 1.4vw, 19px); }
+body.page-jingshen .sp-panel__quote-tag {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 3px 10px;
+  font-size: 11.5px;
+  letter-spacing: .14em;
+  color: var(--gold-deep);
+  background: rgba(190, 138, 60, .12);
+  border: 1px solid rgba(190, 138, 60, .34);
+  border-radius: 100px;
+}
+
+body.page-jingshen .sp-panel__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: clamp(22px, 2.6vw, 38px);
+  align-items: start;
+}
+
+body.page-jingshen .sp-points {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body.page-jingshen .sp-points--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+body.page-jingshen .sp-point {
+  position: relative;
+  margin: 0;
+  padding: 15px 18px 15px 56px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  transition: border-color .28s var(--ease), transform .28s var(--ease);
+}
+body.page-jingshen .sp-point:hover {
+  border-color: rgba(190, 138, 60, .5);
+  transform: translateY(-2px);
+}
+body.page-jingshen .sp-point__idx {
+  position: absolute;
+  left: 17px;
+  top: 15px;
+  font-family: var(--font-num);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--red);
+}
+body.page-jingshen .sp-point__title {
+  margin: 0 0 4px;
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  letter-spacing: .04em;
+  color: var(--ink);
+}
+body.page-jingshen .sp-point__text {
+  margin: 0;
+  font-size: 14.4px;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+
+/* 陇原实践 */
+body.page-jingshen .sp-points-label,
+body.page-jingshen .sp-practice__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  color: var(--red-deep);
+}
+body.page-jingshen .sp-points-label::before,
+body.page-jingshen .sp-practice__label::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: var(--red);
+}
+body.page-jingshen .sp-panel__note {
+  margin: 0 0 clamp(20px, 2.4vw, 28px);
+  font-size: 13.5px;
+}
+body.page-jingshen .sp-practice {
+  margin-top: 0;
+  padding: clamp(20px, 2.2vw, 26px);
+  background: var(--paper-3);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+body.page-jingshen .sp-practice p {
+  margin: 0;
+  font-size: 15.2px;
+  line-height: 1.9;
+  color: var(--ink-2);
+}
+
+body.page-jingshen .sp-panel__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: clamp(22px, 2.4vw, 30px);
+  padding-top: 18px;
+  border-top: 1px solid var(--line-gold);
+}
+body.page-jingshen .sp-panel__foot p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+/* --------------------------------------------------------------------------
+   四、精神对照表
+   -------------------------------------------------------------------------- */
+body.page-jingshen .sp-table-figure {
+  margin-bottom: clamp(26px, 3vw, 40px);
+}
+body.page-jingshen .sp-table { margin-top: clamp(8px, 1.4vw, 16px); }
+body.page-jingshen .sp-table-hint {
+  display: none;
+  margin: 0 0 10px;
+  padding: 9px 14px;
+  font-size: 12.5px;
+  letter-spacing: .04em;
+  color: var(--ink-2);
+  background: rgba(190, 138, 60, .1);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+body.page-jingshen .sp-table .data-table td:first-child {
+  width: 13em;
+  white-space: nowrap;
+}
+body.page-jingshen .sp-table .data-table td:nth-child(3) {
+  white-space: nowrap;
+  color: var(--gold-deep);
+}
+body.page-jingshen .sp-table__note {
+  margin-top: 18px;
+  font-size: 13.5px;
+  line-height: 1.85;
+}
+
+/* --------------------------------------------------------------------------
+   五、红色基因怎么传
+   -------------------------------------------------------------------------- */
+body.page-jingshen .sp-pass { margin-top: clamp(8px, 1.4vw, 16px); }
+body.page-jingshen .sp-pass .steps__text { max-width: 46rem; }
+body.page-jingshen .sp-pass__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: clamp(24px, 3vw, 36px);
+  padding: clamp(20px, 2.4vw, 28px);
+  background: var(--paper-2);
+  border: 1px solid var(--line-gold);
+  border-radius: var(--r);
+}
+body.page-jingshen .sp-pass__foot p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+
+/* --------------------------------------------------------------------------
+   六、总书记论述（深色区）
+   -------------------------------------------------------------------------- */
+body.page-jingshen .sp-words {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 2.6vw, 34px);
+  align-items: start;
+}
+body.page-jingshen .sp-words--single {
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: clamp(20px, 2.6vw, 34px);
+  max-width: 52rem;
+}
+body.page-jingshen .sp-word { position: relative; }
+body.page-jingshen .sp-word__idx {
+  display: block;
+  margin-bottom: 12px;
+  font-family: var(--font-num);
+  font-size: 12px;
+  letter-spacing: .2em;
+  color: var(--gold-soft);
+}
+body.page-jingshen .sp-word .quote { height: 100%; }
+body.page-jingshen .sp-word .quote__text {
+  font-size: clamp(17px, 1.5vw, 20px);
+  line-height: 2;
+}
+body.page-jingshen .sp-words__note {
+  margin-top: clamp(22px, 2.6vw, 30px);
+  font-size: 13px;
+  line-height: 1.85;
+  color: rgba(251, 247, 238, .58);
+}
+
+/* --------------------------------------------------------------------------
+   七、收束
+   -------------------------------------------------------------------------- */
+body.page-jingshen .sp-close {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr);
+  gap: clamp(20px, 2.6vw, 34px);
+  align-items: stretch;
+}
+body.page-jingshen .sp-close__aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: clamp(22px, 2.4vw, 30px);
+  background: var(--paper-3);
+  border: 1px solid var(--line-gold);
+  border-radius: var(--r);
+}
+body.page-jingshen .sp-close__aside p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.9;
+  color: var(--ink-2);
+}
+body.page-jingshen .sp-close__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   八、响应式
+   -------------------------------------------------------------------------- */
+@media (max-width: 1080px) {
+  body.page-jingshen .sp-river__dot { width: 42px; height: 42px; }
+  body.page-jingshen .sp-river__list::before { top: 29px; }
+  body.page-jingshen .sp-panel__grid { grid-template-columns: minmax(0, 1fr); }
+  body.page-jingshen .sp-practice { margin-top: 0; }
+}
+
+@media (max-width: 900px) {
+  body.page-jingshen .sp-tabs .tabs__btn { padding: 11px 13px; font-size: 14px; }
+  body.page-jingshen .sp-words { grid-template-columns: minmax(0, 1fr); }
+  body.page-jingshen .sp-close { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 720px) {
+  body.page-jingshen .sp-table-hint { display: block; }
+  body.page-jingshen .sp-river { padding: 18px 14px 10px; }
+  body.page-jingshen .sp-river__list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  body.page-jingshen .sp-river__list::before {
+    left: 23px;
+    right: auto;
+    top: 18px;
+    bottom: 18px;
+    width: 1px;
+    height: auto;
+    background: linear-gradient(180deg, transparent, var(--red) 12%, var(--red) 88%, transparent);
+  }
+  body.page-jingshen .sp-river__link {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    grid-template-areas:
+      "dot name"
+      "dot era";
+    align-items: center;
+    justify-items: start;
+    gap: 2px 14px;
+    padding: 8px 4px;
+    text-align: left;
+  }
+  body.page-jingshen .sp-river__dot { grid-area: dot; }
+  body.page-jingshen .sp-river__name { grid-area: name; }
+  body.page-jingshen .sp-river__era { grid-area: era; }
+  body.page-jingshen .sp-river__link:hover .sp-river__dot { transform: none; }
+  body.page-jingshen .sp-points--two { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 560px) {
+  body.page-jingshen .sp-tabs .tabs__btn { padding: 10px 11px; font-size: 13.4px; }
+  body.page-jingshen .sp-point { padding-left: 46px; }
+  body.page-jingshen .sp-point__idx { left: 14px; }
+  body.page-jingshen .sp-pass__foot { padding: 18px; }
+}

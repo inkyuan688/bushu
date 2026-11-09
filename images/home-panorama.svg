@@ -1,0 +1,76 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 陇原长卷：甘南峡谷—黄土塬—丹霞雪山—今日田野与风电 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 520" width="2400" height="520" preserveAspectRatio="xMidYMid slice" role="img" aria-label="从甘南峡谷、黄土高原、丹霞雪山到现代田野与风电的陇原大地长卷">
+  <defs>
+    <linearGradient id="psky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"/>
+      <stop offset="1" stop-color="#F3E9D6"/>
+    </linearGradient>
+    <linearGradient id="pdan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C6392C"/>
+      <stop offset="1" stop-color="#8E1A14"/>
+    </linearGradient>
+  </defs>
+  <rect width="2400" height="520" fill="url(#psky)"/>
+
+  <!-- 日 -->
+  <circle cx="1960" cy="118" r="58" fill="#C6392C" opacity=".16"/>
+  <circle cx="1960" cy="118" r="36" fill="#C6392C" opacity=".26"/>
+
+  <!-- 远山（雪山） -->
+  <path d="M0 292 L120 210 L232 274 L360 186 L470 262 L590 200 L700 268 L830 214 L940 276 L1020 246 L1020 520 L0 520 Z" fill="#A61B1B" opacity=".16"/>
+  <path d="M360 186 L392 226 L330 226 Z M830 214 L866 256 L796 256 Z M590 200 L620 236 L560 236 Z" fill="#FBF7EE" opacity=".8"/>
+
+  <!-- 甘南峡谷（左） -->
+  <path d="M0 520 L0 268 L74 236 L96 316 L150 300 L176 372 L214 352 L240 520 Z" fill="url(#pdan)" opacity=".9"/>
+  <g fill="#7A1210" opacity=".75">
+    <path d="M96 352 l16 -46 l16 46 z"/><path d="M132 366 l13 -38 l13 38 z"/>
+    <path d="M170 350 l18 -52 l18 52 z"/>
+  </g>
+  <path d="M0 520 L0 386 L120 400 L240 380 L320 430 L320 520 Z" fill="#5E0D0C" opacity=".92"/>
+
+  <!-- 黄土塬（中） -->
+  <g fill="none" stroke="#A61B1B" stroke-width="2.4" opacity=".42">
+    <path d="M300 470 C 420 452 520 470 620 452 C 720 434 820 456 920 438"/>
+    <path d="M292 500 C 420 480 540 502 660 482 C 780 462 880 486 980 466"/>
+    <path d="M330 436 C 440 420 540 436 640 420"/>
+  </g>
+  <path d="M270 520 L270 398 L420 366 L560 404 L700 360 L830 404 L940 372 L1020 412 L1020 520 Z" fill="#A61B1B" opacity=".24"/>
+  <path d="M352 412 L430 384 L430 412 Z M700 372 L778 404 L700 404 Z" fill="#7A1210" opacity=".3"/>
+
+  <!-- 石窟塔影（中右，莫高/麦积意象的抽象塔） -->
+  <g fill="#7A1210" opacity=".8">
+    <path d="M1076 520 L1076 372 L1120 336 L1164 372 L1164 520 Z"/>
+    <path d="M1092 340 L1120 312 L1148 340 Z"/>
+    <rect x="1112" y="392" width="16" height="34" fill="#FBF7EE" opacity=".55"/>
+    <rect x="1104" y="452" width="32" height="40" fill="#FBF7EE" opacity=".4"/>
+  </g>
+  <path d="M1040 520 L1040 412 L1076 400 L1076 520 Z" fill="#7A1210" opacity=".5"/>
+  <path d="M1164 520 L1164 400 L1200 412 L1200 520 Z" fill="#7A1210" opacity=".5"/>
+
+  <!-- 丹霞（右） -->
+  <path d="M1260 520 L1300 356 L1380 330 L1460 366 L1520 340 L1600 386 L1700 352 L1790 396 L1880 358 L1980 402 L2080 366 L2180 410 L2280 380 L2400 420 L2400 520 Z" fill="#B7281F" opacity=".55"/>
+  <g fill="none" stroke="#7A1210" stroke-width="2" opacity=".32">
+    <path d="M1300 452 C 1450 428 1600 470 1750 442 C 1900 414 2050 456 2200 430 C 2300 414 2360 430 2400 422"/>
+    <path d="M1318 490 C 1470 466 1620 508 1770 480 C 1920 452 2060 496 2210 468 C 2310 450 2370 468 2400 460"/>
+    <path d="M1296 420 C 1440 398 1580 436 1730 410"/>
+  </g>
+
+  <!-- 今日田野与风电（最右） -->
+  <g fill="none" stroke="#7A1210" stroke-width="2.2" opacity=".55">
+    <path d="M1860 470 C 1980 456 2100 486 2220 462 C 2310 444 2360 462 2400 452"/>
+    <path d="M1866 500 C 1990 484 2110 516 2230 490 C 2320 472 2370 490 2400 480"/>
+  </g>
+  <g stroke="#7A1210" stroke-width="4" stroke-linecap="round" opacity=".8">
+    <path d="M2150 356 L2150 268"/><path d="M2150 268 L2112 236"/><path d="M2150 268 L2206 250"/><path d="M2150 268 L2156 320"/>
+    <path d="M2290 372 L2290 306"/><path d="M2290 306 L2262 282"/><path d="M2290 306 L2330 292"/>
+  </g>
+  <g fill="#7A1210" opacity=".85">
+    <rect x="1880" y="404" width="112" height="4"/>
+    <rect x="1886" y="414" width="112" height="4"/>
+    <rect x="1892" y="424" width="112" height="4"/>
+  </g>
+
+  <!-- 前景 -->
+  <path d="M0 520 L0 452 C 300 476 620 440 900 470 C 1200 502 1500 448 1800 478 C 2060 504 2260 468 2400 486 L2400 520 Z" fill="#7A1210" opacity=".9"/>
+  <path d="M0 520 L0 486 C 320 508 660 470 960 498 C 1260 526 1560 476 1860 502 C 2120 524 2300 494 2400 508 L2400 520 Z" fill="#4A0A09"/>
+</svg>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>关于本站 · 设计说明与原创声明 | 陇原星火 · 甘肃红色文化数字馆</title>
+<meta name="description" content="「陇原星火」是一个由学生团队独立完成的静态网站作品：史料梳理、视觉设计、SVG 插画与代码实现全部原创。本页说明设计理念、技术架构、原创声明、站点地图与参考资料。">
+<meta name="keywords" content="红色网页设计大赛,网页设计说明,原创声明,技术架构,站点地图">
+<meta name="author" content="甘肃农业大学 第五届红色网页设计大赛参赛作品">
+<meta name="theme-color" content="#7A1210">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/guanyu.css">
+<script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
+</head>
+<body class="page-guanyu">
+<a class="skip-link" href="#main">跳到主要内容</a>
+<noscript><p class="noscript-note">本站部分交互效果需要启用 JavaScript；未启用时，全部图文内容仍可正常阅读。</p></noscript>
+<div class="progress-bar" aria-hidden="true"><span data-progress></span></div>
+<!-- SHELL:HEADER:START（页头由 _build/gen_skeleton.py 统一维护，请勿手动修改） -->
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html" aria-label="陇原星火 · 甘肃红色文化数字馆 首页">
+      <img class="brand__logo" src="images/logo.svg" alt="" width="38" height="38">
+      <span class="brand__text">
+        <span class="brand__name">陇原星火</span>
+        <span class="brand__sub">甘肃红色文化数字馆</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">
+      <span class="nav-toggle__bars"><span></span></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="主导航">
+      <a class="nav__link" href="index.html">首页</a>
+      <a class="nav__link" href="changzheng.html">长征征程</a>
+      <a class="nav__link" href="nanliang.html">南梁烽火</a>
+      <a class="nav__link" href="xilu.html">西路军魂</a>
+      <a class="nav__link" href="jingshen.html">精神谱系</a>
+      <a class="nav__link" href="dizhi.html">红色地标</a>
+      <a class="nav__link" href="chuancheng.html">传承行动</a>
+      <a class="nav__link" href="xiaoshi.html">校史印记</a>
+      <a class="nav__link" href="guanyu.html" aria-current="page">关于本站</a>
+    </nav>
+  </div>
+</header>
+<!-- SHELL:HEADER:END -->
+
+<main id="main" class="main">
+  <!-- SHELL:CRUMBS:START（面包屑由 _build/gen_skeleton.py 统一维护） -->
+  <nav class="crumbs" aria-label="面包屑导航">
+    <div class="wrap crumbs__inner">
+      <ol class="crumbs__list">
+        <li><a href="index.html">首页</a></li>
+        <li><span aria-current="page">关于本站</span></li>
+      </ol>
+      <button class="back-link" type="button" data-back data-back-href="index.html">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        返回上一页
+      </button>
+    </div>
+  </nav>
+  <!-- SHELL:CRUMBS:END -->
+<!-- MAIN:START -->
+  <section class="page-hero">
+    <div class="wrap page-hero__inner">
+      <div class="page-hero__meta">
+        <p class="eyebrow">捌 · 关于本站</p>
+        <h1 class="page-hero__title">关于本站 <span class="page-hero__title-sub">设计说明</span></h1>
+        <p class="page-hero__desc">一个由学生团队独立完成的静态网站作品：从史料梳理、视觉设计、SVG 插画到手写代码，全部原创。这一页说明我们的设计思路、技术架构、原创声明与参考资料。</p>
+        <ul class="page-hero__facts">
+          <li><span>页面数量</span><strong>9 个</strong></li>
+          <li><span>技术形态</span><strong>纯静态 HTML/CSS/JS</strong></li>
+          <li><span>外部依赖</span><strong>0</strong></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <!-- ============================================================
+       壹 · 设计理念
+       ============================================================ -->
+  <section class="section" id="idea">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">壹 · 设计理念</p>
+        <h2 class="section-title">为什么叫“陇原星火”</h2>
+        <p class="section-lead">“陇原”是甘肃；“星火”是南梁窑洞里的那盏灯，也是长征路上一个一个传下去的火把。我们想做的不是一座陈列馆，而是一条可以走下去的线索——所以整站以“山河—星火—青年”三层递进：先看土地，再读历史，最后回到今天的人。</p>
+      </header>
+      <div class="ideas">
+        <article class="idea reveal" style="--i:0">
+          <p class="idea__char" aria-hidden="true">山</p>
+          <p class="idea__en">LANDSCAPE</p>
+          <h3 class="idea__title">山河为卷</h3>
+          <p class="idea__text">甘肃的地貌本身就是叙事：甘南峡谷、黄土塬梁、河西戈壁与祁连雪山。站点的主视觉与插画都从地貌线条中来，让历史有可触摸的地形。</p>
+        </article>
+        <article class="idea reveal" style="--i:1">
+          <p class="idea__char" aria-hidden="true">火</p>
+          <p class="idea__en">SPARK</p>
+          <h3 class="idea__title">星火为脉</h3>
+          <p class="idea__text">长征、南梁、西路军三条线索，与七种精神共同构成“星火”的传递路径。页面之间用承接卡片与时间轴串联，让读者自然走向下一站。</p>
+        </article>
+        <article class="idea reveal" style="--i:2">
+          <p class="idea__char" aria-hidden="true">青</p>
+          <p class="idea__en">YOUTH</p>
+          <h3 class="idea__title">青年为答</h3>
+          <p class="idea__text">读到最后一页，问题应该回到自己身上：今天我怎么做。研学、宣讲、志愿讲解、数字创作与强农兴农实践，是可以立刻开始的动作。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       贰 · 信息架构
+       ============================================================ -->
+  <section class="section section--paper" id="structure">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">贰 · 信息架构</p>
+        <h2 class="section-title">九个页面，三个层次</h2>
+        <p class="section-lead">全站共 9 个页面，均置于站点根目录，任何页面都能通过页头导航、页脚导览与页面底部承接卡片抵达其他页面，不存在孤岛页面。</p>
+      </header>
+      <div class="sitemap-list reveal" style="--i:1">
+        <a href="index.html"><span class="num">序 · 首页</span><span class="name">陇原星火</span><span class="path">index.html</span></a>
+        <a href="changzheng.html"><span class="num">壹 · 长征</span><span class="name">长征征程</span><span class="path">changzheng.html</span></a>
+        <a href="nanliang.html"><span class="num">贰 · 南梁</span><span class="name">南梁烽火</span><span class="path">nanliang.html</span></a>
+        <a href="xilu.html"><span class="num">叁 · 河西</span><span class="name">西路军魂</span><span class="path">xilu.html</span></a>
+        <a href="jingshen.html"><span class="num">肆 · 精神</span><span class="name">精神谱系</span><span class="path">jingshen.html</span></a>
+        <a href="dizhi.html"><span class="num">伍 · 地标</span><span class="name">红色地标</span><span class="path">dizhi.html</span></a>
+        <a href="chuancheng.html"><span class="num">陆 · 传承</span><span class="name">传承行动</span><span class="path">chuancheng.html</span></a>
+        <a href="xiaoshi.html"><span class="num">柒 · 校史</span><span class="name">校史印记</span><span class="path">xiaoshi.html</span></a>
+        <a href="guanyu.html"><span class="num">捌 · 关于</span><span class="name">关于本站</span><span class="path">guanyu.html</span></a>
+      </div>
+      <div class="mt-block reveal" style="--i:2">
+        <p class="note">层级约定：站点根目录（第 1 层）放置全部页面；css / js / images 三个资源目录为第 2 层；目录深度不超过 3 层，所有本地链接均使用相对路径，便于整站拷贝与迁移。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       叁 · 技术架构
+       ============================================================ -->
+  <section class="section" id="tech">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">叁 · 技术架构</p>
+        <h2 class="section-title">纯静态、零依赖、可离线</h2>
+        <p class="section-lead">整站使用 HTML5 + 原生 CSS + 原生 JavaScript 手写完成，不引入任何框架、构建工具、CDN 资源或第三方字体，双击 index.html 即可完整浏览。</p>
+      </header>
+      <div class="tech reveal" style="--i:1">
+        <div class="tech__item">
+          <p class="tech__name">语义化 HTML5</p>
+          <p class="tech__text">header / nav / main / section / article / figure / footer 结构清晰，每页含 skip-link、面包屑与 aria 标注。</p>
+        </div>
+        <div class="tech__item">
+          <p class="tech__name">CSS 设计令牌</p>
+          <p class="tech__text">用 CSS 自定义属性统一管理色彩、字体、间距与阴影，一套令牌控制全站视觉，保证 9 个页面风格一致。</p>
+        </div>
+        <div class="tech__item">
+          <p class="tech__name">响应式布局</p>
+          <p class="tech__text">CSS Grid 与 Flexbox 实现多栏自适应，断点 1200 / 1080 / 900 / 720 / 560 px，覆盖桌面、平板与手机。</p>
+        </div>
+        <div class="tech__item">
+          <p class="tech__name">渐进增强</p>
+          <p class="tech__text">正文为静态 HTML，交互由无框架原生 JS 接管；禁用 JavaScript 时图文内容仍完整可读，不出现空白屏。</p>
+        </div>
+        <div class="tech__item">
+          <p class="tech__name">浏览器兼容</p>
+          <p class="tech__text">按 Edge 90.0 及以上版本实现与测试，同时兼容 Chrome、Firefox 等主流浏览器的近版本，不依赖实验性特性。</p>
+        </div>
+        <div class="tech__item">
+          <p class="tech__name">原创 SVG 插画</p>
+          <p class="tech__text">全站插画均为手写 SVG 代码绘制的矢量图，体积小、任意分辨率清晰，且不涉及任何图片版权问题。</p>
+        </div>
+        <div class="tech__item">
+          <p class="tech__name">交互模块</p>
+          <p class="tech__text">长征路线图联动、地标地图与筛选检索、精神谱系 Tab、传承行动勾选进度、图片灯箱、滚动入场与数字滚动。</p>
+        </div>
+        <div class="tech__item">
+          <p class="tech__name">无障碍与动效克制</p>
+          <p class="tech__text">支持键盘操作与可见焦点，图片均有替代文本，并遵循 prefers-reduced-motion 关闭动画；无自动播放音频。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       肆 · 原创声明
+       ============================================================ -->
+  <section class="section section--paper" id="original">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">肆 · 原创声明</p>
+        <h2 class="section-title">哪些是我们的，哪些是大家的</h2>
+        <p class="section-lead">本站为甘肃农业大学第五届“红色网页设计大赛”参赛作品，除标注引用的史料与领导人论述外，页面文字、版式设计、SVG 插画与代码均由参赛团队原创。</p>
+      </header>
+      <div class="declare reveal" style="--i:1">
+        <div class="declare__item">
+          <h3>文字</h3>
+          <p>除引用原文（均已标注出处）外，全部文案为团队撰写的原创表述；史实核对依据人民网、新华网、共产党员网、中国军网、中央党史和文献研究院网、甘肃党史网、甘肃农业大学官网等公开权威资料。</p>
+        </div>
+        <div class="declare__item">
+          <h3>插画</h3>
+          <p>全站所有插图均为手写 SVG 代码绘制的原创矢量插画，未使用任何网络图片、图库素材、AI 生成照片或真实历史照片，不涉及第三方著作权。</p>
+        </div>
+        <div class="declare__item">
+          <h3>字体与素材</h3>
+          <p>不加载任何网络字体，仅使用操作系统自带字体（宋体 / 黑体 / 苹方 / 微软雅黑等）回退显示；图标为内联 SVG 路径，无第三方图标库。</p>
+        </div>
+        <div class="declare__item">
+          <h3>致敬与说明</h3>
+          <p>本站为学习与纪念性质的校园文化作品，引用史料版权归原作者与发布机构所有；如对史实表述有不同意见，欢迎指正，我们将据权威资料修订。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       伍 · 部署与使用
+       ============================================================ -->
+  <section class="section" id="deploy">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">伍 · 目录与部署</p>
+        <h2 class="section-title">一个文件夹，直接打开</h2>
+        <p class="section-lead">作品目录按比赛要求分类存放：页面置于根目录，图片、样式、脚本分别放入 images、css、js；本地双击 index.html 即可浏览，亦可整站上传至任意静态托管服务获得公网访问地址。</p>
+      </header>
+      <div class="reveal" style="--i:1">
+        <pre class="tree">site/<b>（网站根目录 · 第 1 层）</b>
+├── index.html          首页：总览与三条主线入口
+├── changzheng.html     壹 · 长征征程
+├── nanliang.html       贰 · 南梁烽火
+├── xilu.html           叁 · 西路军魂
+├── jingshen.html       肆 · 精神谱系
+├── dizhi.html          伍 · 红色地标
+├── chuancheng.html     陆 · 传承行动
+├── xiaoshi.html        柒 · 校史印记
+├── guanyu.html         捌 · 关于本站
+├── <b>css/</b><i>（第 2 层）</i>
+│   ├── base.css        设计令牌与全站通用组件
+│   └── index.css … guanyu.css   各页面专属样式
+├── <b>js/</b><i>（第 2 层）</i>
+│   ├── main.js         全站通用交互
+│   └── index.js … guanyu.js     各页面专属交互
+└── <b>images/</b><i>（第 2 层）</i>
+    ├── logo.svg / logo-light.svg / favicon.svg
+    └── *.svg           全部原创插画（含各页主视觉）</pre>
+      </div>
+      <div class="grid grid-3 mt-block reveal" style="--i:2">
+        <div class="card card--flat">
+          <div class="card__body">
+            <p class="card__tag">本地浏览</p>
+            <h3 class="card__title">双击即可</h3>
+            <p class="card__text">解压后双击 site/index.html，即可在浏览器中完整浏览全部 9 个页面与交互，无需服务器与网络。</p>
+          </div>
+        </div>
+        <div class="card card--flat">
+          <div class="card__body">
+            <p class="card__tag">公网部署</p>
+            <h3 class="card__title">整站上传即可</h3>
+            <p class="card__text">将 site 目录内容整体上传到校园服务器或静态托管服务，即可获得公网 IP / 域名访问地址。</p>
+          </div>
+        </div>
+        <div class="card card--flat">
+          <div class="card__body">
+            <p class="card__tag">浏览器要求</p>
+            <h3 class="card__title">Edge 90.0+</h3>
+            <p class="card__text">作品在 Edge 90.0 及以上版本与主流现代浏览器中测试通过，页面编码统一为 UTF-8，无乱码与错位。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       陆 · 参考资料
+       ============================================================ -->
+  <section class="section section--paper" id="refs">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">陆 · 参考资料</p>
+        <h2 class="section-title">史实从哪里来</h2>
+        <p class="section-lead">本站史实条目均据以下类型的公开权威资料核对，引用原文时在页面内单独标注出处。</p>
+      </header>
+      <ul class="refs reveal" style="--i:1">
+        <li><a href="https://www.12371.cn/" target="_blank" rel="noopener">共产党员网</a><small>长征精神、脱贫攻坚精神、科学家精神及领导人论述原文</small></li>
+        <li><a href="http://cpc.people.com.cn/" target="_blank" rel="noopener">人民网 · 中国共产党新闻网</a><small>南梁精神、八路军兰州办事处、卓尼土司杨积庆等条目</small></li>
+        <li><a href="https://www.news.cn/" target="_blank" rel="noopener">新华网</a><small>红军会宁会师旧址等纪念地报道</small></li>
+        <li><a href="https://www.dswxyjy.org.cn/" target="_blank" rel="noopener">中共中央党史和文献研究院网</a><small>俄界会议、腊子口、界石铺、山城堡、西路军纪念馆等资料</small></li>
+        <li><a href="http://gsds.gov.cn/" target="_blank" rel="noopener">甘肃党史网</a><small>毛泽东陇原咏长征、岷州会议、甘肃省红色纪念馆名录</small></li>
+        <li><a href="http://www.81.cn/" target="_blank" rel="noopener">中国军网</a><small>哈达铺“加油站”、将台堡会师、腊子口战役</small></li>
+        <li><a href="https://www.gsau.edu.cn/" target="_blank" rel="noopener">甘肃农业大学官网</a><small>学校简介、校史总览、校训校风</small></li>
+        <li><a href="https://www.gansu.gov.cn/" target="_blank" rel="noopener">甘肃省人民政府</a><small>甘肃省情与红色文化资源概况</small></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       柒 · 更新记录与结语
+       ============================================================ -->
+  <section class="section" id="log">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">柒 · 更新记录</p>
+        <h2 class="section-title">一版一版改出来的</h2>
+      </header>
+      <ul class="log reveal" style="--i:1">
+        <li><b>v1.0</b><span>确定“陇原星火”主题与三条主线结构，完成设计令牌与页面骨架，统一页头、页脚、面包屑。</span></li>
+        <li><b>v1.1</b><span>完成首页、长征、南梁、西路军、精神谱系、红色地标、传承行动、校史、关于共 9 个页面的正文与交互。</span></li>
+        <li><b>v1.2</b><span>逐条核对史实，修正长征节点日期、纪念馆全称、南梁表述与甘肃农业大学校史年份，确保与权威资料一致。</span></li>
+        <li><b>v1.3</b><span>补充原创 SVG 插画、无障碍属性与移动端适配，完成 Edge 90+ 兼容性与链接完整性自检。</span></li>
+      </ul>
+      <div class="hr-orn" aria-hidden="true"></div>
+      <div class="text-center reveal" style="--i:2">
+        <p class="lead" style="max-width:38em;margin:0 auto">愿每一位读到这里的同学，都能在自己的专业里，找到接过这束星火的方式。</p>
+        <div class="btn-row" style="justify-content:center">
+          <a class="btn btn--primary" href="index.html">回到首页</a>
+          <a class="btn btn--ghost" href="chuancheng.html">查看传承行动清单</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- MAIN:END -->
+</main>
+
+<!-- SHELL:FOOTER:START（页脚由 _build/gen_skeleton.py 统一维护，请勿手动修改） -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <div class="footer__brand">
+          <img class="brand__logo" src="images/logo-light.svg" alt="" width="42" height="42">
+          <div>
+            <p class="footer__brand-name">陇原星火</p>
+            <p class="footer__brand-sub">甘肃红色文化数字馆</p>
+          </div>
+        </div>
+        <p class="footer__desc">以长征在甘肃、南梁、西路军三条历史线索为经，以精神谱系、红色地标、青年传承为纬，用原创插画与交互页面呈现一片被红色足迹反复丈量的土地。</p>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">站点导览</h2>
+        <ul class="footer__links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="changzheng.html">长征征程</a></li>
+          <li><a href="nanliang.html">南梁烽火</a></li>
+          <li><a href="xilu.html">西路军魂</a></li>
+          <li><a href="jingshen.html">精神谱系</a></li>
+          <li><a href="dizhi.html">红色地标</a></li>
+          <li><a href="chuancheng.html">传承行动</a></li>
+          <li><a href="xiaoshi.html">校史印记</a></li>
+          <li><a href="guanyu.html">关于本站</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">专题速览</h2>
+        <ul class="footer__links">
+          <li><a href="changzheng.html">长征路线与时间轴</a></li>
+          <li><a href="nanliang.html">南梁与陕甘边根据地</a></li>
+          <li><a href="xilu.html">西路军河西血战</a></li>
+          <li><a href="jingshen.html">七种精神的内涵</a></li>
+          <li><a href="dizhi.html">可点击的红色地标地图</a></li>
+          <li><a href="chuancheng.html">青年传承行动清单</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__title">参赛信息</h2>
+        <ul class="footer__links">
+          <li><span>主办单位</span>甘肃农业大学创新创业学院</li>
+          <li><span>承办单位</span>甘肃农业大学信息科学技术学院</li>
+          <li><span>赛事名称</span>第五届“红色网页设计大赛”</li>
+          <li><span>作品形态</span>静态网页（HTML/CSS/JS）</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> 陇原星火 · 甘肃红色文化数字馆　|　甘肃农业大学第五届红色网页设计大赛参赛作品</p>
+      <p>本站文字与 SVG 插画均为原创　|　<a href="guanyu.html">原创声明与参考资料</a></p>
+    </div>
+  </div>
+</footer>
+<!-- SHELL:FOOTER:END -->
+
+<script src="js/main.js"></script>
+<script src="js/guanyu.js"></script>
+</body>
+</html>

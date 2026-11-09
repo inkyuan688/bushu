@@ -1,0 +1,638 @@
+@charset "UTF-8";
+/* ==========================================================================
+   陇原星火 · 甘肃红色文化数字馆
+   dizhi.css — 红色地标 · 陇原图谱
+   作用域：body.page-dizhi
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. 页内导读
+   -------------------------------------------------------------------------- */
+body.page-dizhi .page-toc {
+  position: relative;
+  z-index: 2;
+  background: var(--paper-2);
+  border-top: 1px solid var(--line-gold);
+  border-bottom: 1px solid var(--line-gold);
+}
+body.page-dizhi .page-toc__inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 54px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body.page-dizhi .page-toc__label {
+  flex: 0 0 auto;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  color: var(--ink-3);
+}
+body.page-dizhi .page-toc__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body.page-dizhi .page-toc__list li { margin: 0; }
+body.page-dizhi .page-toc__list a {
+  display: block;
+  padding: 4px 10px;
+  font-size: 14px;
+  letter-spacing: .06em;
+  color: var(--ink-2);
+  border-radius: 100px;
+  transition: all .24s var(--ease);
+}
+body.page-dizhi .page-toc__list a:hover {
+  color: var(--red-deep);
+  background: rgba(166, 27, 27, .06);
+}
+
+/* 图形符号库隐藏 */
+body.page-dizhi .dz-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   2. 交互地图
+   -------------------------------------------------------------------------- */
+body.page-dizhi .dz-map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.36fr) minmax(290px, .64fr);
+  gap: clamp(22px, 2.6vw, 40px);
+  align-items: start;
+}
+
+body.page-dizhi .dz-map-board {
+  padding: clamp(9px, 1.1vw, 16px);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  box-shadow: var(--shadow-sm);
+}
+body.page-dizhi .dz-map-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 2px;
+}
+body.page-dizhi .dz-map {
+  display: block;
+  width: 100%;
+  min-width: 640px;
+  height: auto;
+  background: var(--paper-2);
+}
+
+body.page-dizhi .dz-map__bg { fill: var(--paper-2); }
+body.page-dizhi .dz-map__outline {
+  fill: var(--paper-3);
+  stroke: var(--red-deep);
+  stroke-width: 2.4;
+  stroke-linejoin: round;
+}
+body.page-dizhi .dz-map__ridge {
+  fill: var(--gold);
+  opacity: .42;
+}
+body.page-dizhi .dz-map__river {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 4;
+  stroke-linecap: round;
+  opacity: .5;
+}
+body.page-dizhi .dz-map__region {
+  fill: var(--ink-3);
+  font-family: var(--font-serif);
+  font-size: 13px;
+  letter-spacing: .3em;
+  opacity: .55;
+}
+
+/* 地图节点 */
+body.page-dizhi .dz-node { cursor: pointer; outline: none; }
+body.page-dizhi .dz-node__halo {
+  fill: var(--red);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s var(--ease);
+}
+body.page-dizhi .dz-node__hit {
+  fill: var(--paper-2);
+  fill-opacity: 0;
+  pointer-events: all;
+}
+body.page-dizhi .dz-node__ring {
+  fill: none;
+  stroke: var(--red-deep);
+  stroke-width: 2;
+  opacity: .42;
+  pointer-events: none;
+  transition: opacity .22s var(--ease), stroke-width .22s var(--ease), stroke .22s var(--ease);
+}
+body.page-dizhi .dz-node__dot {
+  fill: var(--red);
+  pointer-events: none;
+  transition: fill .22s var(--ease);
+}
+body.page-dizhi .dz-node__label {
+  fill: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: .04em;
+  stroke: var(--paper-2);
+  stroke-width: 3;
+  paint-order: stroke;
+  stroke-linejoin: round;
+  pointer-events: none;
+  transition: fill .22s var(--ease);
+}
+
+body.page-dizhi .dz-node:hover .dz-node__ring,
+body.page-dizhi .dz-node:focus .dz-node__ring {
+  opacity: 1;
+  stroke-width: 2.6;
+}
+body.page-dizhi .dz-node:hover .dz-node__label,
+body.page-dizhi .dz-node:focus .dz-node__label { fill: var(--red-deep); }
+
+/* 键盘可见焦点：金色虚线环 + 标签加深 */
+body.page-dizhi .dz-node:focus-visible .dz-node__ring {
+  stroke: var(--gold-deep);
+  stroke-width: 3;
+  stroke-dasharray: 4 3;
+  opacity: 1;
+}
+body.page-dizhi .dz-node:focus-visible .dz-node__label {
+  fill: var(--red-deep);
+  font-weight: 700;
+}
+
+body.page-dizhi .dz-node.is-active .dz-node__halo { opacity: .15; }
+body.page-dizhi .dz-node.is-active .dz-node__ring {
+  stroke: var(--red);
+  stroke-width: 3;
+  opacity: 1;
+}
+body.page-dizhi .dz-node.is-active .dz-node__dot { fill: var(--red-bright); }
+body.page-dizhi .dz-node.is-active .dz-node__label {
+  fill: var(--red-deep);
+  font-weight: 700;
+}
+
+body.page-dizhi .dz-map-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 12px 4px 2px;
+}
+body.page-dizhi .dz-map-hint {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+body.page-dizhi .dz-map-legend {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+body.page-dizhi .dz-map-legend__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 0 0 3px rgba(166, 27, 27, .14);
+}
+
+/* 地图详情面板 */
+body.page-dizhi .dz-detail {
+  position: sticky;
+  top: calc(var(--header-h) + 22px);
+}
+body.page-dizhi .dz-detail__card {
+  position: relative;
+  padding: clamp(22px, 2.2vw, 30px);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  box-shadow: var(--shadow-md);
+  transition: opacity .22s var(--ease);
+}
+body.page-dizhi .dz-detail__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+}
+body.page-dizhi .dz-detail__card.is-updating { opacity: .32; }
+body.page-dizhi .dz-detail__kicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 14px;
+}
+body.page-dizhi .dz-detail__index {
+  font-family: var(--font-num);
+  font-size: 12.5px;
+  letter-spacing: .1em;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+body.page-dizhi .dz-detail__title {
+  margin: 0 0 6px;
+  font-size: 1.26rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+body.page-dizhi .dz-detail__meta {
+  margin: 0 0 14px;
+  font-size: 12.5px;
+  letter-spacing: .1em;
+  color: var(--gold-deep);
+}
+body.page-dizhi .dz-detail__text {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--ink-2);
+}
+body.page-dizhi .dz-detail__theme {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line-gold);
+  font-size: 12.5px;
+  letter-spacing: .1em;
+  color: var(--ink-3);
+}
+body.page-dizhi .dz-detail__theme strong {
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--ink);
+}
+body.page-dizhi .dz-detail__note {
+  margin-top: 12px;
+  font-size: 12.5px;
+  line-height: 1.75;
+}
+
+/* --------------------------------------------------------------------------
+   3. 筛选条
+   -------------------------------------------------------------------------- */
+body.page-dizhi .dz-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: clamp(18px, 2vw, 26px);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+}
+body.page-dizhi .dz-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 12px;
+}
+body.page-dizhi .dz-filter__label {
+  flex: 0 0 auto;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  color: var(--ink-3);
+}
+body.page-dizhi .dz-chips { gap: 8px; }
+body.page-dizhi .dz-chips .chip {
+  padding: 7px 16px;
+  font-size: 13.5px;
+}
+body.page-dizhi .dz-search {
+  flex: 1 1 230px;
+  min-width: 0;
+}
+body.page-dizhi .dz-search input {
+  width: 100%;
+  min-width: 0;
+}
+body.page-dizhi .field select { min-width: 132px; }
+body.page-dizhi .dz-result {
+  margin: 0;
+  padding-top: 13px;
+  border-top: 1px dashed var(--line-gold);
+  font-size: 13.5px;
+  letter-spacing: .02em;
+  color: var(--ink-2);
+}
+body.page-dizhi .dz-result strong {
+  font-family: var(--font-num);
+  font-size: 1.55rem;
+  line-height: 1;
+  color: var(--red);
+  margin: 0 4px;
+}
+body.page-dizhi .dz-result [data-filter-summary] {
+  margin-left: 4px;
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+
+/* --------------------------------------------------------------------------
+   4. 地标卡片
+   -------------------------------------------------------------------------- */
+body.page-dizhi .lc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2vw, 26px);
+  margin-top: clamp(26px, 3vw, 40px);
+}
+body.page-dizhi .lc-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  overflow: hidden;
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
+}
+body.page-dizhi .lc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(190, 138, 60, .45);
+}
+body.page-dizhi .lc-card[hidden] { display: none; }
+body.page-dizhi .lc-card.is-highlight {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(190, 138, 60, .35), var(--shadow-sm);
+}
+
+body.page-dizhi .lc-card__graphic {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 86px;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--paper-3);
+  color: var(--red-deep);
+  overflow: hidden;
+}
+body.page-dizhi .lc-card__graphic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(115deg, transparent 0 17px, rgba(190, 138, 60, .09) 17px 18px),
+    linear-gradient(135deg, rgba(251, 247, 238, .8), transparent 62%);
+}
+body.page-dizhi .lc-card__graphic::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--red);
+  transform: scaleY(.5);
+  transform-origin: center;
+  transition: transform .32s var(--ease);
+}
+body.page-dizhi .lc-card:hover .lc-card__graphic::after { transform: scaleY(1); }
+
+body.page-dizhi .lc-card[data-type="changzheng"] .lc-card__graphic { color: var(--red-deep); }
+body.page-dizhi .lc-card[data-type="genjudi"] .lc-card__graphic { color: var(--gold-deep); }
+body.page-dizhi .lc-card[data-type="xilujun"] .lc-card__graphic { color: var(--red); }
+body.page-dizhi .lc-card[data-type="bingbian"] .lc-card__graphic { color: var(--red-bright); }
+body.page-dizhi .lc-card[data-type="jinian"] .lc-card__graphic { color: var(--gold-deep); }
+body.page-dizhi .lc-card[data-type="renwu"] .lc-card__graphic { color: var(--ink-2); }
+
+body.page-dizhi .lc-card__ico {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+}
+body.page-dizhi .lc-card__num {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-num);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--gold);
+  opacity: .46;
+}
+body.page-dizhi .lc-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 18px 20px 20px;
+}
+body.page-dizhi .lc-card__kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin: 0 0 10px;
+}
+body.page-dizhi .lc-card__place {
+  font-size: 11.5px;
+  letter-spacing: .06em;
+  color: var(--ink-3);
+}
+body.page-dizhi .lc-card__title {
+  margin: 0 0 8px;
+  font-size: 1.04rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+body.page-dizhi .lc-card__text {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink-2);
+}
+body.page-dizhi .lc-card__locate {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: var(--red);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: color .2s var(--ease);
+}
+body.page-dizhi .lc-card__locate::after {
+  content: "↗";
+  margin-left: 5px;
+  display: inline-block;
+  transition: transform .2s var(--ease);
+}
+body.page-dizhi .lc-card__locate:hover { color: var(--red-deep); }
+body.page-dizhi .lc-card__locate:hover::after { transform: translate(2px, -2px); }
+
+/* 无结果提示 */
+body.page-dizhi .dz-empty {
+  margin-top: 26px;
+  padding: clamp(36px, 5vw, 56px) 20px;
+  text-align: center;
+  background: var(--paper-2);
+  border: 1px dashed var(--line-gold);
+  border-radius: var(--r);
+}
+body.page-dizhi .dz-empty[hidden] { display: none; }
+body.page-dizhi .dz-empty__title {
+  margin: 0 0 8px;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--ink);
+}
+body.page-dizhi .dz-empty__text {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: var(--ink-3);
+}
+
+/* --------------------------------------------------------------------------
+   5. 研学路线
+   -------------------------------------------------------------------------- */
+body.page-dizhi .dz-routes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+body.page-dizhi .dz-route {
+  padding: clamp(18px, 2vw, 24px);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  transition: border-color .26s var(--ease), box-shadow .26s var(--ease);
+}
+body.page-dizhi .dz-route:hover {
+  border-color: rgba(190, 138, 60, .5);
+  box-shadow: var(--shadow-sm);
+}
+body.page-dizhi .dz-route__no {
+  margin: 0 0 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  color: var(--gold-deep);
+}
+body.page-dizhi .dz-route__title {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+body.page-dizhi .dz-route__stops {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+}
+body.page-dizhi .dz-route__stops li {
+  margin: 0;
+  padding: 3px 10px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  background: var(--paper-3);
+  border: 1px solid var(--line-soft);
+  border-radius: 100px;
+}
+body.page-dizhi .dz-route__text {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.9;
+  color: var(--ink-2);
+}
+
+/* 图文 */
+body.page-dizhi .figure__link {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--r);
+  background: var(--paper-3);
+  cursor: zoom-in;
+}
+body.page-dizhi .figure__link img {
+  width: 100%;
+  transition: transform .8s var(--ease);
+}
+body.page-dizhi .figure__link:hover img { transform: scale(1.02); }
+
+/* --------------------------------------------------------------------------
+   6. 响应式
+   -------------------------------------------------------------------------- */
+@media (max-width: 1080px) {
+  body.page-dizhi .dz-map-layout { grid-template-columns: minmax(0, 1fr); }
+  body.page-dizhi .dz-detail { position: static; }
+  body.page-dizhi .lc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 720px) {
+  body.page-dizhi .page-toc__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  body.page-dizhi .page-toc__list {
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+  body.page-dizhi .page-toc__list a { white-space: nowrap; padding-left: 0; padding-right: 14px; }
+  body.page-dizhi .lc-grid { grid-template-columns: minmax(0, 1fr); }
+  body.page-dizhi .dz-map { min-width: 720px; }
+  body.page-dizhi .dz-search { flex-basis: 100%; }
+  body.page-dizhi .dz-detail__card { padding: 22px 18px; }
+  body.page-dizhi .dz-map-foot { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 560px) {
+  body.page-dizhi .dz-map { min-width: 680px; }
+  body.page-dizhi .lc-card__graphic { height: 76px; padding: 0 16px; }
+  body.page-dizhi .lc-card__body { padding: 16px 16px 18px; }
+  body.page-dizhi .dz-route { padding: 16px 16px 18px; }
+  body.page-dizhi .dz-filters { padding: 16px 14px; }
+  body.page-dizhi .dz-filter-row { gap: 8px; }
+  body.page-dizhi .field { flex: 1 1 100%; justify-content: flex-start; }
+}

@@ -1,0 +1,107 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 首页主视觉：会师塔与陇原群山、星火与长征路线 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="会师纪念塔矗立在层叠群山之上，一道星火路线蜿蜒而来">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2=".25" y2="1">
+      <stop offset="0" stop-color="#7E1310"/>
+      <stop offset=".52" stop-color="#650F0D"/>
+      <stop offset="1" stop-color="#400807"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".74" cy=".6" r=".42">
+      <stop offset="0" stop-color="#E3C68C" stop-opacity=".30"/>
+      <stop offset=".55" stop-color="#C6392C" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#C6392C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A8271F"/>
+      <stop offset="1" stop-color="#7A1210"/>
+    </linearGradient>
+    <linearGradient id="mMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#77120F"/>
+      <stop offset="1" stop-color="#540B0A"/>
+    </linearGradient>
+    <linearGradient id="peak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6E7C8" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#F6E7C8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- 星点 -->
+  <g fill="#FBF7EE">
+    <circle cx="140" cy="132" r="2.4" opacity=".55"/><circle cx="268" cy="86" r="1.8" opacity=".4"/>
+    <circle cx="352" cy="196" r="1.4" opacity=".35"/><circle cx="438" cy="118" r="2" opacity=".5"/>
+    <circle cx="520" cy="232" r="1.6" opacity=".3"/><circle cx="612" cy="94" r="2.2" opacity=".45"/>
+    <circle cx="706" cy="176" r="1.5" opacity=".32"/><circle cx="796" cy="112" r="2.6" opacity=".5"/>
+    <circle cx="884" cy="248" r="1.6" opacity=".28"/><circle cx="962" cy="140" r="2" opacity=".44"/>
+    <circle cx="1052" cy="92" r="1.5" opacity=".3"/><circle cx="1128" cy="188" r="2.2" opacity=".42"/>
+    <circle cx="1214" cy="126" r="1.6" opacity=".34"/><circle cx="1300" cy="238" r="2" opacity=".4"/>
+    <circle cx="1386" cy="152" r="1.5" opacity=".3"/><circle cx="1462" cy="204" r="2.4" opacity=".45"/>
+    <circle cx="1540" cy="118" r="1.6" opacity=".3"/><circle cx="236" cy="300" r="1.4" opacity=".22"/>
+    <circle cx="452" cy="336" r="1.4" opacity=".2"/><circle cx="742" cy="302" r="1.5" opacity=".24"/>
+    <circle cx="1006" cy="352" r="1.4" opacity=".22"/><circle cx="1330" cy="330" r="1.6" opacity=".26"/>
+    <circle cx="1518" cy="384" r="1.4" opacity=".2"/><circle cx="612" cy="408" r="1.2" opacity=".18"/>
+  </g>
+
+  <!-- 月轮 -->
+  <circle cx="1206" cy="300" r="152" fill="#E3C68C" opacity=".08"/>
+  <circle cx="1206" cy="300" r="110" fill="#E3C68C" opacity=".10"/>
+  <circle cx="1206" cy="300" r="72" fill="#F6E7C8" opacity=".16"/>
+
+  <!-- 远山 -->
+  <path d="M0 604 L124 512 L246 570 L372 470 L492 552 L620 448 L744 540 L884 476 L1004 548 L1124 486 L1260 560 L1392 494 L1512 566 L1600 520 L1600 900 L0 900 Z" fill="url(#mFar)" opacity=".72"/>
+  <!-- 雪线 -->
+  <path d="M124 512 L146 534 L106 534 Z M372 470 L398 500 L350 500 Z M620 448 L650 482 L596 482 Z M1124 486 L1152 520 L1100 520 Z M1392 494 L1420 526 L1368 526 Z" fill="#F6E7C8" opacity=".4"/>
+
+  <!-- 中景山峦与隘口 -->
+  <path d="M0 706 L132 622 L268 686 L402 606 L534 692 L688 620 L818 698 L958 628 L1096 706 L1252 634 L1398 712 L1524 660 L1600 706 L1600 900 L0 900 Z" fill="url(#mMid)"/>
+
+  <!-- 会师塔 -->
+  <g>
+    <circle cx="1180" cy="700" r="240" fill="url(#glow)"/>
+    <ellipse cx="1180" cy="778" rx="150" ry="26" fill="#330706" opacity=".65"/>
+
+    <path d="M1088 780 L1102 566 L1138 566 L1150 780 Z" fill="#360806" stroke="#E3C68C" stroke-width="1.6" stroke-opacity=".38"/>
+    <path d="M1132 780 L1158 508 L1198 508 L1214 780 Z" fill="#2C0706" stroke="#E3C68C" stroke-width="1.8" stroke-opacity=".5"/>
+    <path d="M1198 780 L1212 592 L1250 592 L1264 780 Z" fill="#360806" stroke="#E3C68C" stroke-width="1.6" stroke-opacity=".38"/>
+
+    <!-- 塔顶 -->
+    <path d="M1150 508 L1158 492 L1198 492 L1206 508 Z" fill="#E3C68C" opacity=".7"/>
+    <path d="M1166 492 L1178 476 L1190 492 Z" fill="#E3C68C" opacity=".85"/>
+
+    <!-- 旗 -->
+    <path d="M1178 476 L1178 418" stroke="#E3C68C" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1178 420 C 1214 404 1244 428 1272 412 L1272 460 C 1244 476 1214 452 1178 468 Z" fill="#C6392C"/>
+    <path d="M1178 420 C 1214 404 1244 428 1272 412" stroke="#F6E7C8" stroke-width="2" fill="none" opacity=".55"/>
+
+    <!-- 塔身装饰线 -->
+    <g stroke="#E3C68C" stroke-width="1.2" stroke-opacity=".26">
+      <path d="M1103 620 L1148 620"/><path d="M1098 676 L1152 676"/><path d="M1092 732 L1156 732"/>
+      <path d="M1141 580 L1208 580"/><path d="M1137 640 L1212 640"/><path d="M1133 700 L1216 700"/>
+      <path d="M1205 646 L1256 646"/><path d="M1209 712 L1260 712"/>
+    </g>
+  </g>
+
+  <!-- 近景山峦 -->
+  <path d="M0 818 L176 760 L356 812 L536 764 L716 820 L900 774 L1084 828 L1264 784 L1444 836 L1600 798 L1600 900 L0 900 Z" fill="#2B0605"/>
+
+  <!-- 长征路线 -->
+  <path d="M34 866 C 214 838 292 792 414 800 C 556 810 596 750 718 758 C 842 766 878 706 998 714 C 1090 720 1122 742 1178 764"
+        fill="none" stroke="#E3C68C" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 11" opacity=".62"/>
+  <g fill="#F6E7C8">
+    <circle cx="214" cy="840" r="4.4" opacity=".9"/><circle cx="414" cy="800" r="4.4" opacity=".9"/>
+    <circle cx="718" cy="758" r="4.4" opacity=".9"/><circle cx="998" cy="714" r="4.4" opacity=".9"/>
+    <circle cx="1178" cy="764" r="5.6" opacity="1"/>
+  </g>
+  <g fill="none" stroke="#E3C68C" stroke-width="1.4" opacity=".55">
+    <circle cx="214" cy="840" r="10"/><circle cx="414" cy="800" r="10"/>
+    <circle cx="718" cy="758" r="10"/><circle cx="998" cy="714" r="10"/><circle cx="1178" cy="764" r="13"/>
+  </g>
+
+  <!-- 星火 -->
+  <g stroke="#E3C68C" stroke-width="2" stroke-linecap="round" opacity=".45">
+    <path d="M96 932 L96 902"/><path d="M78 928 L88 906"/><path d="M114 928 L104 906"/>
+    <path d="M300 946 L300 918"/><path d="M284 942 L293 921"/><path d="M316 942 L307 921"/>
+  </g>
+</svg>

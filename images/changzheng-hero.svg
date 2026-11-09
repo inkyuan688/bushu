@@ -1,0 +1,82 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 长征在甘肃：黄土群山之间，一支队伍沿山脊蜿蜒行进，红旗指向北方 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="长征在甘肃：群山之间蜿蜒行进的队伍剪影与红旗">
+  <defs>
+    <linearGradient id="czHeroSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"></stop>
+      <stop offset=".62" stop-color="#F7F1E4"></stop>
+      <stop offset="1" stop-color="#EFE4CF"></stop>
+    </linearGradient>
+    <pattern id="czHeroGrain" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="6" r="1.1" fill="#1F1A17" opacity=".05"></circle>
+      <circle cx="19" cy="21" r="1" fill="#BE8A3C" opacity=".13"></circle>
+    </pattern>
+    <g id="czHeroSoldier">
+      <circle cx="0" cy="-25" r="4.2" fill="#5E0D0C"></circle>
+      <path d="M-6.5 -20 C -6.5 -13 -7.5 -7 -8.5 -1 L 8.5 -1 C 6.5 -8 5.5 -14 5.5 -20 Z" fill="#5E0D0C"></path>
+      <path d="M-5 -1 L -7.5 8 M 4.5 -1 L 7 8" stroke="#5E0D0C" stroke-width="3" stroke-linecap="round" fill="none"></path>
+      <path d="M2 -17 L 11 -28" stroke="#5E0D0C" stroke-width="2" stroke-linecap="round"></path>
+    </g>
+    <g id="czHeroFlag">
+      <path d="M0 8 V -48" stroke="#7A1210" stroke-width="3.6" stroke-linecap="round"></path>
+      <path d="M0 -48 L 36 -40 L 0 -28 Z" fill="#A61B1B"></path>
+      <path d="M9 -42 l2.2 4.6 5 .8 -3.6 3.5 .9 5 -4.5 -2.4 -4.5 2.4 .9 -5 -3.6 -3.5 5 -.8 z" fill="#BE8A3C" opacity=".92"></path>
+    </g>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#czHeroSky)"></rect>
+  <rect width="1200" height="675" fill="url(#czHeroGrain)"></rect>
+
+  <g>
+    <circle cx="892" cy="168" r="150" fill="#C6392C" opacity=".07"></circle>
+    <circle cx="892" cy="168" r="104" fill="#C6392C" opacity=".12"></circle>
+    <circle cx="892" cy="168" r="66" fill="#C6392C" opacity=".2"></circle>
+    <circle cx="892" cy="168" r="150" fill="none" stroke="#BE8A3C" stroke-width="1.4" opacity=".3" stroke-dasharray="2 9"></circle>
+  </g>
+
+  <path d="M0 404 L78 352 L152 386 L230 330 L306 378 L386 324 L466 384 L550 340 L632 392 L714 346 L802 398 L892 352 L982 404 L1072 362 L1160 406 L1200 390 L1200 675 L0 675 Z" fill="#E3C68C" opacity=".26"></path>
+  <path d="M0 466 L96 404 L188 450 L282 388 L374 450 L468 398 L562 460 L656 404 L750 464 L844 410 L942 468 L1042 416 L1132 468 L1200 434 L1200 675 L0 675 Z" fill="#A61B1B" opacity=".11"></path>
+  <path d="M0 526 L112 458 L226 506 L340 444 L454 514 L568 454 L682 522 L796 462 L910 526 L1024 472 L1138 530 L1200 498 L1200 675 L0 675 Z" fill="#A61B1B" opacity=".2"></path>
+
+  <path d="M0 588 L122 524 L254 568 L386 514 L518 578 L650 524 L782 584 L914 532 L1046 590 L1178 542 L1200 554 L1200 675 L0 675 Z" fill="#7A1210" opacity=".58"></path>
+  <g fill="none" stroke="#BE8A3C" stroke-linecap="round">
+    <path d="M60 560 C 150 538, 220 550, 300 544 C 380 538, 440 520, 512 540" stroke-width="2" opacity=".28"></path>
+    <path d="M560 552 C 640 534, 706 556, 782 548 C 858 540, 910 520, 980 540" stroke-width="2" opacity=".26"></path>
+    <path d="M100 596 C 200 578, 280 588, 360 574" stroke-width="1.6" opacity=".2"></path>
+  </g>
+
+  <path d="M42 566 C 140 542, 258 522, 386 514 C 480 508, 560 542, 650 524 C 742 506, 822 542, 914 532 C 1000 522, 1080 548, 1158 522" fill="none" stroke="#BE8A3C" stroke-width="3" stroke-dasharray="9 9" stroke-linecap="round" opacity=".62"></path>
+
+  <use href="#czHeroSoldier" transform="translate(300 548) scale(.9)"></use>
+  <use href="#czHeroSoldier" transform="translate(322 545) scale(.88)"></use>
+  <use href="#czHeroSoldier" transform="translate(344 542) scale(.86)"></use>
+
+  <use href="#czHeroFlag" transform="translate(612 542)"></use>
+  <use href="#czHeroSoldier" transform="translate(588 548) scale(.9)"></use>
+  <use href="#czHeroSoldier" transform="translate(638 544) scale(.88)"></use>
+  <use href="#czHeroSoldier" transform="translate(660 542) scale(.85)"></use>
+
+  <use href="#czHeroSoldier" transform="translate(880 550) scale(.88)"></use>
+  <use href="#czHeroSoldier" transform="translate(902 547) scale(.86)"></use>
+  <use href="#czHeroFlag" transform="translate(932 550) scale(.78)"></use>
+
+  <g stroke="#1F1A17" stroke-width="2" fill="none" opacity=".28" stroke-linecap="round">
+    <path d="M252 196 q 11 -8 22 0"></path>
+    <path d="M276 196 q 11 -8 22 0"></path>
+    <path d="M322 168 q 9 -7 18 0"></path>
+    <path d="M342 168 q 9 -7 18 0"></path>
+  </g>
+
+  <g fill="#BE8A3C" opacity=".55">
+    <path d="M1012 118 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3 z"></path>
+    <path d="M760 128 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z" opacity=".85"></path>
+    <path d="M1068 268 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z" opacity=".7"></path>
+  </g>
+
+  <path d="M0 675 L0 616 C 120 598 220 618 320 608 C 420 598 512 626 612 620 C 712 614 800 634 900 628 C 1000 622 1090 640 1180 630 L1200 634 L1200 675 Z" fill="#5E0D0C"></path>
+  <g stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".3" fill="none">
+    <path d="M58 646 q 9 -16 3 -28 M70 648 q 3 -15 12 -24 M82 650 q -2 -13 -9 -21"></path>
+    <path d="M244 652 q 8 -14 2 -24 M256 654 q 2 -12 10 -19"></path>
+    <path d="M1040 650 q 9 -15 3 -26 M1052 652 q 3 -13 11 -21"></path>
+  </g>
+  <use href="#czHeroFlag" transform="translate(146 626) scale(.92)"></use>
+</svg>

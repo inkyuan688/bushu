@@ -1,0 +1,77 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 场景说明：旷野之上的七座精神丰碑自低处向高处排开，碑顶缀星并以金线相连，构成一条上升的精神谱系，远处群山与朝阳作背景 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="旷野上七座由低到高排列的丰碑，碑顶缀星并由金线相连，背景是群山与朝阳">
+  <defs>
+    <linearGradient id="jstSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"/>
+      <stop offset="1" stop-color="#F7F1E4"/>
+    </linearGradient>
+    <path id="jstStar" d="M0 -1 L0.2245 -0.309 L0.9511 -0.309 L0.3633 0.118 L0.5878 0.809 L0 0.382 L-0.5878 0.809 L-0.3633 0.118 L-0.9511 -0.309 L-0.2245 -0.309 Z"/>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#jstSky)"/>
+
+  <!-- 朝阳 -->
+  <circle cx="948" cy="330" r="150" fill="#BE8A3C" opacity=".12"/>
+  <circle cx="948" cy="330" r="96" fill="#BE8A3C" opacity=".16"/>
+  <g stroke="#BE8A3C" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".3">
+    <path d="M760 386 A 200 200 0 0 1 1096 214"/>
+    <path d="M716 422 A 250 250 0 0 1 1120 176"/>
+  </g>
+
+  <!-- 远山 -->
+  <path d="M0 412 L128 356 246 396 372 336 496 388 622 344 748 396 872 348 992 394 1110 352 1200 386 1200 675 0 675 Z" fill="#A61B1B" opacity=".10"/>
+  <path d="M0 468 L140 416 282 456 420 402 556 452 700 408 842 458 980 414 1108 456 1200 424 1200 675 0 675 Z" fill="#A61B1B" opacity=".18"/>
+
+  <!-- 地平面 -->
+  <path d="M0 556 L200 542 420 556 640 544 860 556 1060 542 1200 552 1200 675 0 675 Z" fill="#EFE4CF"/>
+  <path d="M0 556 L200 542 420 556 640 544 860 556 1060 542 1200 552" stroke="#BE8A3C" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".55"/>
+
+  <!-- 七座丰碑：由低到高，碑顶缀星 -->
+  <g fill="#A61B1B">
+    <rect x="96" y="410" width="46" height="148" rx="4"/>
+    <rect x="82" y="550" width="74" height="10" rx="2"/>
+    <rect x="248" y="388" width="48" height="170" rx="4"/>
+    <rect x="234" y="550" width="76" height="10" rx="2"/>
+    <rect x="402" y="364" width="50" height="194" rx="4"/>
+    <rect x="388" y="550" width="78" height="10" rx="2"/>
+    <rect x="556" y="344" width="52" height="214" rx="4"/>
+    <rect x="542" y="550" width="80" height="10" rx="2"/>
+    <rect x="712" y="322" width="54" height="236" rx="4"/>
+    <rect x="698" y="550" width="82" height="10" rx="2"/>
+    <rect x="866" y="298" width="56" height="260" rx="4"/>
+    <rect x="852" y="550" width="84" height="10" rx="2"/>
+    <rect x="1018" y="276" width="58" height="282" rx="2"/>
+    <rect x="1004" y="550" width="86" height="10" rx="2"/>
+  </g>
+
+  <!-- 碑身金线 -->
+  <g stroke="#BE8A3C" stroke-width="1.4" opacity=".5" fill="none">
+    <path d="M119 486 L119 550"/><path d="M271 466 L271 550"/>
+    <path d="M427 442 L427 550"/><path d="M582 424 L582 550"/>
+    <path d="M739 402 L739 550"/><path d="M894 380 L894 550"/>
+    <path d="M1047 358 L1047 550"/>
+  </g>
+
+  <!-- 碑顶星辰与谱系金线 -->
+  <path d="M119 392 L272 370 427 346 582 326 739 304 894 280 1047 256" stroke="#BE8A3C" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".62"/>
+  <use href="#jstStar" transform="translate(119,390) scale(10)" fill="#BE8A3C"/>
+  <use href="#jstStar" transform="translate(272,368) scale(10.5)" fill="#BE8A3C"/>
+  <use href="#jstStar" transform="translate(427,344) scale(11)" fill="#BE8A3C"/>
+  <use href="#jstStar" transform="translate(582,324) scale(11.5)" fill="#BE8A3C"/>
+  <use href="#jstStar" transform="translate(739,302) scale(12)" fill="#BE8A3C"/>
+  <use href="#jstStar" transform="translate(894,278) scale(12.5)" fill="#BE8A3C"/>
+  <use href="#jstStar" transform="translate(1047,254) scale(14)" fill="#A61B1B"/>
+
+  <!-- 前景深红土层与金色细线 -->
+  <path d="M0 604 L170 594 356 606 556 596 760 608 960 596 1120 606 1200 598 1200 675 0 675 Z" fill="#7A1210" opacity=".88"/>
+  <path d="M0 604 L170 594 356 606 556 596 760 608 960 596 1120 606 1200 598" stroke="#BE8A3C" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".5"/>
+
+  <!-- 星尘 -->
+  <g fill="#BE8A3C">
+    <circle cx="180" cy="228" r="2.4" opacity=".4"/>
+    <circle cx="330" cy="176" r="2" opacity=".34"/>
+    <circle cx="520" cy="236" r="2.6" opacity=".38"/>
+    <circle cx="700" cy="160" r="2.2" opacity=".36"/>
+    <circle cx="1120" cy="300" r="2.4" opacity=".34"/>
+  </g>
+</svg>

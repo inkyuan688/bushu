@@ -1,0 +1,519 @@
+@charset "UTF-8";
+/* ==========================================================================
+   陇原星火 · 甘肃红色文化数字馆
+   changzheng.css — 长征征程 · 陇原印记（页面工程师 T1）
+   作用域：body.page-changzheng（全部规则均以此限定，不污染全站）
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. 路线总览：左图右详情
+   -------------------------------------------------------------------------- */
+body.page-changzheng .cz-route {
+  display: grid;
+  grid-template-columns: minmax(0, 1.32fr) minmax(0, .88fr);
+  gap: clamp(24px, 3vw, 44px);
+  align-items: start;
+}
+
+body.page-changzheng .cz-route__map {
+  min-width: 0;
+}
+
+body.page-changzheng .cz-route__frame {
+  position: relative;
+  padding: 12px;
+  background: var(--paper-2);
+  border: 1px solid var(--line-gold);
+  border-radius: var(--r);
+}
+
+body.page-changzheng .cz-route__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+body.page-changzheng .cz-route__nodes {
+  position: absolute;
+  inset: 12px;
+  z-index: 2;
+}
+
+/* 地图 SVG 上的兜底圆点：高亮当前站 */
+body.page-changzheng .cz-map-dot circle {
+  transition: fill .24s var(--ease), stroke .24s var(--ease);
+}
+html.js body.page-changzheng .cz-map-dot.is-active circle {
+  fill: var(--red-deep);
+  stroke: var(--gold-soft);
+}
+
+body.page-changzheng .cz-route__hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 12px 2px 0;
+  font-size: 12.5px;
+  line-height: 1.7;
+  letter-spacing: .05em;
+  color: var(--ink-3);
+}
+body.page-changzheng .cz-route__hint::before {
+  content: "※";
+  flex: 0 0 auto;
+  color: var(--gold);
+}
+
+/* 路线节点按钮（桌面端覆盖在 SVG 上） */
+body.page-changzheng .cz-node-btn {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 0;
+  font-family: var(--font-sans);
+  line-height: 1;
+  color: var(--ink-2);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -14px);
+}
+
+body.page-changzheng .cz-node-btn__dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-family: var(--font-num);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--red-deep);
+  background: var(--paper);
+  border: 1.5px solid var(--red);
+  border-radius: 50%;
+  transition: background .24s var(--ease), color .24s var(--ease),
+              box-shadow .24s var(--ease), border-color .24s var(--ease);
+}
+
+body.page-changzheng .cz-node-btn__name {
+  padding: 1px 6px;
+  font-size: 11.5px;
+  letter-spacing: .06em;
+  color: var(--ink-2);
+  white-space: nowrap;
+  background: rgba(251, 247, 238, .92);
+  border-radius: 2px;
+  transition: color .24s var(--ease), background .24s var(--ease);
+}
+
+body.page-changzheng .cz-node-btn:hover .cz-node-btn__dot {
+  background: var(--red);
+  color: var(--paper-2);
+}
+body.page-changzheng .cz-node-btn.is-active .cz-node-btn__dot {
+  color: var(--paper-2);
+  background: var(--red);
+  border-color: var(--red-deep);
+  box-shadow: 0 0 0 4px rgba(166, 27, 27, .16), 0 0 0 5px var(--line-gold);
+}
+body.page-changzheng .cz-node-btn.is-active .cz-node-btn__name {
+  font-weight: 700;
+  color: var(--red-deep);
+  background: var(--paper-2);
+}
+
+/* 右侧详情面板 */
+body.page-changzheng .cz-route__panel {
+  position: sticky;
+  top: calc(var(--header-h) + 26px);
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+  padding: clamp(22px, 2.4vw, 30px) clamp(20px, 2.2vw, 28px);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--red);
+  border-radius: var(--r);
+}
+
+html.js body.page-changzheng .cz-panel { display: none; }
+html.js body.page-changzheng .cz-panel.is-active {
+  display: block;
+  animation: cz-panel-in .4s var(--ease) both;
+}
+@keyframes cz-panel-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+body.page-changzheng .cz-panel__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+body.page-changzheng .cz-panel__idx {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 12px;
+  letter-spacing: .2em;
+  color: var(--gold-deep);
+}
+body.page-changzheng .cz-panel__date {
+  margin: 0;
+  font-family: var(--font-num);
+  font-size: 13px;
+  letter-spacing: .04em;
+  color: var(--ink-3);
+}
+body.page-changzheng .cz-panel__title {
+  margin: 0 0 4px;
+  font-size: clamp(1.4rem, 2vw, 1.7rem);
+  color: var(--red-deep);
+}
+body.page-changzheng .cz-panel__place {
+  margin: 0 0 14px;
+  font-size: 12.5px;
+  letter-spacing: .12em;
+  color: var(--ink-3);
+}
+body.page-changzheng .cz-panel__text {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.9;
+  color: var(--ink-2);
+}
+body.page-changzheng .cz-panel__note {
+  margin: 16px 0 0;
+  padding: 10px 0 10px 14px;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: var(--ink-2);
+  background: linear-gradient(90deg, rgba(190, 138, 60, .1), transparent);
+  border-left: 2px solid var(--gold);
+}
+body.page-changzheng .cz-panel .link-arrow {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+body.page-changzheng .cz-route__nav {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 22px;
+}
+html.js body.page-changzheng .cz-route__nav { display: flex; }
+
+body.page-changzheng .cz-route__count {
+  margin: 0;
+  font-family: var(--font-num);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .12em;
+  color: var(--ink-3);
+}
+body.page-changzheng .cz-route__count b {
+  font-weight: 700;
+  color: var(--red-deep);
+}
+
+/* --------------------------------------------------------------------------
+   2. 关键节点时间轴
+   -------------------------------------------------------------------------- */
+body.page-changzheng .cz-timeline-wrap {
+  max-width: 920px;
+  margin: 0 auto;
+}
+body.page-changzheng .cz-timeline__meta {
+  color: var(--red);
+}
+body.page-changzheng .cz-timeline .timeline__text {
+  max-width: 44em;
+}
+
+/* --------------------------------------------------------------------------
+   3. 战役与会议深读
+   -------------------------------------------------------------------------- */
+body.page-changzheng .cz-deep {
+  align-items: stretch;
+}
+body.page-changzheng .cz-deep__card {
+  height: 100%;
+}
+body.page-changzheng .cz-deep__card .card__tag {
+  color: var(--red);
+}
+body.page-changzheng .cz-deep__figure {
+  margin-top: clamp(28px, 3.6vw, 48px);
+}
+
+/* --------------------------------------------------------------------------
+   4. 会师特写（深色区块）
+   -------------------------------------------------------------------------- */
+body.page-changzheng .cz-huishi {
+  align-items: center;
+}
+body.page-changzheng .cz-huishi__head {
+  margin-bottom: clamp(20px, 2.4vw, 30px);
+}
+body.page-changzheng .cz-huishi p {
+  max-width: 44em;
+  color: rgba(251, 247, 238, .84);
+}
+body.page-changzheng .cz-huishi__forces {
+  margin: clamp(24px, 3vw, 34px) 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(227, 198, 140, .28);
+}
+body.page-changzheng .cz-huishi__forces li {
+  display: grid;
+  grid-template-columns: 7.5em minmax(0, 1fr);
+  gap: 16px;
+  margin: 0;
+  padding: 13px 0;
+  border-bottom: 1px dashed rgba(227, 198, 140, .22);
+}
+body.page-changzheng .cz-huishi__forces strong {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  letter-spacing: .06em;
+  color: var(--gold-soft);
+}
+body.page-changzheng .cz-huishi__forces span {
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: rgba(251, 247, 238, .76);
+}
+body.page-changzheng .cz-huishi__aside {
+  display: grid;
+  gap: 20px;
+}
+body.page-changzheng .cz-huishi__fig {
+  background: rgba(251, 247, 238, .05);
+  border-color: rgba(227, 198, 140, .34);
+}
+body.page-changzheng .cz-cap--light {
+  color: rgba(251, 247, 238, .62);
+}
+body.page-changzheng .cz-huishi__note {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: rgba(251, 247, 238, .72);
+  background: rgba(251, 247, 238, .07);
+  border-left: 2px solid var(--gold-soft);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+body.page-changzheng .cz-huishi__note strong { color: var(--gold-soft); }
+
+/* --------------------------------------------------------------------------
+   5. 诗与山河
+   -------------------------------------------------------------------------- */
+body.page-changzheng .cz-poem {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: clamp(18px, 3vw, 48px);
+  align-items: start;
+}
+body.page-changzheng .cz-poem__side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 8px;
+}
+body.page-changzheng .cz-poem__side .v-text {
+  writing-mode: vertical-rl;
+  letter-spacing: .32em;
+}
+body.page-changzheng .cz-poem__main {
+  min-width: 0;
+}
+body.page-changzheng .cz-poem .section-head {
+  margin-bottom: clamp(20px, 2.6vw, 32px);
+}
+body.page-changzheng .cz-poem__quote {
+  margin: 0 0 clamp(24px, 3vw, 36px);
+}
+body.page-changzheng .cz-poem__quote .quote__text {
+  font-size: clamp(18px, 1.7vw, 22px);
+  line-height: 2.15;
+}
+body.page-changzheng .cz-poem__text {
+  max-width: 46em;
+}
+body.page-changzheng .cz-poem__notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 28px;
+  margin-top: clamp(24px, 3vw, 36px);
+}
+
+/* --------------------------------------------------------------------------
+   6. 下一站
+   -------------------------------------------------------------------------- */
+body.page-changzheng .cz-next {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(20px, 3vw, 44px);
+  padding: clamp(26px, 3.4vw, 44px);
+  background: linear-gradient(118deg, var(--paper-2) 0%, rgba(239, 228, 207, .72) 100%);
+  border-top: 3px solid var(--red);
+}
+body.page-changzheng .cz-next__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+body.page-changzheng .cz-next .card__title {
+  margin-bottom: 12px;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  color: var(--red-deep);
+}
+body.page-changzheng .cz-next .card__text {
+  max-width: 46em;
+  font-size: 15.5px;
+}
+body.page-changzheng .cz-next__arrow {
+  flex: 0 0 auto;
+  font-family: var(--font-num);
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1;
+  color: var(--red);
+  transition: transform .3s var(--ease);
+}
+body.page-changzheng .cz-next:hover .cz-next__arrow {
+  transform: translateX(6px);
+}
+
+/* --------------------------------------------------------------------------
+   7. 响应式
+   -------------------------------------------------------------------------- */
+@media (max-width: 1080px) {
+  body.page-changzheng .cz-route {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body.page-changzheng .cz-route__panel {
+    position: static;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  body.page-changzheng .cz-route__frame {
+    padding: 10px 10px 12px;
+  }
+  body.page-changzheng .cz-route__nodes {
+    position: static;
+    inset: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+    padding-top: 10px;
+  }
+  body.page-changzheng .cz-node-btn {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    padding: 7px 2px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    transform: none;
+  }
+  body.page-changzheng .cz-node-btn__dot {
+    width: 20px;
+    height: 20px;
+    font-size: 9.5px;
+    border-width: 1px;
+  }
+  body.page-changzheng .cz-node-btn__name {
+    padding: 0;
+    font-size: 11.5px;
+    background: transparent;
+  }
+  body.page-changzheng .cz-node-btn.is-active {
+    border-color: rgba(166, 27, 27, .55);
+    background: rgba(166, 27, 27, .05);
+  }
+  body.page-changzheng .cz-node-btn.is-active .cz-node-btn__name {
+    background: transparent;
+  }
+  body.page-changzheng .cz-node-btn.is-active .cz-node-btn__dot {
+    box-shadow: none;
+  }
+
+  body.page-changzheng .cz-huishi__forces li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+
+  body.page-changzheng .cz-poem {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body.page-changzheng .cz-poem__side {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+  }
+  body.page-changzheng .cz-poem__side .v-text {
+    writing-mode: horizontal-tb;
+    letter-spacing: .3em;
+  }
+  body.page-changzheng .cz-poem__notes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.page-changzheng .cz-next {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body.page-changzheng .cz-next__arrow {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 420px) {
+  body.page-changzheng .cz-route__nodes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  body.page-changzheng .cz-poem__quote .quote__text {
+    font-size: 16px;
+    letter-spacing: .01em;
+    line-height: 2.35;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js body.page-changzheng .cz-panel.is-active { animation: none; }
+  body.page-changzheng .cz-next:hover .cz-next__arrow { transform: none; }
+}
+
+/* --------------------------------------------------------------------------
+   8. 深读区引言 / 无脚本兜底
+   -------------------------------------------------------------------------- */
+body.page-changzheng .cz-deep__quote {
+  max-width: 52em;
+  margin: clamp(30px, 3.6vw, 46px) auto 0;
+}
+body.page-changzheng .cz-panel + .cz-panel {
+  margin-top: 28px;
+}

@@ -1,0 +1,66 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 校史印记：校园主楼剪影与陇原田野 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="校园主楼剪影立于层叠山峦与田野之间">
+  <defs>
+    <linearGradient id="xsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"/>
+      <stop offset="1" stop-color="#F2E7D3"/>
+    </linearGradient>
+    <linearGradient id="xmtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A61B1B"/>
+      <stop offset="1" stop-color="#7A1210"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#xsky)"/>
+
+  <!-- 日轮 -->
+  <circle cx="928" cy="152" r="86" fill="#C6392C" opacity=".13"/>
+  <circle cx="928" cy="152" r="54" fill="#C6392C" opacity=".2"/>
+
+  <!-- 远山 -->
+  <path d="M0 372 L118 300 L224 356 L340 278 L446 348 L560 292 L672 356 L788 302 L900 364 L1010 316 L1110 368 L1200 330 L1200 675 L0 675 Z" fill="url(#xmtn)" opacity=".22"/>
+  <path d="M340 278 L364 310 L316 310 Z M788 302 L814 336 L762 336 Z" fill="#FBF7EE" opacity=".75"/>
+
+  <!-- 校园主楼 -->
+  <g>
+    <path d="M392 470 L392 386 L808 386 L808 470 Z" fill="#7A1210" opacity=".92"/>
+    <path d="M360 386 L600 296 L840 386 Z" fill="#A61B1B"/>
+    <path d="M420 410 L470 410 L470 470 L420 470 Z M520 410 L570 410 L570 470 L520 470 Z M620 410 L670 410 L670 470 L620 470 Z M720 410 L770 410 L770 470 L720 470 Z" fill="#F7F1E4" opacity=".55"/>
+    <!-- 中央门廊 -->
+    <path d="M566 470 L566 402 L634 402 L634 470 Z" fill="#F7F1E4" opacity=".8"/>
+    <path d="M556 402 L600 376 L644 402 Z" fill="#BE8A3C"/>
+    <!-- 旗 -->
+    <path d="M600 296 L600 244" stroke="#7A1210" stroke-width="4" stroke-linecap="round"/>
+    <path d="M600 246 C 626 234 650 252 672 240 L672 278 C 650 290 626 272 600 284 Z" fill="#C6392C"/>
+    <!-- 基座 -->
+    <path d="M372 470 L828 470 L828 492 L372 492 Z" fill="#5E0D0C"/>
+    <g stroke="#E3C68C" stroke-width="2" opacity=".42">
+      <path d="M392 428 L808 428"/><path d="M392 448 L808 448"/>
+    </g>
+  </g>
+
+  <!-- 树列 -->
+  <g fill="#7A1210" opacity=".85">
+    <circle cx="300" cy="430" r="26"/><rect x="296" y="430" width="8" height="46"/>
+    <circle cx="256" cy="446" r="20"/><rect x="252" y="446" width="8" height="34"/>
+    <circle cx="900" cy="428" r="26"/><rect x="896" y="428" width="8" height="48"/>
+    <circle cx="946" cy="446" r="20"/><rect x="942" y="446" width="8" height="32"/>
+  </g>
+
+  <!-- 前景田垄 -->
+  <path d="M0 675 L0 520 C 260 500 520 540 760 516 C 980 494 1100 520 1200 508 L1200 675 Z" fill="#A61B1B" opacity=".18"/>
+  <g fill="none" stroke="#7A1210" stroke-width="2.6" opacity=".42">
+    <path d="M0 566 C 240 546 500 584 760 560 C 960 542 1100 566 1200 554"/>
+    <path d="M0 606 C 250 586 520 626 780 600 C 980 580 1110 606 1200 594"/>
+    <path d="M0 646 C 260 626 540 668 800 640 C 1000 620 1120 646 1200 634"/>
+  </g>
+  <path d="M0 675 L0 632 C 280 612 560 652 820 626 C 1020 606 1130 630 1200 620 L1200 675 Z" fill="#5E0D0C" opacity=".9"/>
+
+  <!-- 麦穗 -->
+  <g stroke="#BE8A3C" stroke-width="3" stroke-linecap="round" fill="none" opacity=".8">
+    <path d="M150 652 L150 604"/><path d="M150 620 l-14 -12"/><path d="M150 620 l14 -12"/>
+    <path d="M150 636 l-14 -12"/><path d="M150 636 l14 -12"/>
+    <path d="M210 648 L210 612"/><path d="M210 624 l-11 -10"/><path d="M210 624 l11 -10"/>
+    <path d="M1046 648 L1046 606"/><path d="M1046 618 l-13 -12"/><path d="M1046 618 l13 -12"/>
+    <path d="M1046 634 l-13 -12"/><path d="M1046 634 l13 -12"/>
+  </g>
+</svg>

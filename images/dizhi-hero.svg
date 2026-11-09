@@ -1,0 +1,87 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 形似玉如意的甘肃轮廓简化图上，雪山、黄河与串联红色地标的星火路线 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="形似玉如意的甘肃轮廓简化图上，雪山、黄河与串联红色地标的星火路线">
+  <defs>
+    <linearGradient id="dzSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F1E4"/>
+      <stop offset="1" stop-color="#F7F1E4" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#dzSky)"/>
+  <circle cx="986" cy="150" r="112" fill="#BE8A3C" opacity=".13"/>
+  <circle cx="986" cy="150" r="66" fill="#BE8A3C" opacity=".16"/>
+  <circle cx="986" cy="150" r="66" fill="none" stroke="#BE8A3C" stroke-width="2" opacity=".42"/>
+
+  <!-- 远景山影，烘托轮廓 -->
+  <path d="M0 588 L120 528 L240 570 L360 514 L480 574 L600 520 L720 578 L840 522 L960 580 L1080 528 L1200 576 L1200 675 L0 675 Z" fill="#A61B1B" opacity=".1"/>
+  <path d="M0 618 L150 574 L300 612 L450 568 L600 616 L750 570 L900 618 L1050 574 L1200 614 L1200 675 L0 675 Z" fill="#7A1210" opacity=".16"/>
+
+  <!-- 甘肃轮廓：一枚斜置的玉如意 -->
+  <path d="M120 230 C 160 190 220 178 265 200 L 340 224 L 410 244 L 480 258 L 550 240 L 620 256 L 680 244 L 745 262 L 800 250 L 870 270 L 940 258 L 1000 282 L 1060 300 L 1075 340 L 1030 366 L 980 360 L 940 392 L 900 414 L 860 400 L 820 432 L 780 460 L 740 492 L 690 510 L 640 496 L 595 516 L 550 490 L 510 500 L 470 468 L 430 450 L 390 430 L 350 400 L 310 390 L 280 360 L 240 350 L 205 320 L 165 310 L 140 285 L 118 262 Z" fill="#7A1210"/>
+  <path d="M120 230 C 160 190 220 178 265 200 L 340 224 L 410 244 L 480 258 L 550 240 L 620 256 L 680 244 L 745 262 L 800 250 L 870 270 L 940 258 L 1000 282 L 1060 300 L 1075 340 L 1030 366 L 980 360 L 940 392 L 900 414 L 860 400 L 820 432 L 780 460 L 740 492 L 690 510 L 640 496 L 595 516 L 550 490 L 510 500 L 470 468 L 430 450 L 390 430 L 350 400 L 310 390 L 280 360 L 240 350 L 205 320 L 165 310 L 140 285 L 118 262 Z" fill="none" stroke="#BE8A3C" stroke-width="3" stroke-linejoin="round" opacity=".7"/>
+
+  <!-- 图内雪山：河西走廊的祁连山脉 -->
+  <path d="M 236 300 L 286 252 L 330 288 L 380 244 L 428 292 L 478 258 L 528 296 L 586 264 L 636 302 L 588 322 L 530 308 L 480 332 L 424 312 L 370 336 L 316 310 L 264 330 Z" fill="#F7F1E4" opacity=".9"/>
+  <g fill="#A61B1B" opacity=".55">
+    <path d="M286 252 L272 278 L284 270 L292 286 L302 268 L314 280 L306 262 Z"/>
+    <path d="M380 244 L366 270 L378 262 L386 278 L396 260 L408 272 L400 254 Z"/>
+    <path d="M478 258 L464 284 L476 276 L484 292 L494 274 L506 286 L498 268 Z"/>
+    <path d="M586 264 L572 290 L584 282 L592 298 L602 280 L614 292 L606 274 Z"/>
+  </g>
+
+  <!-- 图内黄河：一条金色水脉 -->
+  <path d="M 596 500 C 614 470 626 444 618 416 C 610 388 628 364 660 352 C 700 338 726 314 736 284" fill="none" stroke="#BE8A3C" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+  <path d="M 596 500 C 614 470 626 444 618 416 C 610 388 628 364 660 352 C 700 338 726 314 736 284" fill="none" stroke="#F7F1E4" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+
+  <!-- 图内黄土塬：陇东的层层台地 -->
+  <g fill="none" stroke="#BE8A3C" stroke-width="2.5" stroke-linecap="round" opacity=".65">
+    <path d="M 826 404 C 856 392 886 398 916 382"/>
+    <path d="M 846 424 C 874 412 906 418 936 402"/>
+    <path d="M 866 444 C 894 432 924 438 954 422"/>
+  </g>
+
+  <!-- 星火路线：把地标串成一条线 -->
+  <path d="M 300 330 L 424 330 L 540 320 L 640 360 L 720 372 L 820 390 L 900 370 L 960 330" fill="none" stroke="#F7F1E4" stroke-width="2.5" stroke-dasharray="7 11" stroke-linecap="round" opacity=".5"/>
+
+  <!-- 地标节点 -->
+  <g>
+    <circle cx="300" cy="330" r="15" fill="#F7F1E4" opacity=".92"/>
+    <circle cx="300" cy="330" r="7" fill="#A61B1B"/>
+    <circle cx="424" cy="330" r="15" fill="#F7F1E4" opacity=".92"/>
+    <circle cx="424" cy="330" r="7" fill="#A61B1B"/>
+    <circle cx="540" cy="320" r="18" fill="#F7F1E4" opacity=".95"/>
+    <circle cx="540" cy="320" r="9" fill="#A61B1B"/>
+    <circle cx="540" cy="320" r="17" fill="none" stroke="#BE8A3C" stroke-width="2" opacity=".9"/>
+    <circle cx="640" cy="360" r="15" fill="#F7F1E4" opacity=".92"/>
+    <circle cx="640" cy="360" r="7" fill="#A61B1B"/>
+    <circle cx="720" cy="372" r="15" fill="#F7F1E4" opacity=".92"/>
+    <circle cx="720" cy="372" r="7" fill="#A61B1B"/>
+    <circle cx="820" cy="390" r="15" fill="#F7F1E4" opacity=".92"/>
+    <circle cx="820" cy="390" r="7" fill="#A61B1B"/>
+    <circle cx="900" cy="370" r="15" fill="#F7F1E4" opacity=".92"/>
+    <circle cx="900" cy="370" r="7" fill="#A61B1B"/>
+    <circle cx="960" cy="330" r="15" fill="#F7F1E4" opacity=".92"/>
+    <circle cx="960" cy="330" r="7" fill="#A61B1B"/>
+  </g>
+
+  <!-- 星火与光芒装饰 -->
+  <g fill="#BE8A3C" opacity=".8">
+    <path d="M 176 154 L 180 166 L 192 170 L 180 174 L 176 186 L 172 174 L 160 170 L 172 166 Z"/>
+    <path d="M 1082 452 L 1086 462 L 1096 466 L 1086 470 L 1082 480 L 1078 470 L 1068 466 L 1078 462 Z"/>
+    <path d="M 244 566 L 247 574 L 255 577 L 247 580 L 244 588 L 241 580 L 233 577 L 241 574 Z"/>
+  </g>
+  <g fill="none" stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".45">
+    <path d="M 640 268 L 664 250"/>
+    <path d="M 664 250 L 688 268"/>
+    <path d="M 250 386 L 250 404"/>
+    <path d="M 242 396 L 258 396"/>
+  </g>
+
+  <!-- 四角细线，取版画装帧之意 -->
+  <g stroke="#BE8A3C" stroke-width="2" opacity=".5">
+    <path d="M 42 60 L 42 96 M 42 60 L 78 60"/>
+    <path d="M 1158 60 L 1158 96 M 1158 60 L 1122 60"/>
+    <path d="M 42 615 L 42 579 M 42 615 L 78 615"/>
+    <path d="M 1158 615 L 1158 579 M 1158 615 L 1122 615"/>
+  </g>
+</svg>

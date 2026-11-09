@@ -1,0 +1,85 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 场景说明：晨光与层叠山峦之前，三位青年的背影立于陇原田野，一人高擎星火，两侧麦浪簇拥，象征青年接过红色火种、扎根土地作答 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="晨光山峦前三位青年的背影立于田野，一人高举星火，两侧是金色麦浪">
+  <defs>
+    <linearGradient id="ccSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"/>
+      <stop offset="1" stop-color="#EFE4CF"/>
+    </linearGradient>
+    <g id="ccYouth">
+      <circle cx="0" cy="-232" r="20"/>
+      <rect x="-7" y="-218" width="14" height="22"/>
+      <path d="M-30 -196 C -18 -209 18 -209 30 -196 L 34 -104 L -34 -104 Z"/>
+      <path d="M-30 -194 C -40 -174 -44 -144 -45 -112 L -34 -110 C -33 -144 -30 -170 -22 -190 Z"/>
+      <path d="M30 -194 C 40 -174 44 -144 45 -112 L 34 -110 C 33 -144 30 -170 22 -190 Z"/>
+      <path d="M-32 -104 L-32 -2 L-10 -2 L-10 -104 Z"/>
+      <path d="M10 -104 L10 -2 L32 -2 L32 -104 Z"/>
+    </g>
+    <g id="ccWheat">
+      <path d="M0 0 L0 -150" stroke="#7A1210" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <g fill="#BE8A3C">
+        <ellipse cx="-10" cy="-62" rx="7" ry="13" transform="rotate(-24 -10 -62)"/>
+        <ellipse cx="10" cy="-62" rx="7" ry="13" transform="rotate(24 10 -62)"/>
+        <ellipse cx="-10" cy="-86" rx="7" ry="13" transform="rotate(-24 -10 -86)"/>
+        <ellipse cx="10" cy="-86" rx="7" ry="13" transform="rotate(24 10 -86)"/>
+        <ellipse cx="-9" cy="-110" rx="6.5" ry="12" transform="rotate(-24 -9 -110)"/>
+        <ellipse cx="9" cy="-110" rx="6.5" ry="12" transform="rotate(24 9 -110)"/>
+        <ellipse cx="0" cy="-134" rx="6" ry="12"/>
+      </g>
+      <g stroke="#BE8A3C" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".8">
+        <path d="M0 -146 L-14 -176"/><path d="M0 -146 L0 -182"/><path d="M0 -146 L14 -176"/>
+      </g>
+    </g>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#ccSky)"/>
+
+  <!-- 晨光 -->
+  <circle cx="918" cy="238" r="136" fill="#BE8A3C" opacity=".10"/>
+  <circle cx="918" cy="238" r="84" fill="#BE8A3C" opacity=".16"/>
+  <circle cx="918" cy="238" r="38" fill="#BE8A3C" opacity=".22"/>
+  <g stroke="#BE8A3C" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".32">
+    <path d="M748 300 A 178 178 0 0 1 1070 132"/>
+    <path d="M700 344 A 236 236 0 0 1 1104 88"/>
+  </g>
+
+  <!-- 飞鸟 -->
+  <g stroke="#BE8A3C" stroke-width="2" fill="none" stroke-linecap="round" opacity=".45">
+    <path d="M712 136 C 720 124 728 124 736 136 M736 136 C 744 124 752 124 760 136"/>
+    <path d="M800 106 C 806 97 812 97 818 106 M818 106 C 824 97 830 97 836 106"/>
+  </g>
+
+  <!-- 远山与中山 -->
+  <path d="M0 404 L130 348 250 386 380 326 510 380 640 336 770 388 900 340 1020 386 1130 350 1200 382 1200 675 0 675 Z" fill="#A61B1B" opacity=".10"/>
+  <path d="M0 468 L150 414 300 456 448 404 596 456 744 408 892 458 1040 412 1200 456 1200 675 0 675 Z" fill="#A61B1B" opacity=".18"/>
+
+  <!-- 近处田野 -->
+  <path d="M0 566 L170 552 350 566 530 552 710 568 890 552 1070 566 1200 556 1200 675 0 675 Z" fill="#EFE4CF"/>
+  <path d="M0 566 L170 552 350 566 530 552 710 568 890 552 1070 566 1200 556" stroke="#BE8A3C" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".55"/>
+
+  <!-- 三位青年的背影 -->
+  <use href="#ccYouth" transform="translate(340,570) scale(.82)" fill="#A61B1B"/>
+  <use href="#ccYouth" transform="translate(452,558) scale(.76)" fill="#A61B1B" opacity=".92"/>
+  <use href="#ccYouth" transform="translate(556,548) scale(.68)" fill="#A61B1B" opacity=".86"/>
+  <g transform="translate(556,548) scale(.68)" fill="#A61B1B" opacity=".86">
+    <path d="M24 -198 C 32 -218 38 -240 44 -258 L58 -252 C 51 -232 44 -210 36 -192 Z"/>
+    <circle cx="51" cy="-260" r="8"/>
+  </g>
+
+  <!-- 高举的星火 -->
+  <circle cx="591" cy="371" r="27" fill="#BE8A3C" opacity=".22"/>
+  <path d="M0 -1 L0.2245 -0.309 L0.9511 -0.309 L0.3633 0.118 L0.5878 0.809 L0 0.382 L-0.5878 0.809 L-0.3633 0.118 L-0.9511 -0.309 L-0.2245 -0.309 Z" transform="translate(591,367) scale(15)" fill="#A61B1B"/>
+
+  <!-- 麦浪（前景，左右簇拥） -->
+  <use href="#ccWheat" transform="translate(74,675) scale(1.18)"/>
+  <use href="#ccWheat" transform="translate(130,675) scale(1.38)"/>
+  <use href="#ccWheat" transform="translate(186,675) scale(1.02)"/>
+  <use href="#ccWheat" transform="translate(694,681) scale(.9)"/>
+  <use href="#ccWheat" transform="translate(736,681) scale(1.02)"/>
+  <use href="#ccWheat" transform="translate(1016,675) scale(1.16)"/>
+  <use href="#ccWheat" transform="translate(1072,675) scale(1.44)"/>
+  <use href="#ccWheat" transform="translate(1130,675) scale(1.05)"/>
+
+  <!-- 前景深红土层 -->
+  <path d="M0 640 L200 632 420 642 640 632 860 644 1080 634 1200 642 1200 675 0 675 Z" fill="#7A1210" opacity=".9"/>
+  <path d="M0 640 L200 632 420 642 640 632 860 644 1080 634 1200 642" stroke="#BE8A3C" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".45"/>
+</svg>

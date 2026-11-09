@@ -1,0 +1,122 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 腊子口：两山夹峙的一线天，木桥横跨峡谷，突击队攀崖迂回 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="腊子口两山夹峙的隘口、横跨峡谷的木桥与攀崖迂回的红军队伍剪影">
+  <defs>
+    <linearGradient id="czLzSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"></stop>
+      <stop offset="1" stop-color="#F7F1E4"></stop>
+    </linearGradient>
+    <pattern id="czLzGrain" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="7" r="1.1" fill="#1F1A17" opacity=".05"></circle>
+      <circle cx="20" cy="21" r="1" fill="#BE8A3C" opacity=".13"></circle>
+    </pattern>
+    <g id="czLzSoldier">
+      <circle cx="0" cy="-21" r="3.6" fill="#5E0D0C"></circle>
+      <path d="M-5.6 -17 C -5.6 -11 -6.4 -6 -7.2 -1 L 7.2 -1 C 5.6 -7 4.8 -12 4.8 -17 Z" fill="#5E0D0C"></path>
+      <path d="M-4.2 -1 L -6.4 7 M 3.8 -1 L 6 7" stroke="#5E0D0C" stroke-width="2.6" stroke-linecap="round" fill="none"></path>
+      <path d="M1.6 -15 L 9 -24" stroke="#5E0D0C" stroke-width="1.8" stroke-linecap="round"></path>
+    </g>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#czLzSky)"></rect>
+  <rect width="1200" height="675" fill="url(#czLzGrain)"></rect>
+
+  <circle cx="600" cy="300" r="176" fill="#E3C68C" opacity=".22"></circle>
+  <circle cx="600" cy="300" r="118" fill="#E3C68C" opacity=".3"></circle>
+  <circle cx="600" cy="300" r="72" fill="#BE8A3C" opacity=".18"></circle>
+  <g stroke="#BE8A3C" stroke-width="2" opacity=".16" stroke-linecap="round">
+    <path d="M600 300 L420 130"></path>
+    <path d="M600 300 L780 130"></path>
+    <path d="M600 300 L470 470"></path>
+    <path d="M600 300 L730 470"></path>
+  </g>
+
+  <path d="M420 470 L480 396 L540 446 L600 386 L660 444 L720 404 L780 470 Z" fill="#E3C68C" opacity=".55"></path>
+  <path d="M450 470 L510 424 L570 462 L630 428 L690 464 L740 470 Z" fill="#EFE4CF"></path>
+
+  <path d="M0 675 L0 140 L64 92 L128 138 L196 104 L262 168 L318 236 L344 302 L372 372 L392 440 L384 508 L414 594 L428 675 Z" fill="#7A1210"></path>
+  <path d="M0 140 L64 92 L128 138 L88 264 L0 306 Z" fill="#A61B1B" opacity=".42"></path>
+  <path d="M262 168 L318 236 L344 302 L300 352 L240 268 Z" fill="#A61B1B" opacity=".3"></path>
+  <path d="M392 440 L384 508 L414 594 L428 675 L322 675 L318 540 L300 430 L330 366 L372 372 Z" fill="#5E0D0C" opacity=".62"></path>
+  <g fill="none" stroke="#BE8A3C" stroke-width="1.8" opacity=".34" stroke-linecap="round">
+    <path d="M96 160 L138 360"></path>
+    <path d="M188 190 L220 400"></path>
+    <path d="M266 244 L296 452"></path>
+    <path d="M326 306 L342 512"></path>
+    <path d="M60 250 L96 470"></path>
+  </g>
+  <path d="M0 306 L88 264 L140 300 L120 470 L0 500 Z" fill="#5E0D0C" opacity=".25"></path>
+
+  <path d="M1200 675 L1200 120 L1130 78 L1064 126 L996 92 L930 156 L874 226 L846 292 L820 362 L800 430 L808 500 L778 588 L764 675 Z" fill="#7A1210"></path>
+  <path d="M1200 120 L1130 78 L1064 126 L1104 258 L1200 300 Z" fill="#A61B1B" opacity=".42"></path>
+  <path d="M930 156 L874 226 L846 292 L888 342 L948 256 Z" fill="#A61B1B" opacity=".3"></path>
+  <path d="M800 430 L808 500 L778 588 L764 675 L876 675 L880 540 L898 430 L868 366 L828 362 Z" fill="#5E0D0C" opacity=".62"></path>
+  <g fill="none" stroke="#BE8A3C" stroke-width="1.8" opacity=".34" stroke-linecap="round">
+    <path d="M1104 160 L1062 360"></path>
+    <path d="M1012 190 L980 400"></path>
+    <path d="M934 244 L904 452"></path>
+    <path d="M874 306 L858 512"></path>
+    <path d="M1140 250 L1104 470"></path>
+  </g>
+  <path d="M1200 300 L1104 258 L1052 296 L1072 470 L1200 500 Z" fill="#5E0D0C" opacity=".25"></path>
+
+  <path d="M424 528 L776 528 L806 675 L394 675 Z" fill="#FBF7EE" opacity=".86"></path>
+  <g fill="none" stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".42">
+    <path d="M446 566 C 520 552, 580 576, 660 562 C 710 554, 748 566, 776 556"></path>
+    <path d="M434 612 C 512 596, 584 620, 668 606 C 722 596, 762 610, 792 600"></path>
+    <path d="M420 650 C 500 634, 580 658, 668 644 C 726 634, 768 646, 800 638"></path>
+  </g>
+  <g fill="#5E0D0C" opacity=".82">
+    <path d="M470 600 L492 578 L516 600 Z"></path>
+    <path d="M676 634 L702 608 L726 634 Z"></path>
+    <path d="M560 656 L580 638 L600 656 Z"></path>
+  </g>
+
+  <path d="M398 512 H802" stroke="#5E0D0C" stroke-width="8" stroke-linecap="round"></path>
+  <path d="M410 486 H790" stroke="#7A1210" stroke-width="3.4" stroke-linecap="round"></path>
+  <g stroke="#7A1210" stroke-width="3" stroke-linecap="round">
+    <path d="M438 486 V 512 M500 486 V 512 M562 486 V 512 M624 486 V 512 M686 486 V 512 M748 486 V 512 M786 486 V 512"></path>
+  </g>
+  <g stroke="#BE8A3C" stroke-width="2" opacity=".4" stroke-linecap="round">
+    <path d="M424 506 V 516 M456 506 V 516 M488 506 V 516 M520 506 V 516 M552 506 V 516 M584 506 V 516 M616 506 V 516 M648 506 V 516 M680 506 V 516 M712 506 V 516 M744 506 V 516 M776 506 V 516"></path>
+  </g>
+  <path d="M398 512 L336 436" stroke="#5E0D0C" stroke-width="2.6" stroke-linecap="round"></path>
+  <path d="M802 512 L864 436" stroke="#5E0D0C" stroke-width="2.6" stroke-linecap="round"></path>
+
+  <path d="M292 474 L356 330" stroke="#BE8A3C" stroke-width="2" stroke-dasharray="5 6" stroke-linecap="round" opacity=".75"></path>
+  <use href="#czLzSoldier" transform="translate(470 512) scale(.9)"></use>
+  <use href="#czLzSoldier" transform="translate(516 512) scale(.88)"></use>
+  <use href="#czLzSoldier" transform="translate(586 510) scale(.9)"></use>
+  <use href="#czLzSoldier" transform="translate(634 510) scale(.86)"></use>
+  <use href="#czLzSoldier" transform="translate(306 446) scale(.76)"></use>
+  <use href="#czLzSoldier" transform="translate(326 400) scale(.72)"></use>
+  <use href="#czLzSoldier" transform="translate(346 356) scale(.68)"></use>
+
+  <g transform="translate(288 334)">
+    <path d="M0 0 V -30" stroke="#7A1210" stroke-width="3" stroke-linecap="round"></path>
+    <path d="M0 -30 L 30 -23 L 0 -14 Z" fill="#A61B1B"></path>
+    <path d="M7 -26 l1.8 4 4.2 .7 -3 3 .7 4.2 -3.7 -2 -3.7 2 .7 -4.2 -3 -3 4.2 -.7 z" fill="#BE8A3C" opacity=".9"></path>
+  </g>
+  <g transform="translate(882 334) scale(.86)">
+    <path d="M0 0 V -28" stroke="#7A1210" stroke-width="3" stroke-linecap="round"></path>
+    <path d="M0 -28 L 28 -21 L 0 -12 Z" fill="#A61B1B"></path>
+  </g>
+
+  <g stroke="#1F1A17" stroke-width="2" fill="none" opacity=".3" stroke-linecap="round">
+    <path d="M536 180 q 11 -8 22 0"></path>
+    <path d="M560 180 q 11 -8 22 0"></path>
+    <path d="M648 214 q 9 -7 18 0"></path>
+    <path d="M668 214 q 9 -7 18 0"></path>
+  </g>
+
+  <g fill="#BE8A3C" opacity=".5">
+    <path d="M508 96 l2.4 7.2 7.2 2.4 -7.2 2.4 -2.4 7.2 -2.4 -7.2 -7.2 -2.4 7.2 -2.4 z"></path>
+    <path d="M700 128 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z" opacity=".8"></path>
+  </g>
+
+  <path d="M0 675 L0 636 C 96 620 188 636 280 628 L336 675 Z" fill="#5E0D0C"></path>
+  <path d="M1200 675 L1200 636 C 1110 620 1020 636 930 628 L876 675 Z" fill="#5E0D0C"></path>
+  <g fill="none" stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".3">
+    <path d="M76 660 q 8 -14 2 -24 M88 662 q 3 -12 10 -20"></path>
+    <path d="M1124 660 q -8 -14 -2 -24 M1112 662 q -3 -12 -10 -20"></path>
+  </g>
+</svg>

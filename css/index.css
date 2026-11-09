@@ -1,0 +1,718 @@
+@charset "UTF-8";
+/* ==========================================================================
+   陇原星火 · 首页（index.html）专属样式
+   作用域：body.page-index
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   一、首页主视觉
+   -------------------------------------------------------------------------- */
+body.page-index .hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(600px, 88vh, 840px);
+  overflow: hidden;
+  background: #4A0A09;
+  color: var(--paper-2);
+}
+
+body.page-index .hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 66% center;
+  will-change: transform;
+}
+
+body.page-index .hero__veil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(100deg, rgba(58, 7, 6, .95) 0%, rgba(58, 7, 6, .84) 30%, rgba(58, 7, 6, .42) 58%, rgba(58, 7, 6, .06) 100%),
+    linear-gradient(180deg, rgba(58, 7, 6, .42) 0%, rgba(58, 7, 6, 0) 36%, rgba(58, 7, 6, .5) 100%);
+}
+
+body.page-index .hero__inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 118px;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding-top: clamp(56px, 8vw, 96px);
+  padding-bottom: clamp(64px, 8vw, 104px);
+}
+
+body.page-index .hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-size: 12.5px;
+  letter-spacing: .3em;
+  color: var(--gold-soft);
+}
+body.page-index .hero__eyebrow::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: var(--gold-soft);
+  opacity: .7;
+}
+
+body.page-index .hero__title {
+  margin: 22px 0 0;
+  font-size: clamp(3rem, 8.6vw, 7.4rem);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: .14em;
+  color: var(--paper-2);
+  text-indent: .06em;
+  text-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+}
+body.page-index .hero__title-sub {
+  display: block;
+  margin-top: clamp(16px, 2vw, 26px);
+  font-family: var(--font-sans);
+  font-size: clamp(.92rem, 1.35vw, 1.18rem);
+  font-weight: 400;
+  letter-spacing: .52em;
+  color: var(--gold-soft);
+  text-indent: .2em;
+}
+
+body.page-index .hero__lead {
+  max-width: 33em;
+  margin: clamp(22px, 2.6vw, 32px) 0 0;
+  font-size: clamp(15.5px, 1.25vw, 17.5px);
+  line-height: 2.05;
+  color: rgba(251, 247, 238, .78);
+}
+
+body.page-index .hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: clamp(28px, 3.4vw, 40px);
+}
+
+body.page-index .btn--light {
+  background: var(--paper-2);
+  border-color: var(--paper-2);
+  color: var(--red-deep);
+}
+body.page-index .btn--light:hover {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--red-deep);
+  transform: translateY(-2px);
+}
+body.page-index .btn--outline-light {
+  background: transparent;
+  border-color: rgba(227, 198, 140, .45);
+  color: var(--gold-soft);
+}
+body.page-index .btn--outline-light:hover {
+  background: rgba(227, 198, 140, .1);
+  border-color: var(--gold-soft);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+body.page-index .hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(22px, 3.4vw, 48px);
+  margin: clamp(38px, 4.6vw, 54px) 0 0;
+  padding: 22px 0 0;
+  list-style: none;
+  border-top: 1px solid rgba(227, 198, 140, .22);
+}
+body.page-index .hero__meta li {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+body.page-index .hero__meta span {
+  font-size: 11px;
+  letter-spacing: .26em;
+  color: rgba(251, 247, 238, .46);
+}
+body.page-index .hero__meta strong {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: var(--gold-soft);
+}
+
+body.page-index .hero__side {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  height: 100%;
+}
+body.page-index .hero__side-text {
+  writing-mode: vertical-rl;
+  font-family: var(--font-serif);
+  font-size: 13px;
+  letter-spacing: .52em;
+  color: rgba(227, 198, 140, .6);
+}
+body.page-index .hero__side-line {
+  width: 1px;
+  height: 96px;
+  background: linear-gradient(180deg, transparent, rgba(227, 198, 140, .5), transparent);
+}
+
+body.page-index .hero__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  z-index: 3;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: .3em;
+  color: rgba(251, 247, 238, .5);
+}
+body.page-index .hero__scroll::after {
+  content: "";
+  width: 1px;
+  height: 34px;
+  background: linear-gradient(180deg, rgba(227, 198, 140, .7), transparent);
+  animation: scroll-hint 2.2s var(--ease) infinite;
+}
+@keyframes scroll-hint {
+  0%, 100% { opacity: .3; transform: scaleY(.6); transform-origin: top; }
+  50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+}
+
+/* 星火粒子 */
+body.page-index .hero__sparks {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+body.page-index .hero__sparks i {
+  position: absolute;
+  bottom: 12%;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: var(--gold-soft);
+  opacity: 0;
+  animation: spark-rise 9s linear infinite;
+}
+body.page-index .hero__sparks i:nth-child(1) { left: 18%; animation-delay: 0s; }
+body.page-index .hero__sparks i:nth-child(2) { left: 31%; animation-delay: 1.6s; animation-duration: 11s; }
+body.page-index .hero__sparks i:nth-child(3) { left: 44%; animation-delay: 3.2s; animation-duration: 8s; }
+body.page-index .hero__sparks i:nth-child(4) { left: 57%; animation-delay: 4.8s; animation-duration: 12s; }
+body.page-index .hero__sparks i:nth-child(5) { left: 72%; animation-delay: 2.4s; animation-duration: 10s; }
+body.page-index .hero__sparks i:nth-child(6) { left: 86%; animation-delay: 6s; animation-duration: 9s; }
+@keyframes spark-rise {
+  0% { opacity: 0; transform: translateY(0) scale(.8); }
+  12% { opacity: .85; }
+  70% { opacity: .5; }
+  100% { opacity: 0; transform: translateY(-320px) scale(1.1); }
+}
+
+@media (max-width: 900px) {
+  body.page-index .hero__inner { grid-template-columns: minmax(0, 1fr); }
+  body.page-index .hero__side { display: none; }
+  body.page-index .hero__bg { object-position: 72% center; }
+  body.page-index .hero__scroll { display: none; }
+}
+@media (max-width: 560px) {
+  body.page-index .hero { min-height: 0; }
+  body.page-index .hero__title { letter-spacing: .1em; }
+  body.page-index .hero__title-sub { letter-spacing: .34em; }
+}
+
+/* --------------------------------------------------------------------------
+   二、开篇引言
+   -------------------------------------------------------------------------- */
+body.page-index .intro {
+  position: relative;
+}
+body.page-index .intro__quote {
+  max-width: 54rem;
+  margin: 0 auto;
+  text-align: center;
+}
+body.page-index .intro__quote .quote {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--line-gold);
+  border-bottom: 1px solid var(--line-gold);
+  border-radius: 0;
+  padding: clamp(30px, 4vw, 48px) clamp(10px, 3vw, 40px);
+  text-align: center;
+}
+body.page-index .intro__quote .quote::before { display: none; }
+body.page-index .intro__quote .quote__text { font-size: clamp(18px, 2.1vw, 26px); line-height: 2; }
+body.page-index .intro__quote .quote__from { margin-top: 18px; }
+body.page-index .intro__note {
+  margin: clamp(26px, 3vw, 36px) auto 0;
+  max-width: 40rem;
+  font-size: 15px;
+  line-height: 2;
+  color: var(--ink-2);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   三、三条主线
+   -------------------------------------------------------------------------- */
+body.page-index .tracks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.2vw, 28px);
+}
+body.page-index .track {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(26px, 2.8vw, 38px);
+  min-height: 330px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  color: var(--ink);
+  overflow: hidden;
+  transition: transform .34s var(--ease), box-shadow .34s var(--ease), border-color .34s var(--ease);
+}
+body.page-index .track::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .4s var(--ease);
+}
+body.page-index .track:hover {
+  transform: translateY(-6px);
+  border-color: rgba(190, 138, 60, .5);
+  box-shadow: var(--shadow-md);
+  color: var(--ink);
+}
+body.page-index .track:hover::before { transform: scaleX(1); }
+
+body.page-index .track__num {
+  position: absolute;
+  top: 2px;
+  right: 18px;
+  font-family: var(--font-serif);
+  font-size: 3.6rem;
+  line-height: 1;
+  color: rgba(166, 27, 27, .08);
+  pointer-events: none;
+  transition: color .34s var(--ease);
+}
+body.page-index .track:hover .track__num { color: rgba(166, 27, 27, .15); }
+
+body.page-index .track__en {
+  margin: 0;
+  padding-right: 34px;
+  font-size: 10px;
+  letter-spacing: .16em;
+  line-height: 1.7;
+  color: var(--gold-deep);
+}
+body.page-index .track__title {
+  margin: 16px 0 0;
+  font-size: clamp(1.5rem, 2.2vw, 1.85rem);
+  letter-spacing: .1em;
+}
+body.page-index .track__sub {
+  margin: 8px 0 0;
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  letter-spacing: .22em;
+  color: var(--ink-3);
+}
+body.page-index .track__desc {
+  flex: 1 1 auto;
+  margin: 20px 0 0;
+  font-size: 15.5px;
+  line-height: 1.9;
+  color: var(--ink-2);
+}
+body.page-index .track__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line-gold);
+  font-size: 12.5px;
+  letter-spacing: .1em;
+  color: var(--ink-3);
+}
+body.page-index .track__arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--red);
+  transition: transform .3s var(--ease);
+}
+body.page-index .track:hover .track__arrow { transform: translateX(5px); }
+
+@media (max-width: 900px) {
+  body.page-index .tracks { grid-template-columns: minmax(0, 1fr); }
+  body.page-index .track { min-height: 0; }
+}
+
+/* --------------------------------------------------------------------------
+   四、陇原长卷
+   -------------------------------------------------------------------------- */
+body.page-index .panorama {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: var(--paper-3);
+  border-top: 1px solid var(--line-gold);
+  border-bottom: 1px solid var(--line-gold);
+  overflow: hidden;
+}
+body.page-index .panorama__img {
+  width: 100%;
+  height: clamp(180px, 25vw, 340px);
+  object-fit: cover;
+  display: block;
+}
+body.page-index .panorama__cap {
+  position: absolute;
+  left: var(--gutter);
+  bottom: clamp(14px, 2vw, 26px);
+  max-width: min(520px, 70%);
+  margin: 0;
+  padding: 12px 20px;
+  font-size: 13px;
+  line-height: 1.75;
+  letter-spacing: .06em;
+  color: var(--paper-2);
+  background: rgba(58, 7, 6, .78);
+  border-left: 2px solid var(--gold);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+@media (max-width: 560px) {
+  body.page-index .panorama__cap { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   五、数字陇原
+   -------------------------------------------------------------------------- */
+body.page-index .numbers-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: center;
+}
+body.page-index .numbers-grid .section-lead { margin-top: 0; }
+body.page-index .numbers-grid .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+body.page-index .numbers-grid .stat { padding: 4px 0 4px 18px; }
+@media (max-width: 900px) {
+  body.page-index .numbers-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 480px) {
+  body.page-index .numbers-grid .stats { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   六、精神谱系横带
+   -------------------------------------------------------------------------- */
+body.page-index .spirits {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  margin-top: clamp(24px, 3vw, 34px);
+  border-top: 1px solid var(--line-gold);
+  border-left: 1px solid var(--line-gold);
+}
+body.page-index .spirit {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 24px 18px 26px;
+  border-right: 1px solid var(--line-gold);
+  border-bottom: 1px solid var(--line-gold);
+  color: var(--ink);
+  transition: background .3s var(--ease), color .3s var(--ease);
+}
+body.page-index .spirit:hover {
+  background: var(--red);
+  color: var(--paper-2);
+}
+body.page-index .spirit__idx {
+  font-family: var(--font-num);
+  font-size: 11px;
+  letter-spacing: .18em;
+  color: var(--gold-deep);
+  transition: color .3s var(--ease);
+}
+body.page-index .spirit__name {
+  font-family: var(--font-serif);
+  font-size: 1.06rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  line-height: 1.45;
+}
+body.page-index .spirit__era {
+  font-size: 11.5px;
+  letter-spacing: .04em;
+  color: var(--ink-3);
+  transition: color .3s var(--ease);
+}
+body.page-index .spirit:hover .spirit__idx,
+body.page-index .spirit:hover .spirit__era { color: rgba(251, 247, 238, .72); }
+
+@media (max-width: 980px) {
+  body.page-index .spirits { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  body.page-index .spirits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* --------------------------------------------------------------------------
+   七、红色地标墙
+   -------------------------------------------------------------------------- */
+body.page-index .lm-wall {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line-gold);
+  border: 1px solid var(--line-gold);
+}
+body.page-index .lm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: clamp(22px, 2.4vw, 32px);
+  background: var(--paper-2);
+  color: var(--ink);
+  transition: background .3s var(--ease), color .3s var(--ease);
+}
+body.page-index .lm:hover { background: var(--red); color: var(--paper-2); }
+body.page-index .lm__loc {
+  font-size: 11px;
+  letter-spacing: .2em;
+  color: var(--gold-deep);
+  transition: color .3s var(--ease);
+}
+body.page-index .lm__name {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 1.5vw, 1.32rem);
+  font-weight: 700;
+  letter-spacing: .06em;
+  line-height: 1.5;
+}
+body.page-index .lm__desc {
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: var(--ink-3);
+  transition: color .3s var(--ease);
+}
+body.page-index .lm:hover .lm__loc,
+body.page-index .lm:hover .lm__desc { color: rgba(251, 247, 238, .74); }
+@media (max-width: 900px) {
+  body.page-index .lm-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  body.page-index .lm-wall { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   八、史实速读卡（可切换）
+   -------------------------------------------------------------------------- */
+body.page-index .today {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr) auto;
+  gap: clamp(20px, 3vw, 40px);
+  align-items: center;
+  padding: clamp(24px, 3vw, 38px) clamp(24px, 3vw, 40px);
+  background: var(--paper-2);
+  border: 1px solid var(--line-gold);
+  border-left: 3px solid var(--red);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+body.page-index .today__label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+}
+body.page-index .today__label b {
+  font-family: var(--font-serif);
+  font-size: 1.16rem;
+  letter-spacing: .12em;
+  color: var(--red-deep);
+}
+body.page-index .today__label span {
+  font-size: 11px;
+  letter-spacing: .24em;
+  color: var(--ink-3);
+}
+body.page-index .today__body { min-width: 0; }
+body.page-index .today__date {
+  margin: 0 0 6px;
+  font-family: var(--font-num);
+  font-size: 13px;
+  letter-spacing: .14em;
+  color: var(--gold-deep);
+}
+body.page-index .today__text {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.9;
+  color: var(--ink-2);
+  min-height: 3.8em;
+  transition: opacity .3s var(--ease), transform .3s var(--ease);
+}
+body.page-index .today__text.is-swapping { opacity: 0; transform: translateY(6px); }
+body.page-index .today__btn { flex: 0 0 auto; }
+@media (max-width: 820px) {
+  body.page-index .today { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  body.page-index .today__btn { justify-self: start; }
+}
+
+/* --------------------------------------------------------------------------
+   九、校史呼应
+   -------------------------------------------------------------------------- */
+body.page-index .xiaoshi {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: center;
+}
+body.page-index .xiaoshi__facts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line-gold);
+}
+body.page-index .xiaoshi__facts li {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 18px;
+  margin: 0;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line-gold);
+  font-size: 15px;
+  color: var(--ink-2);
+}
+body.page-index .xiaoshi__facts b {
+  font-family: var(--font-serif);
+  font-size: 13.5px;
+  letter-spacing: .1em;
+  color: var(--red-deep);
+  font-weight: 700;
+}
+@media (max-width: 900px) {
+  body.page-index .xiaoshi { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   十、行动号召带
+   -------------------------------------------------------------------------- */
+body.page-index .action {
+  position: relative;
+  overflow: hidden;
+}
+body.page-index .action__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 2.6vw, 34px);
+  margin-top: clamp(28px, 3.4vw, 44px);
+}
+body.page-index .action__item {
+  padding: 22px 0 0;
+  border-top: 1px solid rgba(227, 198, 140, .38);
+}
+body.page-index .action__idx {
+  font-family: var(--font-num);
+  font-size: 12px;
+  letter-spacing: .22em;
+  color: var(--gold-soft);
+}
+body.page-index .action__title {
+  margin: 10px 0 8px;
+  font-size: 1.16rem;
+  color: var(--paper-2);
+}
+body.page-index .action__text {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: rgba(251, 247, 238, .72);
+}
+@media (max-width: 820px) {
+  body.page-index .action__grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   十一、全站导览矩阵
+   -------------------------------------------------------------------------- */
+body.page-index .sitemap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 1.8vw, 22px);
+}
+body.page-index .sm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: clamp(20px, 2.2vw, 26px);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  color: var(--ink);
+  transition: border-color .3s var(--ease), transform .3s var(--ease), background .3s var(--ease);
+}
+body.page-index .sm:hover {
+  transform: translateY(-3px);
+  border-color: var(--red);
+  color: var(--ink);
+}
+body.page-index .sm__num {
+  font-family: var(--font-num);
+  font-size: 11px;
+  letter-spacing: .2em;
+  color: var(--gold-deep);
+}
+body.page-index .sm__title {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+body.page-index .sm__desc {
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--ink-3);
+}
+@media (max-width: 900px) {
+  body.page-index .sitemap { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  body.page-index .sitemap { grid-template-columns: minmax(0, 1fr); }
+}

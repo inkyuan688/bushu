@@ -1,0 +1,127 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 陇东黄土塬：层叠台地、崖面窑洞与盛放的山丹丹花 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="陇东黄土塬：层叠台地、崖面窑洞与盛放的山丹丹花">
+  <defs>
+    <linearGradient id="yuanSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F1E4"/>
+      <stop offset="1" stop-color="#F7F1E4" stop-opacity=".6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#yuanSky)"/>
+  <circle cx="926" cy="150" r="98" fill="#BE8A3C" opacity=".16"/>
+  <circle cx="926" cy="150" r="56" fill="#BE8A3C" opacity=".18"/>
+  <circle cx="926" cy="150" r="56" fill="none" stroke="#BE8A3C" stroke-width="2" opacity=".42"/>
+
+  <!-- 远层塬面 -->
+  <path d="M0 322 L138 294 L276 318 L414 288 L552 316 L690 292 L828 320 L966 296 L1098 322 L1200 304 L1200 452 L0 452 Z" fill="#BE8A3C" opacity=".22"/>
+  <path d="M0 322 L138 294 L276 318 L414 288 L552 316 L690 292 L828 320 L966 296 L1098 322 L1200 304" fill="none" stroke="#BE8A3C" stroke-width="2" opacity=".5"/>
+
+  <!-- 中层塬面与梯田线 -->
+  <path d="M0 446 L124 412 L262 440 L402 406 L542 438 L682 410 L822 442 L962 412 L1102 444 L1200 420 L1200 548 L0 548 Z" fill="#A61B1B" opacity=".32"/>
+  <path d="M0 446 L124 412 L262 440 L402 406 L542 438 L682 410 L822 442 L962 412 L1102 444 L1200 420" fill="none" stroke="#7A1210" stroke-width="2.5" opacity=".32"/>
+  <g fill="none" stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".55">
+    <path d="M 60 470 C 180 456 300 478 420 462 C 540 446 660 470 780 454 C 900 438 1010 462 1120 446"/>
+    <path d="M 100 496 C 220 482 340 504 460 488 C 580 472 700 496 820 480 C 940 464 1040 484 1140 470"/>
+    <path d="M 150 522 C 260 510 370 530 480 514 C 590 498 700 522 810 506 C 920 490 1020 510 1110 498"/>
+  </g>
+
+  <!-- 崖面：塬的剖面 -->
+  <path d="M0 548 C 120 540 220 556 320 548 C 420 540 520 556 620 548 C 720 540 820 556 920 548 C 1020 540 1100 554 1200 546 L1200 675 L0 675 Z" fill="#7A1210"/>
+  <path d="M0 548 C 120 540 220 556 320 548 C 420 540 520 556 620 548 C 720 540 820 556 920 548 C 1020 540 1100 554 1200 546" fill="none" stroke="#BE8A3C" stroke-width="2.5" opacity=".5"/>
+  <!-- 黄土垂直节理 -->
+  <g stroke="#F7F1E4" stroke-width="1.6" opacity=".16">
+    <path d="M 118 556 L 108 640"/>
+    <path d="M 262 560 L 270 646"/>
+    <path d="M 448 558 L 438 640"/>
+    <path d="M 700 558 L 712 645"/>
+    <path d="M 1014 560 L 1002 646"/>
+    <path d="M 1136 556 L 1146 640"/>
+  </g>
+  <g stroke="#BE8A3C" stroke-width="1.6" opacity=".3">
+    <path d="M 0 590 L 1200 590"/>
+    <path d="M 0 626 L 1200 626"/>
+    <path d="M 0 660 L 1200 660"/>
+  </g>
+
+  <!-- 窑洞三孔：纸白拱窗与金色窗棂 -->
+  <g>
+    <path d="M 262 646 L 262 584 Q 296 548 330 584 L 330 646 Z" fill="#F7F1E4"/>
+    <path d="M 262 646 L 262 584 Q 296 548 330 584 L 330 646" fill="none" stroke="#BE8A3C" stroke-width="3"/>
+    <path d="M 262 610 L 330 610 M 296 562 L 296 646" stroke="#A61B1B" stroke-width="2" opacity=".5"/>
+    <path d="M 278 646 L 278 596 Q 296 580 314 596 L 314 646" fill="none" stroke="#7A1210" stroke-width="2" opacity=".35"/>
+  </g>
+  <g>
+    <path d="M 560 646 L 560 576 Q 600 536 640 576 L 640 646 Z" fill="#F7F1E4"/>
+    <path d="M 560 646 L 560 576 Q 600 536 640 576 L 640 646" fill="none" stroke="#BE8A3C" stroke-width="3"/>
+    <path d="M 560 606 L 640 606 M 600 556 L 600 646" stroke="#A61B1B" stroke-width="2" opacity=".5"/>
+    <path d="M 578 646 L 578 590 Q 600 570 622 590 L 622 646" fill="none" stroke="#7A1210" stroke-width="2" opacity=".35"/>
+  </g>
+  <g>
+    <path d="M 846 646 L 846 592 Q 876 562 906 592 L 906 646 Z" fill="#F7F1E4"/>
+    <path d="M 846 646 L 846 592 Q 876 562 906 592 L 906 646" fill="none" stroke="#BE8A3C" stroke-width="3"/>
+    <path d="M 846 618 L 906 618 M 876 570 L 876 646" stroke="#A61B1B" stroke-width="2" opacity=".5"/>
+  </g>
+
+  <!-- 塬上小路与树影 -->
+  <path d="M 0 548 C 140 528 238 552 356 536 C 474 520 570 548 686 534 C 802 520 906 544 1020 532 C 1100 524 1160 538 1200 532" fill="none" stroke="#BE8A3C" stroke-width="2.5" stroke-dasharray="10 12" opacity=".55"/>
+  <g fill="#1F1A17" opacity=".55">
+    <path d="M 470 470 L 478 470 L 478 448 L 470 448 Z"/>
+    <path d="M 458 448 Q 474 428 490 448 Z"/>
+    <path d="M 742 480 L 749 480 L 749 460 L 742 460 Z"/>
+    <path d="M 731 460 Q 745 442 759 460 Z"/>
+  </g>
+
+  <!-- 山丹丹花：红瓣、墨茎、金蕊 -->
+  <g fill="none" stroke="#1F1A17" stroke-width="3" stroke-linecap="round">
+    <path d="M 132 675 C 130 630 118 596 96 570"/>
+    <path d="M 132 675 C 138 636 156 606 176 588"/>
+    <path d="M 1010 675 C 1006 636 992 610 972 590"/>
+    <path d="M 1010 675 C 1018 638 1038 614 1058 600"/>
+    <path d="M 1110 675 C 1108 644 1098 620 1082 604"/>
+  </g>
+  <g fill="#A61B1B">
+    <g transform="translate(96 562)">
+      <path d="M 0 -22 C 8 -22 12 -14 10 -6 L 0 2 L -10 -6 C -12 -14 -8 -22 0 -22 Z"/>
+      <path d="M 18 -8 C 24 -2 22 6 15 9 L 3 5 L 8 -4 Z"/>
+      <path d="M 12 14 C 8 21 0 23 -5 18 L -2 7 L 7 7 Z"/>
+      <path d="M -14 12 C -22 9 -24 1 -18 -4 L -7 0 L -8 9 Z"/>
+      <path d="M -20 -8 C -24 -16 -19 -23 -11 -21 L -5 -9 L -12 -2 Z"/>
+      <circle cx="0" cy="0" r="5" fill="#BE8A3C"/>
+    </g>
+    <g transform="translate(176 578) scale(.82)">
+      <path d="M 0 -22 C 8 -22 12 -14 10 -6 L 0 2 L -10 -6 C -12 -14 -8 -22 0 -22 Z"/>
+      <path d="M 18 -8 C 24 -2 22 6 15 9 L 3 5 L 8 -4 Z"/>
+      <path d="M 12 14 C 8 21 0 23 -5 18 L -2 7 L 7 7 Z"/>
+      <path d="M -14 12 C -22 9 -24 1 -18 -4 L -7 0 L -8 9 Z"/>
+      <path d="M -20 -8 C -24 -16 -19 -23 -11 -21 L -5 -9 L -12 -2 Z"/>
+      <circle cx="0" cy="0" r="5" fill="#BE8A3C"/>
+    </g>
+    <g transform="translate(972 584) scale(.9)">
+      <path d="M 0 -22 C 8 -22 12 -14 10 -6 L 0 2 L -10 -6 C -12 -14 -8 -22 0 -22 Z"/>
+      <path d="M 18 -8 C 24 -2 22 6 15 9 L 3 5 L 8 -4 Z"/>
+      <path d="M 12 14 C 8 21 0 23 -5 18 L -2 7 L 7 7 Z"/>
+      <path d="M -14 12 C -22 9 -24 1 -18 -4 L -7 0 L -8 9 Z"/>
+      <path d="M -20 -8 C -24 -16 -19 -23 -11 -21 L -5 -9 L -12 -2 Z"/>
+      <circle cx="0" cy="0" r="5" fill="#BE8A3C"/>
+    </g>
+    <g transform="translate(1058 596) scale(.72)">
+      <path d="M 0 -22 C 8 -22 12 -14 10 -6 L 0 2 L -10 -6 C -12 -14 -8 -22 0 -22 Z"/>
+      <path d="M 18 -8 C 24 -2 22 6 15 9 L 3 5 L 8 -4 Z"/>
+      <path d="M 12 14 C 8 21 0 23 -5 18 L -2 7 L 7 7 Z"/>
+      <path d="M -14 12 C -22 9 -24 1 -18 -4 L -7 0 L -8 9 Z"/>
+      <path d="M -20 -8 C -24 -16 -19 -23 -11 -21 L -5 -9 L -12 -2 Z"/>
+      <circle cx="0" cy="0" r="5" fill="#BE8A3C"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#1F1A17" stroke-width="2.5" stroke-linecap="round" opacity=".6">
+    <path d="M 64 650 C 60 630 54 616 46 606"/>
+    <path d="M 64 650 C 68 628 76 614 86 604"/>
+    <path d="M 1136 652 C 1132 632 1126 618 1118 608"/>
+  </g>
+
+  <!-- 归鸟 -->
+  <g fill="none" stroke="#1F1A17" stroke-width="2.4" stroke-linecap="round" opacity=".36">
+    <path d="M 286 186 L 306 174 L 326 186"/>
+    <path d="M 340 160 L 356 150 L 372 160"/>
+  </g>
+</svg>

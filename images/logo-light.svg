@@ -1,0 +1,11 @@
+<!-- 原创 SVG 站徽（浅色版，用于深红页脚） · 陇原星火 · 甘肃红色文化数字馆 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="陇原星火站徽">
+  <rect x="1.5" y="1.5" width="61" height="61" rx="6" fill="none" stroke="#E3C68C" stroke-width="2"/>
+  <rect x="7" y="7" width="50" height="50" rx="3" fill="none" stroke="#E3C68C" stroke-width="1" opacity=".55"/>
+  <path d="M32 14.5 l4.7 9.6 10.6 1.5 -7.7 7.5 1.8 10.6 -9.4 -5 -9.4 5 1.8 -10.6 -7.7 -7.5 10.6 -1.5 z" fill="#E3C68C"/>
+  <g stroke="#E3C68C" stroke-width="1.7" stroke-linecap="round" opacity=".8">
+    <path d="M32 53 v-4.4"/>
+    <path d="M24.8 51.6 l1.8 -3.7"/>
+    <path d="M39.2 51.6 l-1.8 -3.7"/>
+  </g>
+</svg>

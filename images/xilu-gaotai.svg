@@ -1,0 +1,141 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 祁连山下的高台古城，城门楼与城墙上并肩而立的战旗 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="祁连山下的高台古城，城门楼与城墙上并肩而立的战旗">
+  <defs>
+    <linearGradient id="gtSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F1E4"/>
+      <stop offset="1" stop-color="#F7F1E4" stop-opacity=".62"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 天幕与寒日 -->
+  <rect width="1200" height="675" fill="url(#gtSky)"/>
+  <circle cx="922" cy="196" r="106" fill="#BE8A3C" opacity=".15"/>
+  <circle cx="922" cy="196" r="62" fill="#BE8A3C" opacity=".18"/>
+  <circle cx="922" cy="196" r="62" fill="none" stroke="#BE8A3C" stroke-width="2" opacity=".45"/>
+
+  <!-- 祁连山：朱红山体与纸白雪线 -->
+  <path d="M0 400 L104 330 L196 380 L300 308 L410 386 L520 320 L640 392 L748 326 L860 398 L966 336 L1078 400 L1200 344 L1200 520 L0 520 Z" fill="#A61B1B" opacity=".26"/>
+  <g fill="#F7F1E4" opacity=".9">
+    <path d="M300 308 L278 342 L292 332 L303 350 L316 330 L332 344 L322 320 Z"/>
+    <path d="M520 320 L496 356 L512 344 L524 364 L538 342 L556 358 L544 330 Z"/>
+    <path d="M748 326 L726 360 L740 350 L751 368 L763 348 L778 362 L768 336 Z"/>
+    <path d="M966 336 L944 370 L958 360 L969 378 L981 358 L996 372 L986 346 Z"/>
+    <path d="M1078 400 L1058 430 L1070 420 L1080 436 L1090 418 L1104 430 L1096 408 Z"/>
+  </g>
+  <path d="M0 400 L104 330 L196 380 L300 308 L410 386 L520 320 L640 392 L748 326 L860 398 L966 336 L1078 400 L1200 344" fill="none" stroke="#7A1210" stroke-width="3" stroke-linecap="round" opacity=".3"/>
+
+  <!-- 中景城郊土塬 -->
+  <path d="M0 520 L120 486 L240 512 L360 480 L470 516 L590 484 L700 518 L820 486 L940 518 L1060 490 L1200 516 L1200 540 L0 540 Z" fill="#A61B1B" opacity=".4"/>
+  <path d="M0 540 L1200 540 L1200 560 L0 560 Z" fill="#7A1210" opacity=".28"/>
+
+  <!-- 城墙与垛口 -->
+  <rect x="0" y="520" width="1200" height="155" fill="#7A1210"/>
+  <g fill="#7A1210">
+    <rect x="0" y="496" width="34" height="26"/>
+    <rect x="64" y="496" width="34" height="26"/>
+    <rect x="128" y="496" width="34" height="26"/>
+    <rect x="192" y="496" width="34" height="26"/>
+    <rect x="256" y="496" width="34" height="26"/>
+    <rect x="320" y="496" width="34" height="26"/>
+    <rect x="384" y="496" width="34" height="26"/>
+    <rect x="448" y="496" width="34" height="26"/>
+    <rect x="512" y="496" width="34" height="26" opacity="0"/>
+    <rect x="576" y="496" width="34" height="26" opacity="0"/>
+    <rect x="640" y="496" width="34" height="26" opacity="0"/>
+    <rect x="704" y="496" width="34" height="26"/>
+    <rect x="768" y="496" width="34" height="26"/>
+    <rect x="832" y="496" width="34" height="26"/>
+    <rect x="896" y="496" width="34" height="26"/>
+    <rect x="960" y="496" width="34" height="26"/>
+    <rect x="1024" y="496" width="34" height="26"/>
+    <rect x="1088" y="496" width="34" height="26"/>
+    <rect x="1152" y="496" width="34" height="26"/>
+  </g>
+  <!-- 墙面砖缝与金色压线 -->
+  <g stroke="#F7F1E4" stroke-width="1.6" opacity=".14">
+    <path d="M0 556 L1200 556"/>
+    <path d="M0 590 L1200 590"/>
+    <path d="M0 624 L1200 624"/>
+    <path d="M0 658 L1200 658"/>
+  </g>
+  <g stroke="#7A1210" stroke-width="1.4" opacity=".5">
+    <path d="M120 556 L120 590 M260 556 L260 590 M400 556 L400 590 M540 556 L540 590 M680 556 L680 590 M820 556 L820 590 M960 556 L960 590 M1100 556 L1100 590"/>
+    <path d="M180 590 L180 624 M320 590 L320 624 M460 590 L460 624 M600 590 L600 624 M740 590 L740 624 M880 590 L880 624 M1020 590 L1020 624"/>
+    <path d="M120 624 L120 658 M260 624 L260 658 M400 624 L400 658 M540 624 L540 658 M680 624 L680 658 M820 624 L820 658 M960 624 L960 658 M1100 624 L1100 658"/>
+  </g>
+  <path d="M0 540 L1200 540" stroke="#BE8A3C" stroke-width="2.5" opacity=".55"/>
+
+  <!-- 城门洞 -->
+  <path d="M552 675 L552 596 Q600 552 648 596 L648 675 Z" fill="#F7F1E4"/>
+  <path d="M552 675 L552 596 Q600 552 648 596 L648 675" fill="none" stroke="#BE8A3C" stroke-width="3" opacity=".7"/>
+  <path d="M580 675 L580 604 Q600 584 620 604 L620 675" fill="none" stroke="#A61B1B" stroke-width="2" opacity=".35"/>
+
+  <!-- 城门楼：三层飞檐 -->
+  <g fill="#7A1210" stroke="#BE8A3C" stroke-width="2" stroke-linejoin="round" opacity=".98">
+    <path d="M494 446 L706 446 L736 420 L726 412 L690 424 L510 424 L474 412 L464 420 Z"/>
+    <path d="M524 406 L676 406 L702 382 L692 374 L666 386 L534 386 L508 374 L498 382 Z"/>
+    <path d="M550 368 L650 368 L670 346 L660 338 L638 350 L562 350 L540 338 L530 346 Z"/>
+  </g>
+  <g fill="#7A1210" opacity=".98">
+    <rect x="524" y="404" width="152" height="42"/>
+    <rect x="548" y="366" width="104" height="40"/>
+    <rect x="574" y="322" width="52" height="46"/>
+  </g>
+  <!-- 楼身窗洞与立柱 -->
+  <g fill="#F7F1E4" opacity=".82">
+    <rect x="572" y="414" width="16" height="24"/>
+    <rect x="612" y="414" width="16" height="24"/>
+    <rect x="591" y="378" width="18" height="22"/>
+    <rect x="592" y="332" width="16" height="24"/>
+  </g>
+  <g stroke="#BE8A3C" stroke-width="1.8" opacity=".5">
+    <path d="M548 404 L548 446 M600 404 L600 446 M652 404 L652 446"/>
+    <path d="M572 366 L572 406 M600 366 L600 406 M628 366 L628 406"/>
+  </g>
+  <!-- 楼顶尖与风铎 -->
+  <path d="M596 322 L604 322 L604 300 L596 300 Z" fill="#7A1210"/>
+  <path d="M600 300 L600 278" stroke="#1F1A17" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="600" cy="274" r="7" fill="#BE8A3C"/>
+  <g stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".75">
+    <path d="M544 440 L544 458"/>
+    <path d="M656 440 L656 458"/>
+    <path d="M600 426 L600 440"/>
+  </g>
+
+  <!-- 楼顶战旗 -->
+  <path d="M600 278 L600 208" stroke="#1F1A17" stroke-width="5" stroke-linecap="round"/>
+  <path d="M604 210 L700 226 L682 248 L700 270 L604 282 Z" fill="#F7F1E4" stroke="#7A1210" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M646 232 L652 244 L664 245 L655 253 L658 265 L646 258 L634 265 L637 253 L628 245 L640 244 Z" fill="#A61B1B"/>
+  <path d="M604 210 L700 226 L682 248 L700 270 L604 282 Z" fill="none" stroke="#BE8A3C" stroke-width="1.6" opacity=".6"/>
+
+  <!-- 城墙侧旗 -->
+  <g>
+    <path d="M300 496 L300 420" stroke="#1F1A17" stroke-width="4" stroke-linecap="round"/>
+    <path d="M304 422 L382 436 L366 456 L382 476 L304 490 Z" fill="#A61B1B" stroke="#F7F1E4" stroke-width="2" opacity=".94"/>
+    <circle cx="342" cy="454" r="5" fill="#F7F1E4" opacity=".8"/>
+  </g>
+  <g>
+    <path d="M890 496 L890 430" stroke="#1F1A17" stroke-width="4" stroke-linecap="round"/>
+    <path d="M886 432 L812 444 L826 462 L812 480 L886 490 Z" fill="#A61B1B" stroke="#F7F1E4" stroke-width="2" opacity=".94"/>
+    <circle cx="850" cy="460" r="5" fill="#F7F1E4" opacity=".8"/>
+  </g>
+
+  <!-- 城头守望者剪影 -->
+  <g fill="#1F1A17" opacity=".85">
+    <circle cx="394" cy="478" r="7"/>
+    <path d="M386 496 Q 386 482 394 482 Q 402 482 402 496 Z"/>
+    <path d="M402 478 L420 462" stroke="#1F1A17" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="776" cy="478" r="7"/>
+    <path d="M768 496 Q 768 482 776 482 Q 784 482 784 496 Z"/>
+    <path d="M768 478 L750 462" stroke="#1F1A17" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 城下冻土与草痕 -->
+  <path d="M0 675 L1200 675 L1200 638 L1010 650 L840 632 L660 654 L480 636 L300 656 L120 638 L0 650 Z" fill="#1F1A17" opacity=".2"/>
+  <g stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".42">
+    <path d="M80 660 L120 648"/>
+    <path d="M112 668 L148 654"/>
+    <path d="M962 654 L1004 642"/>
+    <path d="M1010 666 L1048 650"/>
+  </g>
+</svg>

@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* ==========================================================================
+   陇原星火 · 关于本站页（guanyu.html）专属样式
+   作用域：body.page-guanyu
+   ========================================================================== */
+
+/* hero 只有文字，改为单列 */
+body.page-guanyu .page-hero__inner { grid-template-columns: minmax(0, 1fr); }
+body.page-guanyu .page-hero__meta { max-width: 54rem; }
+
+/* 设计理念关键词 */
+body.page-guanyu .ideas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.4vw, 30px);
+}
+body.page-guanyu .idea {
+  position: relative;
+  padding: clamp(26px, 3vw, 38px) clamp(22px, 2.6vw, 32px);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+body.page-guanyu .idea::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+  opacity: .55;
+}
+body.page-guanyu .idea__char {
+  position: absolute;
+  top: -14px;
+  right: 6px;
+  font-family: var(--font-serif);
+  font-size: 6.4rem;
+  line-height: 1;
+  color: rgba(166, 27, 27, .06);
+  pointer-events: none;
+}
+body.page-guanyu .idea__en {
+  margin: 0;
+  font-size: 10.5px;
+  letter-spacing: .3em;
+  color: var(--gold-deep);
+}
+body.page-guanyu .idea__title {
+  margin: 14px 0 10px;
+  font-size: 1.3rem;
+}
+body.page-guanyu .idea__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--ink-2);
+}
+@media (max-width: 900px) {
+  body.page-guanyu .ideas { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* 站点地图 */
+body.page-guanyu .sitemap-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line-gold);
+  border: 1px solid var(--line-gold);
+}
+body.page-guanyu .sitemap-list a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px 20px;
+  background: var(--paper-2);
+  color: var(--ink);
+  transition: background .26s var(--ease), color .26s var(--ease);
+}
+body.page-guanyu .sitemap-list a:hover { background: var(--red); color: var(--paper-2); }
+body.page-guanyu .sitemap-list .num {
+  font-family: var(--font-num);
+  font-size: 11px;
+  letter-spacing: .18em;
+  color: var(--gold-deep);
+  transition: color .26s var(--ease);
+}
+body.page-guanyu .sitemap-list .name {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+body.page-guanyu .sitemap-list .path {
+  font-size: 11.5px;
+  color: var(--ink-3);
+  transition: color .26s var(--ease);
+}
+body.page-guanyu .sitemap-list a:hover .num,
+body.page-guanyu .sitemap-list a:hover .path { color: rgba(251, 247, 238, .7); }
+@media (max-width: 900px) {
+  body.page-guanyu .sitemap-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  body.page-guanyu .sitemap-list { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* 技术特性 */
+body.page-guanyu .tech {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 24px);
+}
+body.page-guanyu .tech__item {
+  padding: 20px 22px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+body.page-guanyu .tech__name {
+  margin: 0 0 6px;
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--red-deep);
+}
+body.page-guanyu .tech__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink-2);
+}
+@media (max-width: 700px) {
+  body.page-guanyu .tech { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* 目录树 */
+body.page-guanyu .tree {
+  margin: 0;
+  padding: 22px 24px;
+  overflow-x: auto;
+  font-family: Consolas, "Courier New", "SimSun", monospace;
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--ink-2);
+  background: var(--paper-2);
+  border: 1px solid var(--line-gold);
+  border-radius: var(--r);
+  white-space: pre;
+}
+body.page-guanyu .tree b { color: var(--red-deep); }
+body.page-guanyu .tree i { color: var(--ink-3); font-style: normal; }
+
+/* 声明 */
+body.page-guanyu .declare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line-gold);
+  border: 1px solid var(--line-gold);
+}
+body.page-guanyu .declare__item {
+  padding: 22px 24px;
+  background: var(--paper-2);
+}
+body.page-guanyu .declare__item h3 {
+  margin: 0 0 8px;
+  font-size: 1.02rem;
+  color: var(--red-deep);
+  letter-spacing: .08em;
+}
+body.page-guanyu .declare__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--ink-2);
+}
+@media (max-width: 700px) {
+  body.page-guanyu .declare { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* 参考资料 */
+body.page-guanyu .refs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line-gold);
+  counter-reset: ref;
+}
+body.page-guanyu .refs li {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line-gold);
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+body.page-guanyu .refs li::before {
+  counter-increment: ref;
+  content: "[" counter(ref) "]";
+  flex: 0 0 auto;
+  font-family: var(--font-num);
+  font-size: 12.5px;
+  color: var(--gold-deep);
+}
+body.page-guanyu .refs a { color: var(--red-deep); word-break: break-all; }
+body.page-guanyu .refs a:hover { color: var(--red-bright); }
+body.page-guanyu .refs small { display: block; font-size: 12px; color: var(--ink-3); }
+
+/* 更新记录 */
+body.page-guanyu .log {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body.page-guanyu .log li {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 20px;
+  margin: 0;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--line-gold);
+  font-size: 14.5px;
+  color: var(--ink-2);
+}
+body.page-guanyu .log b {
+  font-family: var(--font-num);
+  font-size: 13px;
+  letter-spacing: .06em;
+  color: var(--gold-deep);
+  font-weight: 700;
+}
+@media (max-width: 560px) {
+  body.page-guanyu .log li { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+}

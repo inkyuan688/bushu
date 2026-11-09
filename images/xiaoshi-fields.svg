@@ -1,0 +1,64 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 田野上的论文：旱作农业试验田与试验站 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="陇原旱作农田的层层田垄、试验站小屋与远山">
+  <defs>
+    <linearGradient id="fsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"/>
+      <stop offset="1" stop-color="#F1E5D0"/>
+    </linearGradient>
+    <linearGradient id="fearth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B7281F"/>
+      <stop offset="1" stop-color="#7A1210"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#fsky)"/>
+
+  <!-- 日与光 -->
+  <circle cx="880" cy="130" r="70" fill="#C6392C" opacity=".14"/>
+  <circle cx="880" cy="130" r="44" fill="#C6392C" opacity=".22"/>
+
+  <!-- 远山 -->
+  <path d="M0 306 L140 232 L262 292 L392 216 L518 288 L640 228 L760 296 L884 240 L1000 302 L1112 250 L1200 300 L1200 675 L0 675 Z" fill="#A61B1B" opacity=".18"/>
+  <path d="M392 216 L420 252 L364 252 Z" fill="#FBF7EE" opacity=".7"/>
+
+  <!-- 试验站小屋 -->
+  <g>
+    <path d="M760 424 L760 356 L920 356 L920 424 Z" fill="#7A1210"/>
+    <path d="M744 356 L840 306 L936 356 Z" fill="#A61B1B"/>
+    <rect x="826" y="378" width="30" height="46" fill="#F7F1E4" opacity=".85"/>
+    <rect x="782" y="378" width="24" height="22" fill="#F7F1E4" opacity=".5"/>
+    <rect x="874" y="378" width="24" height="22" fill="#F7F1E4" opacity=".5"/>
+    <!-- 气象杆 -->
+    <path d="M948 424 L948 330" stroke="#7A1210" stroke-width="3"/>
+    <path d="M948 340 L974 330 M948 340 L922 330" stroke="#7A1210" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="948" cy="326" r="5" fill="#BE8A3C"/>
+  </g>
+
+  <!-- 田垄（透视层层） -->
+  <path d="M0 675 L0 424 C 220 402 440 442 660 418 C 880 394 1060 430 1200 414 L1200 675 Z" fill="url(#fearth)" opacity=".2"/>
+  <g fill="none" stroke="#7A1210" stroke-width="2.6" opacity=".45">
+    <path d="M0 470 C 230 448 460 488 690 462 C 900 438 1080 470 1200 456"/>
+    <path d="M0 512 C 240 490 480 530 710 502 C 910 478 1090 512 1200 498"/>
+    <path d="M0 556 C 250 532 500 574 730 546 C 930 520 1100 556 1200 542"/>
+    <path d="M0 600 C 260 576 520 618 750 590 C 950 564 1110 600 1200 586"/>
+  </g>
+  <!-- 垄上的幼苗 -->
+  <g fill="#7A1210" opacity=".8">
+    <path d="M170 500 l-12 -18 l24 0 z"/><path d="M320 520 l-12 -18 l24 0 z"/>
+    <path d="M470 494 l-12 -18 l24 0 z"/><path d="M620 516 l-12 -18 l24 0 z"/>
+    <path d="M1040 512 l-12 -18 l24 0 z"/><path d="M1120 530 l-10 -16 l20 0 z"/>
+  </g>
+
+  <!-- 前景土坡 -->
+  <path d="M0 675 L0 618 C 300 594 620 640 900 610 C 1060 594 1150 618 1200 610 L1200 675 Z" fill="#5E0D0C"/>
+
+  <!-- 麦穗与测量标尺 -->
+  <g stroke="#BE8A3C" stroke-width="3.5" stroke-linecap="round" fill="none" opacity=".85">
+    <path d="M96 660 L96 596"/><path d="M96 614 l-16 -14"/><path d="M96 614 l16 -14"/>
+    <path d="M96 634 l-16 -14"/><path d="M96 634 l16 -14"/><path d="M96 654 l-16 -14"/><path d="M96 654 l16 -14"/>
+  </g>
+  <g stroke="#7A1210" stroke-width="2.4" opacity=".6">
+    <path d="M1082 660 L1082 560"/>
+    <path d="M1074 574 L1082 560 L1090 574"/>
+    <path d="M1082 600 L1102 590"/><path d="M1082 620 L1102 610"/>
+  </g>
+</svg>

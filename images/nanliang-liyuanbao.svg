@@ -1,0 +1,116 @@
+<!-- 原创 SVG 插画 · 陇原星火 · 荔园堡：黄土塬上的堡寨、窑洞与红旗，1934 年苏维埃政府成立地 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="南梁荔园堡的堡寨城门、窑洞与山峦剪影">
+  <defs>
+    <linearGradient id="nlLbSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"></stop>
+      <stop offset="1" stop-color="#EFE4CF"></stop>
+    </linearGradient>
+    <pattern id="nlLbGrain" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="6" r="1.1" fill="#1F1A17" opacity=".05"></circle>
+      <circle cx="20" cy="22" r="1" fill="#BE8A3C" opacity=".13"></circle>
+    </pattern>
+    <g id="nlLbCave">
+      <path d="M-26 30 L-26 2 A 26 26 0 0 1 26 2 L26 30 Z" fill="#BE8A3C"></path>
+      <path d="M-19 30 L-19 5 A 19 19 0 0 1 19 5 L19 30 Z" fill="#E3C68C"></path>
+      <path d="M0 4 V 30 M-19 18 H 19" stroke="#5E0D0C" stroke-width="2.6"></path>
+    </g>
+    <g id="nlLbPerson">
+      <circle cx="0" cy="-20" r="3.4" fill="#5E0D0C"></circle>
+      <path d="M-5 -17 C -5 -10 -6 -6 -6.8 -1 L 6.8 -1 C 5.2 -6 4.4 -11 4.4 -17 Z" fill="#5E0D0C"></path>
+      <path d="M-4 -1 L -6 6 M 4 -1 L 6 6" stroke="#5E0D0C" stroke-width="2.4" stroke-linecap="round"></path>
+    </g>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#nlLbSky)"></rect>
+  <rect width="1200" height="675" fill="url(#nlLbGrain)"></rect>
+
+  <circle cx="930" cy="148" r="120" fill="#BE8A3C" opacity=".14"></circle>
+  <circle cx="930" cy="148" r="78" fill="#BE8A3C" opacity=".2"></circle>
+  <circle cx="930" cy="148" r="46" fill="#C6392C" opacity=".22"></circle>
+
+  <path d="M0 382 L120 326 L240 366 L360 312 L480 362 L600 320 L720 366 L840 322 L960 370 L1080 328 L1200 374 L1200 675 L0 675 Z" fill="#E3C68C" opacity=".3"></path>
+  <path d="M0 452 L140 390 L280 436 L420 382 L560 440 L700 390 L840 444 L980 396 L1120 448 L1200 416 L1200 675 L0 675 Z" fill="#A61B1B" opacity=".12"></path>
+  <path d="M0 522 L160 470 L320 506 L480 464 L640 512 L800 472 L960 514 L1120 478 L1200 506 L1200 675 L0 675 Z" fill="#BE8A3C" opacity=".22"></path>
+
+  <g fill="#FBF7EE" opacity=".85">
+    <path d="M170 190 q 0 -22 22 -22 q 6 -20 28 -20 q 22 0 26 20 q 26 -2 26 22 z"></path>
+    <path d="M300 250 q 0 -18 18 -18 q 5 -16 23 -16 q 18 0 21 16 q 21 -2 21 18 z" opacity=".7"></path>
+    <path d="M980 230 q 0 -20 20 -20 q 5 -18 25 -18 q 20 0 24 18 q 23 -2 23 20 z" opacity=".65"></path>
+  </g>
+
+  <path d="M0 675 L0 604 C 180 574 380 582 580 596 C 780 610 980 590 1200 606 L1200 675 Z" fill="#BE8A3C" opacity=".24"></path>
+
+  <path d="M80 620 L80 552 L312 552 L312 620 Z" fill="#BE8A3C" opacity=".3"></path>
+  <use href="#nlLbCave" transform="translate(140 596)"></use>
+  <use href="#nlLbCave" transform="translate(202 596) scale(.92)"></use>
+  <use href="#nlLbCave" transform="translate(262 596) scale(.86)"></use>
+
+  <path d="M56 620 L56 546 L312 546" fill="none" stroke="#BE8A3C" stroke-width="2.4" opacity=".55"></path>
+  <g transform="translate(76 552) scale(.7)">
+    <path d="M0 0 V -40" stroke="#7A1210" stroke-width="3" stroke-linecap="round"></path>
+    <path d="M0 -40 L 34 -33 L 0 -22 Z" fill="#A61B1B"></path>
+  </g>
+
+  <path d="M336 492 h18 v20 h-18 z M374 492 h18 v20 h-18 z M412 492 h18 v20 h-18 z M450 492 h18 v20 h-18 z M488 492 h18 v20 h-18 z M526 492 h18 v20 h-18 z M564 492 h18 v20 h-18 z M602 492 h18 v20 h-18 z M640 492 h18 v20 h-18 z M678 492 h18 v20 h-18 z M716 492 h18 v20 h-18 z M754 492 h18 v20 h-18 z M792 492 h18 v20 h-18 z" fill="#7A1210"></path>
+  <path d="M330 604 L330 512 L830 512 L830 604 Z" fill="#7A1210"></path>
+  <g stroke="#5E0D0C" stroke-width="2" opacity=".4" stroke-linecap="round">
+    <path d="M338 534 H 822"></path>
+    <path d="M338 558 H 822"></path>
+    <path d="M338 582 H 822"></path>
+  </g>
+  <path d="M525 604 L525 552 A 55 55 0 0 1 635 552 L635 604 Z" fill="#F7F1E4"></path>
+  <path d="M525 604 L525 552 A 55 55 0 0 1 635 552 L635 604" fill="none" stroke="#BE8A3C" stroke-width="2.4" opacity=".85"></path>
+
+  <path d="M505 512 L505 456 L655 456 L655 512 Z" fill="#A61B1B"></path>
+  <path d="M475 456 L580 408 L685 456 Z" fill="#7A1210"></path>
+  <path d="M475 456 L580 408 L685 456" fill="none" stroke="#BE8A3C" stroke-width="2.4" opacity=".9"></path>
+  <path d="M475 456 q -24 -2 -34 14" fill="none" stroke="#7A1210" stroke-width="4.4" stroke-linecap="round"></path>
+  <path d="M685 456 q 24 -2 34 14" fill="none" stroke="#7A1210" stroke-width="4.4" stroke-linecap="round"></path>
+  <g fill="#BE8A3C" opacity=".85">
+    <path d="M520 500 L520 474 A 12 12 0 0 1 544 474 L544 500 Z"></path>
+    <path d="M578 500 L578 474 A 12 12 0 0 1 602 474 L602 500 Z"></path>
+  </g>
+  <g transform="translate(580 408)">
+    <path d="M0 0 V -40" stroke="#7A1210" stroke-width="3.2" stroke-linecap="round"></path>
+    <path d="M0 -40 L 36 -32 L 0 -20 Z" fill="#A61B1B"></path>
+    <path d="M9 -35 l2 4.4 4.6 .7 -3.4 3.2 .9 4.6 -4.1 -2.2 -4.1 2.2 .9 -4.6 -3.4 -3.2 4.6 -.7 z" fill="#BE8A3C" opacity=".9"></path>
+  </g>
+  <g transform="translate(330 512) scale(.66)">
+    <path d="M0 0 V -34" stroke="#7A1210" stroke-width="3" stroke-linecap="round"></path>
+    <path d="M0 -34 L 30 -27 L 0 -16 Z" fill="#A61B1B"></path>
+  </g>
+  <g transform="translate(830 512) scale(.66)">
+    <path d="M0 0 V -34" stroke="#7A1210" stroke-width="3" stroke-linecap="round"></path>
+    <path d="M0 -34 L 30 -27 L 0 -16 Z" fill="#A61B1B"></path>
+  </g>
+
+  <path d="M1200 675 L1200 640 C 1040 624 930 618 866 600 L818 606 C 882 636 1020 660 1176 675 Z" fill="#EFE4CF" opacity=".9"></path>
+  <path d="M1168 668 C 1044 648 934 628 872 608" fill="none" stroke="#BE8A3C" stroke-width="2.4" stroke-dasharray="7 8" stroke-linecap="round" opacity=".6"></path>
+  <use href="#nlLbPerson" transform="translate(884 616) scale(.9)"></use>
+  <use href="#nlLbPerson" transform="translate(922 624) scale(.88)"></use>
+  <use href="#nlLbPerson" transform="translate(962 632) scale(.86)"></use>
+  <use href="#nlLbPerson" transform="translate(1004 640) scale(.84)"></use>
+
+  <g transform="translate(1080 556) scale(.9)">
+    <path d="M0 0 V -26" stroke="#7A1210" stroke-width="3" stroke-linecap="round"></path>
+    <path d="M0 -26 L 24 -20 L 0 -11 Z" fill="#A61B1B"></path>
+  </g>
+
+  <g stroke="#1F1A17" stroke-width="2" fill="none" opacity=".26" stroke-linecap="round">
+    <path d="M330 210 q 10 -7 20 0"></path>
+    <path d="M352 210 q 10 -7 20 0"></path>
+    <path d="M760 258 q 9 -7 18 0"></path>
+    <path d="M780 258 q 9 -7 18 0"></path>
+  </g>
+
+  <g fill="#BE8A3C" opacity=".5">
+    <path d="M1048 300 l2.4 7.2 7.2 2.4 -7.2 2.4 -2.4 7.2 -2.4 -7.2 -7.2 -2.4 7.2 -2.4 z"></path>
+    <path d="M180 330 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z" opacity=".8"></path>
+  </g>
+
+  <path d="M0 675 L0 648 C 160 632 300 652 460 644 C 620 636 780 656 940 648 L1200 654 L1200 675 Z" fill="#7A1210" opacity=".8"></path>
+  <g fill="none" stroke="#BE8A3C" stroke-width="2" stroke-linecap="round" opacity=".3">
+    <path d="M60 662 q 8 -14 2 -24 M72 664 q 3 -12 10 -20"></path>
+    <path d="M1128 662 q -8 -14 -2 -24 M1116 664 q -3 -12 -10 -20"></path>
+  </g>
+</svg>

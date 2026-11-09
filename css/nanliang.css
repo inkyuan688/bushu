@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/* ==========================================================================
+   陇原星火 · 甘肃红色文化数字馆
+   nanliang.css — 南梁烽火 · 陕甘根基（页面工程师 T1）
+   作用域：body.page-nanliang（全部规则均以此限定，不污染全站）
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. 为什么是南梁
+   -------------------------------------------------------------------------- */
+body.page-nanliang .nl-why {
+  align-items: start;
+}
+body.page-nanliang .nl-why__body p {
+  max-width: 44em;
+}
+body.page-nanliang .nl-why__aspects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: clamp(24px, 3vw, 34px) 0 0;
+}
+body.page-nanliang .nl-why__aspect {
+  padding: 16px 18px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+body.page-nanliang .nl-why__aspect h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--red-deep);
+}
+body.page-nanliang .nl-why__aspect p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+body.page-nanliang .nl-why__aside {
+  display: grid;
+  gap: 22px;
+}
+body.page-nanliang .nl-why__aside .figure__cap {
+  text-align: left;
+}
+body.page-nanliang .nl-why__aside .quote__text {
+  font-size: clamp(16px, 1.35vw, 18px);
+  line-height: 1.95;
+}
+body.page-nanliang .nl-stats {
+  margin-top: clamp(36px, 4.5vw, 52px);
+  padding-top: clamp(26px, 3vw, 36px);
+  border-top: 1px solid var(--line-gold);
+}
+
+/* --------------------------------------------------------------------------
+   2. 创建年表（含阶段筛选）
+   -------------------------------------------------------------------------- */
+body.page-nanliang .nl-timeline-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px 24px;
+  margin-bottom: clamp(24px, 3vw, 34px);
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line-gold);
+}
+body.page-nanliang .nl-filter {
+  margin: 0;
+}
+body.page-nanliang .nl-count {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: .08em;
+  color: var(--ink-3);
+}
+body.page-nanliang .nl-count b {
+  font-family: var(--font-num);
+  font-size: 16px;
+  color: var(--red-deep);
+}
+body.page-nanliang .nl-timeline {
+  max-width: 980px;
+}
+body.page-nanliang .nl-timeline__item[hidden] {
+  display: none !important;
+}
+body.page-nanliang .nl-timeline__meta {
+  color: var(--red);
+}
+body.page-nanliang .nl-timeline .timeline__text {
+  max-width: 46em;
+}
+body.page-nanliang .nl-timeline__foot {
+  margin-top: clamp(22px, 3vw, 32px);
+}
+
+/* --------------------------------------------------------------------------
+   3. 人物
+   -------------------------------------------------------------------------- */
+body.page-nanliang .nl-people {
+  align-items: stretch;
+}
+body.page-nanliang .nl-people .person {
+  height: 100%;
+}
+body.page-nanliang .nl-people .person__text {
+  font-size: 14.5px;
+}
+
+/* --------------------------------------------------------------------------
+   4. 南梁精神（深色区块，自定义卡片类）
+   -------------------------------------------------------------------------- */
+body.page-nanliang .nl-spirit__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 24px);
+}
+body.page-nanliang .nl-spirit__card {
+  position: relative;
+  padding: clamp(20px, 2vw, 28px);
+  background: rgba(251, 247, 238, .055);
+  border: 1px solid rgba(227, 198, 140, .3);
+  border-radius: var(--r);
+  transition: background .3s var(--ease), border-color .3s var(--ease),
+              transform .3s var(--ease);
+}
+body.page-nanliang .nl-spirit__card:hover {
+  background: rgba(251, 247, 238, .09);
+  border-color: rgba(227, 198, 140, .56);
+  transform: translateY(-3px);
+}
+body.page-nanliang .nl-spirit__idx {
+  display: block;
+  margin: 0 0 12px;
+  font-family: var(--font-serif);
+  font-size: 13px;
+  letter-spacing: .22em;
+  color: var(--gold-soft);
+}
+body.page-nanliang .nl-spirit__title {
+  margin: 0 0 10px;
+  font-size: 1.16rem;
+  letter-spacing: .08em;
+  color: var(--paper-2);
+}
+body.page-nanliang .nl-spirit__text {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: rgba(251, 247, 238, .78);
+}
+body.page-nanliang .nl-spirit__note {
+  margin: clamp(24px, 3vw, 32px) 0 0;
+  font-size: 13px;
+  line-height: 1.8;
+  letter-spacing: .04em;
+  color: rgba(251, 247, 238, .58);
+}
+
+/* --------------------------------------------------------------------------
+   5. 南梁的纪念
+   -------------------------------------------------------------------------- */
+body.page-nanliang .nl-sites__table {
+  margin-top: 4px;
+}
+body.page-nanliang .nl-table-hint {
+  display: none;
+  margin: 10px 2px 0;
+  font-size: 12.5px;
+  letter-spacing: .04em;
+  color: var(--ink-3);
+}
+body.page-nanliang .nl-sites__lower {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+  gap: clamp(24px, 3vw, 42px);
+  align-items: center;
+  margin-top: clamp(28px, 4vw, 46px);
+}
+body.page-nanliang .nl-sites__notes {
+  min-width: 0;
+}
+body.page-nanliang .nl-sites__notes p {
+  max-width: 40em;
+}
+body.page-nanliang .nl-sites__list {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line-gold);
+}
+body.page-nanliang .nl-sites__list li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 14.5px;
+  color: var(--ink-2);
+  border-bottom: 1px dashed var(--line);
+}
+body.page-nanliang .nl-sites__list b {
+  flex: 0 0 auto;
+  font-family: var(--font-num);
+  font-size: 13px;
+  color: var(--gold-deep);
+}
+
+/* --------------------------------------------------------------------------
+   6. 下一站
+   -------------------------------------------------------------------------- */
+body.page-nanliang .nl-next {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(20px, 3vw, 44px);
+  padding: clamp(26px, 3.4vw, 44px);
+  background: linear-gradient(118deg, var(--paper-2) 0%, rgba(239, 228, 207, .72) 100%);
+  border-top: 3px solid var(--red);
+}
+body.page-nanliang .nl-next__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+body.page-nanliang .nl-next .card__title {
+  margin-bottom: 12px;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  color: var(--red-deep);
+}
+body.page-nanliang .nl-next .card__text {
+  max-width: 46em;
+  font-size: 15.5px;
+}
+body.page-nanliang .nl-next__arrow {
+  flex: 0 0 auto;
+  font-family: var(--font-num);
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1;
+  color: var(--red);
+  transition: transform .3s var(--ease);
+}
+body.page-nanliang .nl-next:hover .nl-next__arrow {
+  transform: translateX(6px);
+}
+
+/* --------------------------------------------------------------------------
+   7. 响应式
+   -------------------------------------------------------------------------- */
+@media (max-width: 1080px) {
+  body.page-nanliang .nl-spirit__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  body.page-nanliang .nl-sites__lower {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body.page-nanliang .nl-why__aspects {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  body.page-nanliang .nl-table-hint {
+    display: block;
+  }
+  body.page-nanliang .nl-why__aspects {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body.page-nanliang .nl-timeline-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  body.page-nanliang .nl-next {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body.page-nanliang .nl-next__arrow {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 560px) {
+  body.page-nanliang .nl-spirit__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.page-nanliang .nl-spirit__card:hover { transform: none; }
+  body.page-nanliang .nl-next:hover .nl-next__arrow { transform: none; }
+}
